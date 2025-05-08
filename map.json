@@ -1,6 +1,6 @@
 {
   "name": "ErisPulse 官方模块源",
-  "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/",
+  "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/modules",
   "modules": {
     "AsyncServer": {
       "path": "/AsyncServer.zip",
