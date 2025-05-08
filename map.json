@@ -1,6 +1,6 @@
 {
-  "name": "Async-Origin",
-  "base": "https://sdkframe.anran.xyz/modules",
+  "name": "ErisPulse 官方模块源",
+  "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/",
   "modules": {
     "AsyncServer": {
       "path": "/AsyncServer.zip",
