@@ -280,7 +280,7 @@
           "name": "RemindCore",
           "author": "WSu2059",
           "description": "通用定时提醒服务模块",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "license": "MIT",
           "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
       },
