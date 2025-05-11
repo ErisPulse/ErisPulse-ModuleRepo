@@ -82,6 +82,38 @@
         "pip": []
       }
     },
+    "BotUnfollowed": {
+      "path": "/BotUnfollowed.zip",
+      "meta": {
+        "name": "BotUnfollowed",
+        "author": "WSu2059",
+        "description": "异步云湖适配器 - 取消关注机器人事件处理模块",
+        "version": "1.0.0",
+        "license": "MIT",
+        "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
+      },
+      "dependencies": {
+        "requires": ["AsyncServer"],
+        "optional": [],
+        "pip": []
+      }
+    },
+    "BotFollowed": {
+      "path": "/BotFollowed.zip",
+      "meta": {
+        "name": "BotFollowed",
+        "author": "WSu2059",
+        "description": "异步云湖适配器 - 关注机器人事件处理模块",
+        "version": "1.0.0",
+        "license": "MIT",
+        "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
+      },
+      "dependencies": {
+        "requires": ["AsyncServer"],
+        "optional": [],
+        "pip": []
+      }
+    },
     "MessageBase": {
       "path": "/MessageBase.zip",
       "meta": {
