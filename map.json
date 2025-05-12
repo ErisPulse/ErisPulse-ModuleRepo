@@ -326,7 +326,7 @@
   "App-DailyQuoteReminder": {
     "path": "/App-DailyQuoteReminder.zip",
     "meta": {
-        "name": "DailyQuoteReminder",
+        "name": "App-DailyQuoteReminder",
         "version": "1.0.1",
         "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
         "author": "WSu2059",
