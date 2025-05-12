@@ -7,7 +7,7 @@
       "meta": {
         "name": "YunhuAdapter",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器服务器模块",
+        "description": "云湖 | 异步 Webhook 服务端，用于接收并分发事件请求",
         "version": "1.1.3",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -23,7 +23,7 @@
       "meta": {
         "name": "YunhuNormalHandler",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 普通消息处理模块",
+        "description": "云湖 | 普通消息事件监听模块，用于注册文本与富文本消息回调",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -39,7 +39,7 @@
       "meta": {
         "name": "YunhuCommandHandler",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 命令消息处理模块",
+        "description": "云湖 | 指令消息事件监听模块，支持按指令ID注册处理器",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -55,7 +55,7 @@
       "meta": {
         "name": "YunhuGroupJoinHandler",
         "author": "WSu2059",
-        "description": "异步云湖适配器 - 加入群组事件处理模块",
+        "description": "云湖 | 用户加入群组事件监听模块，提供回调注册接口",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -71,7 +71,7 @@
       "meta": {
         "name": "YunhuGroupLeaveHandler",
         "author": "WSu2059",
-        "description": "异步云湖适配器 - 离开群组事件处理模块",
+        "description": "云湖 | 用户退出群组事件监听模块，提供回调注册接口",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -87,7 +87,7 @@
       "meta": {
         "name": "YunhuBotUnfollowed",
         "author": "WSu2059",
-        "description": "异步云湖适配器 - 取消关注机器人事件处理模块",
+        "description": "云湖 | 机器人取消关注事件监听模块，提供回调注册接口",
         "version": "1.0.0",
         "license": "MIT",
         "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
@@ -103,7 +103,7 @@
       "meta": {
         "name": "YunhuBotFollowed",
         "author": "WSu2059",
-        "description": "异步云湖适配器 - 关注机器人事件处理模块",
+        "description": "云湖 | 机器人被关注事件监听模块，提供回调注册接口",
         "version": "1.0.0",
         "license": "MIT",
         "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
@@ -119,7 +119,7 @@
       "meta": {
         "name": "YunhuMessageBase",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息基类模块",
+        "description": "云湖 | 消息通信基础模块，提供网络请求与文件上传能力",
         "version": "1.1.2",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -135,7 +135,7 @@
       "meta": {
         "name": "YunhuMessageBatch",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息批量发送模块",
+        "description": "云湖 | 批量消息发送模块，支持向多个对象同时推送",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -151,7 +151,7 @@
       "meta": {
         "name": "YunhuMessageBoard",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息看板模块",
+        "description": "云湖 | 公告看板管理模块，支持全局和指定用户发布公告",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -167,7 +167,7 @@
       "meta": {
         "name": "YunhuMessageEditor",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息编辑模块",
+        "description": "云湖 | 已发送消息编辑模块，支持内容修改",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -183,7 +183,7 @@
       "meta": {
         "name": "YunhuMessageHistory",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息会话模块",
+        "description": "云湖 | 消息历史查询与撤回模块",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
@@ -199,7 +199,7 @@
       "meta": {
         "name": "YunhuMessageSender",
         "author": "r1a, WSu2059",
-        "description": "异步云湖适配器 - 消息发送模块",
+        "description": "云湖 | 单条消息发送模块，支持文本、图片、视频等类型",
         "version": "1.0.1",
         "license": "MIT",
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
