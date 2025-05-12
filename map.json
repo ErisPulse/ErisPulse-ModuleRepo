@@ -15,9 +15,7 @@
       "dependencies": {
         "requires": [],
         "optional": [],
-        "pip": [
-          "aiohttp"
-        ]
+        "pip": ["aiohttp"]
       }
     },
     "YunhuNormalHandler": {
@@ -31,9 +29,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -49,9 +45,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -67,9 +61,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -85,9 +77,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -103,9 +93,7 @@
         "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -121,9 +109,7 @@
         "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuAdapter"
-        ],
+        "requires": ["YunhuAdapter"],
         "optional": [],
         "pip": []
       }
@@ -141,9 +127,7 @@
       "dependencies": {
         "requires": [],
         "optional": [],
-        "pip": [
-          "filetype"
-        ]
+        "pip": ["filetype"]
       }
     },
     "YunhuMessageBatch": {
@@ -157,9 +141,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuMessageBase"
-        ],
+        "requires": ["YunhuMessageBase"],
         "optional": [],
         "pip": []
       }
@@ -175,9 +157,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuMessageBase"
-        ],
+        "requires": ["YunhuMessageBase"],
         "optional": [],
         "pip": []
       }
@@ -193,9 +173,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuMessageBase"
-        ],
+        "requires": ["YunhuMessageBase"],
         "optional": [],
         "pip": []
       }
@@ -211,9 +189,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuMessageBase"
-        ],
+        "requires": ["YunhuMessageBase"],
         "optional": [],
         "pip": []
       }
@@ -229,9 +205,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
       },
       "dependencies": {
-        "requires": [
-          "YunhuMessageBase"
-        ],
+        "requires": ["YunhuMessageBase"],
         "optional": [],
         "pip": []
       }
@@ -249,9 +223,7 @@
       "dependencies": {
         "requires": [],
         "optional": [],
-        "pip": [
-          "aiohttp"
-        ]
+        "pip": ["aiohttp"]
       }
     },
     "OneBotMessageHandler": {
@@ -265,9 +237,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-OneBotAdapter"
       },
       "dependencies": {
-        "requires": [
-          "OneBotAdapter"
-        ],
+        "requires": ["OneBotAdapter"],
         "optional": [],
         "pip": []
       }
@@ -283,9 +253,7 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-OneBotAdapter"
       },
       "dependencies": {
-        "requires": [
-          "OneBotAdapter"
-        ],
+        "requires": ["OneBotAdapter"],
         "optional": [],
         "pip": []
       }
@@ -301,14 +269,12 @@
         "homepage": "https://github.com/ErisPulse/ErisPulse-OneBotAdapter"
       },
       "dependencies": {
-        "requires": [
-          "OneBotAdapter"
-        ],
+        "requires": ["OneBotAdapter"],
         "optional": [],
         "pip": []
       }
     },
-    "AIChat": {
+        "AIChat": {
       "path": "/AIChat.zip",
       "meta": {
         "name": "AIChat",
@@ -320,13 +286,8 @@
       },
       "dependencies": {
         "requires": [],
-        "optional": [
-          "OneBotMessageHandler",
-          "YunhuNormalHandler"
-        ],
-        "pip": [
-          "openai"
-        ]
+        "optional": ["OneBotMessageHandler", "YunhuNormalHandler"],
+        "pip": ["openai"]
       }
     },
     "AIChatMessageStore": {
@@ -340,9 +301,7 @@
         "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
       },
       "dependencies": {
-        "requires": [
-          "AIChat"
-        ],
+        "requires": ["AIChat"],
         "optional": [],
         "pip": []
       }
@@ -350,46 +309,34 @@
     "RemindCore": {
       "path": "/RemindCore.zip",
       "meta": {
-        "name": "RemindCore",
-        "author": "WSu2059",
-        "description": "通用定时提醒服务模块",
-        "version": "1.1.1",
-        "license": "MIT",
-        "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
+          "name": "RemindCore",
+          "author": "WSu2059",
+          "description": "通用定时提醒服务模块",
+          "version": "1.1.1",
+          "license": "MIT",
+          "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
       },
       "dependencies": {
-        "requires": [],
-        "optional": [
-          "YunhuMessageSender",
-          "OneBotAdapter"
-        ],
-        "pip": []
+          "requires": [],
+          "optional": ["YunhuMessageSender", "OneBotAdapter"],
+          "pip": []
       }
-    }
-  },
-  "App-DailyQuoteReminder": {
-    "path": "/App-DailyQuoteReminder.zip",
-    "meta": {
-      "name": "App-DailyQuoteReminder",
-      "version": "1.0.1",
-      "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
-      "author": "WSu2059",
-      "license": "MIT",
-      "homepage": "https://github.com/wsu2059q/App-DailyQuoteReminder"
     },
-    "dependencies": {
-      "requires": [
-        "RemindCore"
-      ],
-      "optional": [
-        "OneBotMessageHandler",
-        [
-          "YunhuNormalHandler",
-          "YunhuCommandHandler",
-          "YunhuBotFollowed"
-        ]
-      ],
-      "pip": []
+    "App-DailyQuoteReminder": {
+      "path": "/App-DailyQuoteReminder.zip",
+      "meta": {
+          "name": "App-DailyQuoteReminder",
+          "version": "1.0.1",
+          "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
+          "author": "WSu2059",
+          "license": "MIT",
+          "homepage": "https://github.com/wsu2059q/App-DailyQuoteReminder"
+      },
+      "dependencies": {
+          "requires": ["RemindCore"],
+          "optional": ["OneBotMessageHandler", ["YunhuNormalHandler", "YunhuCommandHandler", "YunhuBotFollowed"]],
+          "pip": []
+      }
     }
   }
 }
