@@ -323,7 +323,7 @@
       }
     }
   },
-  "App-DailyQuoteReminder":
+  "App-DailyQuoteReminder": {
     "path": "/App-DailyQuoteReminder.zip",
     "meta": {
         "name": "DailyQuoteReminder",
@@ -338,4 +338,5 @@
         "optional": ["OneBotMessageHandler", ["YunhuNormalHandler", "YunhuCommandHandler", "YunhuBotFollowed"]],
         "pip": []
     }
+  }
 }
