@@ -3,7 +3,7 @@
     "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/modules/YunhuAdapter-2.0.2.zip",
+            "path": "/YunhuAdapter-2.0.2.zip",
             "meta": {
                 "name": "YunhuAdapter",
                 "author": "r1a, WSu2059",
