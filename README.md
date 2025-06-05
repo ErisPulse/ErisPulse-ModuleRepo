@@ -15,7 +15,7 @@
 
 ### 使用方式
 
-1. 安装 GitHub CLI：
+1. 登录 GitHub CLI：
    ```bash
    gh auth login
    ```
