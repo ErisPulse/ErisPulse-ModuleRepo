@@ -11,13 +11,13 @@ def run_cmd(cmd, check=True, cwd=None):
     return subprocess.run(cmd, shell=True, check=check, cwd=cwd)
 
 config = {
-    "module_name": "YunhuAdapter",
-    "github_username": "wsu2059q",  # 替换为你自己的 GitHub 用户名
-    "official_repo": "ErisPulse/ErisPulse-ModuleRepo",
-    "local_module_path": "YunhuAdapter",
-    "files_to_include": [
-        "YunhuAdapter/__init__.py",
-        "YunhuAdapter/Core.py",
+    "module_name": "YourModuleName",                   # 模块名称
+    "github_username": "your_github_username",         # 你的 GitHub 用户名
+    "official_repo": "ErisPulse/ErisPulse-ModuleRepo", # 官方仓库地址（一般无需更改）
+    "local_module_path": "YourModuleName",             # 本地模块文件夹路径
+    "files_to_include": [                              # 需要包含的文件列表
+        "YourModuleName/__init__.py",
+        "YourModuleName/Core.py",
         "README.md"
     ]
 }
