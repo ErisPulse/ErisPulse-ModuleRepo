@@ -11,11 +11,25 @@
 
 ## 模块构建工具
 
-我们提供自动化构建脚本 `tools/build.py`，帮助开发者快速打包、更新 map.json 并提交 PR。
+我们提供自动化构建脚本 `tools/build.py`，帮助开发者快速打包发布。
+
+### 快速部署构建工具
+
+请运行以下命令来下载构建工具：
+
+#### Linux / macOS:
+```bash
+mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/tools/build.py
+```
+
+#### Windows (PowerShell):
+```powershell
+New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/tools/build.py" -OutFile "tools/build.py"
+```
 
 ### 使用方式
 
-1. 登录 GitHub CLI：
+1. 登录 GitHub CLI（如尚未登录）：
    ```bash
    gh auth login
    ```
@@ -25,13 +39,12 @@
    python tools/build.py
    ```
 
-3. 脚本会自动完成：
+3. 脚本会自动完成以下操作：
    - 打包模块为 ZIP 文件
-   - 更新 map.json 中的模块信息（路径、版本、构建时间）
+   - 更新 `map.json` 中的模块信息（路径、版本、构建时间）
    - 推送变更到你的 Fork
-   - 向官方仓库发起 PR（如登录了 GitHub CLI）
+   - 向官方仓库发起 PR（需已登录 GitHub CLI）
 
-4. 如果未使用 `gh`，脚本将输出一个可点击的 PR 链接供你手动提交
+---
 
-
-# 感谢您的支持与贡献！
+## 感谢您的支持与贡献！
