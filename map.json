@@ -3,14 +3,14 @@
     "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.0.2.zip",
+            "path": "/YunhuAdapter-2.0.3.zip",
             "meta": {
                 "name": "YunhuAdapter",
+                "version": "2.0.3",
+                "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
-                "description": "云湖 | 异步 Webhook 服务端，用于接收并分发事件请求",
-                "version": "2.0.2",
                 "license": "MIT",
-                "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
+                "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
             },
             "dependencies": {
                 "requires": [],
@@ -18,7 +18,8 @@
                 "pip": [
                     "aiohttp"
                 ]
-            }
+            },
+            "build_time": "2025-06-06T16:18:13.557777"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.0.1.zip",
