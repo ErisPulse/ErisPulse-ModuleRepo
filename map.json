@@ -1,102 +1,145 @@
 {
-  "name": "ErisPulse 官方模块源",
-  "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/modules",
-  "modules": {
-    "YunhuAdapter": {
-      "path": "/YunhuAdapter-2.0.2.zip",
-      "meta": {
-        "name": "YunhuAdapter",
-        "author": "r1a, WSu2059",
-        "description": "云湖 | 异步 Webhook 服务端，用于接收并分发事件请求",
-        "version": "2.0.2",
-        "license": "MIT",
-        "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
-      },
-      "dependencies": {
-        "requires": [],
-        "optional": [],
-        "pip": ["aiohttp"]
-      }
-    },
-    "OneBotAdapter": {
-      "path": "/OneBotAdapter.zip",
-      "meta": {
-        "name": "OneBotAdapter",
-        "author": "WSu2059",
-        "description": "OneBotV11协议适配器，异步的OneBot触发器",
-        "version": "2.0.0",
-        "license": "MIT",
-        "homepage": "https://github.com/ErisPulse/ErisPulse-OneBotAdapter"
-      },
-      "dependencies": {
-        "requires": [],
-        "optional": [],
-        "pip": ["aiohttp"]
-      }
-    },
-    "AIChat": {
-      "path": "/AIChat.zip",
-      "meta": {
-        "name": "AIChat",
-        "author": "WSu2059",
-        "description": "AI聊天模块, 适配异步的OneBot及云湖触发器",
-        "version": "1.5.3",
-        "license": "MIT",
-        "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
-      },
-      "dependencies": {
-        "requires": [],
-        "optional": ["OneBotMessageHandler", "YunhuNormalHandler"],
-        "pip": ["openai"]
-      }
-    },
-    "AIChatMessageStore": {
-      "path": "/AIChatMessageStore.zip",
-      "meta": {
-        "name": "AIChatMessageStore",
-        "author": "WSu2059",
-        "description": "AI聊天模块 - 消息对话存储模块，该模块用于存储AI聊天模块的对话记录",
-        "version": "1.0.2",
-        "license": "MIT",
-        "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
-      },
-      "dependencies": {
-        "requires": ["AIChat"],
-        "optional": [],
-        "pip": []
-      }
-    },
-    "RemindCore": {
-      "path": "/RemindCore.zip",
-      "meta": {
-          "name": "RemindCore",
-          "author": "WSu2059",
-          "description": "通用定时提醒服务模块",
-          "version": "1.1.1",
-          "license": "MIT",
-          "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
-      },
-      "dependencies": {
-          "requires": [],
-          "optional": ["YunhuMessageSender", "OneBotAdapter"],
-          "pip": []
-      }
-    },
-    "App-DailyQuoteReminder": {
-      "path": "/App-DailyQuoteReminder.zip",
-      "meta": {
-          "name": "App-DailyQuoteReminder",
-          "version": "1.0.1",
-          "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
-          "author": "WSu2059",
-          "license": "MIT",
-          "homepage": "https://github.com/wsu2059q/App-DailyQuoteReminder"
-      },
-      "dependencies": {
-          "requires": ["RemindCore"],
-          "optional": ["OneBotMessageHandler", ["YunhuNormalHandler", "YunhuCommandHandler", "YunhuBotFollowed"]],
-          "pip": []
-      }
+    "name": "ErisPulse 官方模块源",
+    "base": "https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/modules",
+    "modules": {
+        "YunhuAdapter": {
+            "path": "/YunhuAdapter-2.0.2.zip",
+            "meta": {
+                "name": "YunhuAdapter",
+                "author": "r1a, WSu2059",
+                "description": "云湖 | 异步 Webhook 服务端，用于接收并分发事件请求",
+                "version": "2.0.2",
+                "license": "MIT",
+                "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp"
+                ]
+            }
+        },
+        "OneBotAdapter": {
+            "path": "/OneBotAdapter.zip",
+            "meta": {
+                "name": "OneBotAdapter",
+                "author": "WSu2059",
+                "description": "OneBotV11协议适配器，异步的OneBot触发器",
+                "version": "2.0.0",
+                "license": "MIT",
+                "homepage": "https://github.com/ErisPulse/ErisPulse-OneBotAdapter"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp"
+                ]
+            }
+        },
+        "AIChat": {
+            "path": "/AIChat.zip",
+            "meta": {
+                "name": "AIChat",
+                "author": "WSu2059",
+                "description": "AI聊天模块, 适配异步的OneBot及云湖触发器",
+                "version": "1.5.3",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [
+                    "OneBotMessageHandler",
+                    "YunhuNormalHandler"
+                ],
+                "pip": [
+                    "openai"
+                ]
+            }
+        },
+        "AIChatMessageStore": {
+            "path": "/AIChatMessageStore.zip",
+            "meta": {
+                "name": "AIChatMessageStore",
+                "author": "WSu2059",
+                "description": "AI聊天模块 - 消息对话存储模块，该模块用于存储AI聊天模块的对话记录",
+                "version": "1.0.2",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
+            },
+            "dependencies": {
+                "requires": [
+                    "AIChat"
+                ],
+                "optional": [],
+                "pip": []
+            }
+        },
+        "RemindCore": {
+            "path": "/RemindCore.zip",
+            "meta": {
+                "name": "RemindCore",
+                "author": "WSu2059",
+                "description": "通用定时提醒服务模块",
+                "version": "1.1.1",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [
+                    "YunhuMessageSender",
+                    "OneBotAdapter"
+                ],
+                "pip": []
+            }
+        },
+        "App-DailyQuoteReminder": {
+            "path": "/App-DailyQuoteReminder.zip",
+            "meta": {
+                "name": "App-DailyQuoteReminder",
+                "version": "1.0.1",
+                "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
+                "author": "WSu2059",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/App-DailyQuoteReminder"
+            },
+            "dependencies": {
+                "requires": [
+                    "RemindCore"
+                ],
+                "optional": [
+                    "OneBotMessageHandler",
+                    [
+                        "YunhuNormalHandler",
+                        "YunhuCommandHandler",
+                        "YunhuBotFollowed"
+                    ]
+                ],
+                "pip": []
+            }
+        },
+        "AnyMsgSync": {
+            "path": "/AnyMsgSync-1.0.0.zip",
+            "meta": {
+                "name": "AnyMsgSync",
+                "version": "1.0.0",
+                "description": "QQ与云湖之间的双向消息转发器",
+                "author": "WSu2059q",
+                "license": "MIT",
+                "homepage": "https://github.com/ErisPulse/ErisPulse-AnyMsgSync"
+            },
+            "dependencies": {
+                "requires": [
+                    "OneBotAdapter",
+                    "YunhuAdapter"
+                ],
+                "optional": [],
+                "pip": []
+            },
+            "build_time": "2025-06-06T15:51:00.087497"
+        }
     }
-  }
 }
