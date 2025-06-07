@@ -119,12 +119,12 @@ input("[ACTION] 按回车键继续...")
 
 build_time = datetime.now().isoformat()
 
-# Fork 并克隆仓库
 fork_repo = f"{config['github_username']}/{repo_name}"
+
+# Fork 并克隆仓库
 def ensure_fork(repo):
     username = config["github_username"]
     fork_repo = f"{username}/{repo.split('/')[-1]}"
-
     try:
         run_cmd(f"gh repo view {fork_repo}", check=True)
         print(f"[INFO] 已找到 fork 的仓库：{fork_repo}")
@@ -158,7 +158,7 @@ print("[INFO] 加载官方 map.json...")
 map_file = module_repo_dir / "map.json"
 data = json.loads(map_file.read_text(encoding="utf-8"))
 
-# 构造模块条目（修复了嵌套结构）
+# 构造模块条目
 module_name = config["module_name"]
 module_entry = {
     "path": f"/{module_name}-{current_version}.zip",
@@ -211,24 +211,6 @@ else:
 run_cmd(f"git config --global user.name \"{git_user_name}\"", cwd=module_repo_dir)
 run_cmd(f"git config --global user.email \"{git_user_email}\"", cwd=module_repo_dir)
 
-# 检查并暂存本地改动
-try:
-    print("[INFO] 检测并暂存本地未提交改动...")
-    run_cmd("git stash --all", cwd=module_repo_dir)
-except subprocess.CalledProcessError:
-    print("[WARN] 没有需要暂存的改动或暂存失败，继续执行...")
-
-# 同步主分支
-print("[INFO] 正在同步远程 main 分支...")
-run_cmd("gh repo sync -b main", cwd=module_repo_dir)
-
-# 恢复暂存的改动
-try:
-    print("[INFO] 恢复暂存的本地改动...")
-    run_cmd("git stash pop", cwd=module_repo_dir)
-except subprocess.CalledProcessError:
-    print("[WARN] 没有暂存内容或恢复失败，跳过。")
-
 # 创建并推送新分支
 branch_name = f"update-{module_name.lower()}-{current_version}"
 print(f"[INFO] 创建并推送新分支: {branch_name}")
@@ -237,18 +219,24 @@ run_cmd(f"git add .", cwd=module_repo_dir)
 run_cmd(f'git commit -m "Update {module_name} to v{current_version}"', cwd=module_repo_dir)
 run_cmd(f"git push origin {branch_name}", cwd=module_repo_dir)
 
-# 设置默认仓库
-run_cmd("gh repo set-default", cwd=module_repo_dir)
-
-# 创建 PR
-print("[INFO] 正在创建 Pull Request...")
-run_cmd([
-    "gh", "pr", "create",
-    "--title", f"Update {module_name} to v{current_version}",
-    "--body", f"添加/更新 `{module_name}` 模块至 v{current_version}",
-    "--base", "main",
-    "--head", branch_name
-], cwd=module_repo_dir)
+# 尝试向官方仓库提交 PR
+print("[INFO] 正在尝试向官方仓库提交 Pull Request...")
+pr_created = False
+try:
+    run_cmd([
+        "gh", "pr", "create",
+        "-R", config["official_repo"],
+        "--title", f"Update {module_name} to v{current_version}",
+        "--body", f"添加/更新 `{module_name}` 模块至 v{current_version}",
+        "--base", "main",
+        "--head", branch_name
+    ], cwd=module_repo_dir)
+    print("[SUCCESS] PR 已成功提交到官方仓库！")
+    pr_created = True
+except subprocess.CalledProcessError as e:
+    print("[ERROR] 自动提交 PR 失败，请手动提交以下链接：")
+    compare_url = f"https://github.com/{config['official_repo']}/compare/main...{config['github_username']}:{branch_name}?expand=1"
+    print(f"🔗 手动提交 PR 链接：{compare_url}")
 
 # 写入 build_hash 到 __init__.py
 build_hash = calculate_file_hash(zip_path)
