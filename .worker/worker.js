@@ -6,16 +6,37 @@ async function handleRequest(request) {
   const url = new URL(request.url)
   const path = url.pathname
 
-  return mirrorToRepo(path, request)
+  let response
+
+  if (path === '/refresh-map') {
+    response = await refreshMapCache()
+  } else {
+    response = await mirrorToRepo(path, request)
+  }
+
+  if (isJsonPath(path)) {
+    const newHeaders = new Headers(response.headers)
+    newHeaders.set('Content-Type', 'application/json')
+    response = new Response(response.body, {
+      status: response.status,
+      headers: newHeaders
+    })
+  }
+
+  return response
+}
+
+function isJsonPath(path) {
+  return path.endsWith('.json') || path === '/map.json' || path === '//map.json'
 }
 
 async function mirrorToRepo(path, request) {
   const githubUrl = `https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main${path}`
 
-  const response = await fetch(githubUrl, {
+  let response = await fetch(githubUrl, {
     cf: {
       cacheEverything: true,
-      cacheTtl: 86400 // 缓存 24 小时
+      cacheTtl: 14400 // 缓存 4 小时
     }
   })
 
@@ -23,11 +44,35 @@ async function mirrorToRepo(path, request) {
     const zipResponse = await fetch(`${githubUrl}.zip`, {
       cf: {
         cacheEverything: true,
-        cacheTtl: 86400
+        cacheTtl: 14400
       }
     })
-    return zipResponse
+    response = zipResponse
   }
 
   return response
+}
+
+async function refreshMapCache() {
+  const cacheUrl = 'https://raw.githubusercontent.com/ErisPulse/ErisPulse-ModuleRepo/main/map.json'
+
+  const cacheKey = new Request(cacheUrl)
+  const cache = caches.default
+
+  await cache.delete(cacheKey)
+
+  const response = await fetch(cacheUrl, {
+    cf: {
+      cacheEverything: true,
+      cacheTtl: 14400
+    }
+  })
+
+  return new Response(JSON.stringify({ message: 'GitHub map.json cache refreshed' }), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-store'
+    }
+  })
 }
