@@ -23,7 +23,6 @@ def run_cmd(cmd, check=True, cwd=None):
     print(f"[CMD] {cmd}")
     return subprocess.run(cmd, shell=True, check=check, cwd=cwd)
 
-
 def calculate_file_hash(file_path, hash_algorithm="sha256"):
     hash_func = getattr(hashlib, hash_algorithm)()
     with open(file_path, "rb") as f:
@@ -42,16 +41,19 @@ def is_gh_installed():
     except subprocess.CalledProcessError:
         return False
 
-def ensure_fork(repo):
-    username = config["github_username"]
-    fork_repo = f"{username}/{repo.split('/')[-1]}"
-
+def get_git_config(config_name, cwd):
     try:
-        run_cmd(f"gh repo view {fork_repo}", check=True)
-        print(f"[INFO] 已找到 fork 的仓库：{fork_repo}")
+        result = subprocess.run(
+            f"git config --global {config_name}",
+            shell=True,
+            check=True,
+            stdout=subprocess.PIPE,
+            text=True,
+            cwd=cwd
+        )
+        return result.stdout.strip()
     except subprocess.CalledProcessError:
-        print(f"[INFO] 正在为你 fork 官方仓库：{repo}")
-        run_cmd(f"gh repo fork {repo} --clone=false")
+        return None
 
 repo_owner, repo_name = config["official_repo"].split("/")
 module_repo_dir = Path(repo_name)
@@ -119,6 +121,17 @@ build_time = datetime.now().isoformat()
 
 # Fork 并克隆仓库
 fork_repo = f"{config['github_username']}/{repo_name}"
+def ensure_fork(repo):
+    username = config["github_username"]
+    fork_repo = f"{username}/{repo.split('/')[-1]}"
+
+    try:
+        run_cmd(f"gh repo view {fork_repo}", check=True)
+        print(f"[INFO] 已找到 fork 的仓库：{fork_repo}")
+    except subprocess.CalledProcessError:
+        print(f"[INFO] 正在为你 fork 官方仓库：{repo}")
+        run_cmd(f"gh repo fork {repo} --clone=false")
+
 ensure_fork(config["official_repo"])
 
 print("[INFO] 克隆官方模块源仓库...")
@@ -181,8 +194,22 @@ modules_dir.mkdir(exist_ok=True)
 dest_path = modules_dir / zip_path.name
 shutil.copyfile(zip_path, dest_path)
 
-# 配置 Git 用户
-run_cmd("gh config set git_protocol ssh", cwd=module_repo_dir)
+# 设置 Git 用户信息
+git_user_name = get_git_config("user.name", module_repo_dir)
+git_user_email = get_git_config("user.email", module_repo_dir)
+
+if git_user_name and git_user_email:
+    use_current = input(f"[INFO] 检测到当前 Git 用户配置: {git_user_name} <{git_user_email}>，是否继续使用？(y/n): ")
+    if use_current.lower() != "y":
+        git_user_name = input("[INPUT] 请输入新的 Git 用户名: ").strip()
+        git_user_email = input("[INPUT] 请输入新的 Git 邮箱: ").strip()
+else:
+    print("[INFO] 未检测到 Git 用户配置，请设置：")
+    git_user_name = input("[INPUT] Git 用户名: ").strip()
+    git_user_email = input("[INPUT] Git 邮箱: ").strip()
+
+run_cmd(f"git config --global user.name \"{git_user_name}\"", cwd=module_repo_dir)
+run_cmd(f"git config --global user.email \"{git_user_email}\"", cwd=module_repo_dir)
 
 # 检查并暂存本地改动
 try:
@@ -227,5 +254,21 @@ run_cmd([
 build_hash = calculate_file_hash(zip_path)
 with open(init_file, "a", encoding="utf-8") as f:
     f.write(f'\n# build_hash="{build_hash}"\n')
+
+# 构建完成，询问是否清理
+clean_up = input("[ACTION] 是否清理构建过程中生成的临时文件？(y/n): ").lower()
+if clean_up == "y":
+    temp_files = [
+        temp_zip, zip_path, module_repo_dir
+    ]
+    for file in temp_files:
+        if file.exists():
+            if file.is_dir():
+                shutil.rmtree(file, onerror=on_rm_error)
+            else:
+                os.remove(file)
+    print("[INFO] 已清理临时文件。")
+else:
+    print("[INFO] 跳过清理步骤。")
 
 print("[INFO] 构建完成！")
