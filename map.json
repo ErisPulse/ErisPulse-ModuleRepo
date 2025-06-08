@@ -3,14 +3,14 @@
     "base": "https://sdkframe.anran.xyz/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.0.3.zip",
+            "path": "/YunhuAdapter-2.0.6.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.0.3",
+                "version": "2.0.6",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
-                "homepage": "https://github.com/wsu2059q/ErisPulse-YunhuAdapter"
+                "homepage": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter"
             },
             "dependencies": {
                 "requires": [],
@@ -19,7 +19,7 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-06T16:18:13.557777"
+            "build_time": "2025-06-08T18:34:22.231364"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.0.6.zip",
