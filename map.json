@@ -3,10 +3,10 @@
     "base": "https://sdkframe.anran.xyz/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.0.8.zip",
+            "path": "/YunhuAdapter-2.1.0.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.0.8",
+                "version": "2.1.0",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -19,7 +19,7 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-08T20:04:24.029990"
+            "build_time": "2025-06-09T23:53:28.622100"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.0.9.zip",
@@ -122,10 +122,10 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.1.6.zip",
+            "path": "/AnyMsgSync-1.1.8.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.1.6",
+                "version": "1.1.8",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
@@ -140,6 +140,27 @@
                 "pip": []
             },
             "build_time": "2025-06-09T15:44:31.867657"
+        },
+        "TelegramAdapter": {
+            "path": "/TelegramAdapter-1.1.1.zip",
+            "meta": {
+                "name": "TelegramAdapter",
+                "version": "1.1.1",
+                "description": "Telegram 协议适配器",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp",
+                    "aiohttp-socks",
+                    "certifi"
+                ]
+            },
+            "build_time": "2025-06-09T23:42:42.008216"
         }
     }
 }
