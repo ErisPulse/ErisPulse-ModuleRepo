@@ -22,10 +22,10 @@
             "build_time": "2025-06-08T20:04:24.029990"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.0.7.zip",
+            "path": "/OneBotAdapter-2.0.8.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.0.7",
+                "version": "2.0.8",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,7 +36,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-08T20:06:56.185155"
+            "build_time": "2025-06-09T23:42:36.530167"
         },
         "AIChat": {
             "path": "/AIChat.zip",
@@ -122,10 +122,10 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.1.6.zip",
+            "path": "/AnyMsgSync-1.1.8.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.1.6",
+                "version": "1.1.8",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
