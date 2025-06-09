@@ -3,10 +3,10 @@
     "base": "https://sdkframe.anran.xyz/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.0.8.zip",
+            "path": "/YunhuAdapter-2.1.0.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.0.8",
+                "version": "2.1.0",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -19,13 +19,13 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-08T20:04:24.029990"
+            "build_time": "2025-06-09T23:53:28.622100"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.0.7.zip",
+            "path": "/OneBotAdapter-2.0.9.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.0.7",
+                "version": "2.0.9",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,7 +36,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-08T20:06:56.185155"
+            "build_time": "2025-06-09T23:55:10.005051"
         },
         "AIChat": {
             "path": "/AIChat.zip",
@@ -140,6 +140,27 @@
                 "pip": []
             },
             "build_time": "2025-06-10T00:37:42.299295"
+        },
+        "TelegramAdapter": {
+            "path": "/TelegramAdapter-1.1.2.zip",
+            "meta": {
+                "name": "TelegramAdapter",
+                "version": "1.1.2",
+                "description": "Telegram 协议适配器",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp",
+                    "aiohttp-socks",
+                    "certifi"
+                ]
+            },
+            "build_time": "2025-06-09T23:56:54.535982"
         }
     }
 }
