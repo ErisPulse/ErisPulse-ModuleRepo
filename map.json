@@ -140,6 +140,27 @@
                 "pip": []
             },
             "build_time": "2025-06-09T15:44:31.867657"
+        },
+        "TelegramAdapter": {
+            "path": "/TelegramAdapter-1.1.5.zip",
+            "meta": {
+                "name": "TelegramAdapter",
+                "version": "1.1.5",
+                "description": "Telegram 协议适配器",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp",
+                    "aiohttp-socks",
+                    "certifi"
+                ]
+            },
+            "build_time": "2025-06-10T11:17:31.604368"
         }
     }
 }
