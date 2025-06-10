@@ -122,10 +122,10 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.1.6.zip",
+            "path": "/AnyMsgSync-1.2.6.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.1.6",
+                "version": "1.2.6",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
@@ -139,7 +139,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-09T15:44:31.867657"
+            "build_time": "2025-06-10T11:16:51.879106"
         }
     }
 }
