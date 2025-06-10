@@ -122,24 +122,25 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.2.7.zip",
+            "path": "/AnyMsgSync-1.2.8.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.2.7",
+                "version": "1.2.8",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/ErisPulse/ErisPulse-AnyMsgSync"
             },
             "dependencies": {
-                "requires": [
+                "requires": [],
+                "optional": [
+                    "TelegramAdapter",
                     "OneBotAdapter",
                     "YunhuAdapter"
                 ],
-                "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-10T11:43:23.987554"
+            "build_time": "2025-06-10T11:51:44.983024"
         },
         "TelegramAdapter": {
             "path": "/TelegramAdapter-1.1.5.zip",
