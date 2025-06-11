@@ -22,10 +22,10 @@
             "build_time": "2025-06-11T11:43:16.461791"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.0.7.zip",
+            "path": "/OneBotAdapter-2.0.9.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.0.7",
+                "version": "2.0.9",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,7 +36,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-08T20:06:56.185155"
+            "build_time": "2025-06-09T23:55:10.005051"
         },
         "AIChat": {
             "path": "/AIChat.zip",
@@ -122,24 +122,46 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.1.6.zip",
+            "path": "/AnyMsgSync-1.2.8.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.1.6",
+                "version": "1.2.8",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/ErisPulse/ErisPulse-AnyMsgSync"
             },
             "dependencies": {
-                "requires": [
+                "requires": [],
+                "optional": [
+                    "TelegramAdapter",
                     "OneBotAdapter",
                     "YunhuAdapter"
                 ],
-                "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-09T15:44:31.867657"
+            "build_time": "2025-06-10T11:51:44.983024"
+        },
+        "TelegramAdapter": {
+            "path": "/TelegramAdapter-1.1.5.zip",
+            "meta": {
+                "name": "TelegramAdapter",
+                "version": "1.1.5",
+                "description": "Telegram 协议适配器",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "aiohttp",
+                    "aiohttp-socks",
+                    "certifi"
+                ]
+            },
+            "build_time": "2025-06-10T01:09:14.438916"
         }
     }
 }
