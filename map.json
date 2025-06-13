@@ -22,10 +22,10 @@
             "build_time": "2025-06-11T23:52:47.823523"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.0.9.zip",
+            "path": "/OneBotAdapter-2.1.0.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.0.9",
+                "version": "2.1.0",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,7 +36,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-09T23:55:10.005051"
+            "build_time": "2025-06-13T21:44:23.176952"
         },
         "AIChat": {
             "path": "/AIChat.zip",
