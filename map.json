@@ -3,10 +3,10 @@
     "base": "https://sdkframe.anran.xyz/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.2.5.zip",
+            "path": "/YunhuAdapter-2.2.6.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.2.5",
+                "version": "2.2.6",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -19,7 +19,7 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-13T21:49:45.658302"
+            "build_time": "2025-06-14T23:21:12.570250"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.1.0.zip",
