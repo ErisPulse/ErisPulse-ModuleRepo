@@ -3,10 +3,10 @@
     "base": "https://sdkframe.anran.xyz/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.0.8.zip",
+            "path": "/YunhuAdapter-2.2.5.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.0.8",
+                "version": "2.2.5",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -19,13 +19,13 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-08T20:04:24.029990"
+            "build_time": "2025-06-13T21:49:45.658302"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.0.7.zip",
+            "path": "/OneBotAdapter-2.1.0.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.0.7",
+                "version": "2.1.0",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,7 +36,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-08T20:06:56.185155"
+            "build_time": "2025-06-13T21:44:23.176952"
         },
         "AIChat": {
             "path": "/AIChat.zip",
@@ -122,21 +122,22 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.1.6.zip",
+            "path": "/AnyMsgSync-1.2.8.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.1.6",
+                "version": "1.2.8",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/ErisPulse/ErisPulse-AnyMsgSync"
             },
             "dependencies": {
-                "requires": [
+                "requires": [],
+                "optional": [
+                    "TelegramAdapter",
                     "OneBotAdapter",
                     "YunhuAdapter"
                 ],
-                "optional": [],
                 "pip": []
             },
             "build_time": "2025-06-09T15:44:31.867657"
