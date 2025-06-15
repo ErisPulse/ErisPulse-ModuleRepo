@@ -39,25 +39,31 @@
             "build_time": "2025-06-14T23:14:42.758585"
         },
         "AIChat": {
-            "path": "/AIChat.zip",
+            "path": "/AIChat-1.6.0.zip",
             "meta": {
                 "name": "AIChat",
-                "author": "WSu2059",
-                "description": "AI聊天模块, 适配异步的OneBot及云湖触发器",
-                "version": "1.5.3",
+                "version": "1.6.0",
+                "description": "AIChat 聊天模块",
+                "author": "wsu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
             },
             "dependencies": {
-                "requires": [],
+                "requires": [
+                    "OpenAI"
+                ],
                 "optional": [
-                    "OneBotMessageHandler",
-                    "YunhuNormalHandler"
+                    [
+                        "OneBotAdapter",
+                        "YunhuAdapter",
+                        "TelegramAdapter"
+                    ]
                 ],
                 "pip": [
                     "openai"
                 ]
-            }
+            },
+            "build_time": "2025-06-16T03:38:14.355151"
         },
         "AIChatMessageStore": {
             "path": "/AIChatMessageStore.zip",
