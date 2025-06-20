@@ -1,6 +1,6 @@
 {
     "name": "ErisPulse 官方模块源",
-    "base": "https://sdkframe.anran.xyz/modules",
+    "base": "https://erisdev.com/modules",
     "modules": {
         "YunhuAdapter": {
             "path": "/YunhuAdapter-2.2.6.zip",
