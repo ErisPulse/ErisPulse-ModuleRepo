@@ -143,10 +143,10 @@
             "build_time": "2025-06-09T15:44:31.867657"
         },
         "TelegramAdapter": {
-            "path": "/TelegramAdapter-1.1.6.zip",
+            "path": "/TelegramAdapter-1.2.0.zip",
             "meta": {
                 "name": "TelegramAdapter",
-                "version": "1.1.6",
+                "version": "1.2.0",
                 "description": "Telegram 协议适配器",
                 "author": "wsu2059q",
                 "license": "MIT",
@@ -161,7 +161,7 @@
                     "certifi"
                 ]
             },
-            "build_time": "2025-06-14T22:51:11.375867"
+            "build_time": "2025-06-21T07:03:05.447876"
         }
     }
 }
