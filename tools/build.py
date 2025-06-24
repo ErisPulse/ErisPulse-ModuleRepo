@@ -76,23 +76,36 @@ print("[INFO] 正在加载模块信息...")
 init_file = Path(config["local_module_path"]) / "__init__.py"
 content = init_file.read_text(encoding="utf-8")
 
-# 提取 meta JSON 块
-meta_start = content.find("{")
-meta_end = content.rfind("}") + 1
-if meta_start == -1 or meta_end == -1:
-    print("[ERROR] 未找到模块元信息，请确保 __init__.py 中有正确的 JSON 块定义。")
+import ast
+
+def extract_module_metadata(content):
+    try:
+        tree = ast.parse(content)
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Assign) and isinstance(node.value, ast.Dict):
+                try:
+                    value_dict = eval(compile(ast.Expression(body=node.value), filename='<string>', mode='eval'))
+                    meta = value_dict.get("meta", {})
+                    if isinstance(meta, dict) and "version" in meta and "name" in meta:
+                        return value_dict
+                except Exception:
+                    continue
+        return None
+    except SyntaxError as e:
+        print(f"[ERROR] __init__.py 语法错误：{e}")
+        return None
+
+
+# 使用方式
+content = init_file.read_text(encoding="utf-8")
+module_meta = extract_module_metadata(content)
+
+if not module_meta:
+    print("[ERROR] 未找到包含 name 和 version 的模块元信息")
     exit(1)
 
-try:
-    module_meta = json.loads(content[meta_start:meta_end])
-except json.JSONDecodeError as e:
-    print(f"[ERROR] 模块元信息 JSON 格式错误：{e}")
-    exit(1)
-
-current_version = module_meta.get("meta", {}).get("version")
-if not current_version:
-    print("[ERROR] 未找到版本号，请确保 __init__.py 中有 'version' 字段。")
-    exit(1)
+current_version = module_meta["meta"]["version"]
+module_name = module_meta["meta"]["name"]
 
 # 构建前先打包一次，用于计算当前内容哈希
 temp_zip = Path("temp_build.zip")

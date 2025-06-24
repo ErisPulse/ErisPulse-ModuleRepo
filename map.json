@@ -1,12 +1,12 @@
 {
     "name": "ErisPulse 官方模块源",
-    "base": "https://sdkframe.anran.xyz/modules",
+    "base": "https://erisdev.com/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.2.5.zip",
+            "path": "/YunhuAdapter-2.3.0.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.2.5",
+                "version": "2.3.0",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -19,13 +19,13 @@
                     "aiohttp"
                 ]
             },
-            "build_time": "2025-06-13T21:49:45.658302"
+            "build_time": "2025-06-21T07:04:39.746656"
         },
         "OneBotAdapter": {
-            "path": "/OneBotAdapter-2.1.0.zip",
+            "path": "/OneBotAdapter-2.2.0.zip",
             "meta": {
                 "name": "OneBotAdapter",
-                "version": "2.1.0",
+                "version": "2.2.0",
                 "description": "OneBotV11协议适配模块，异步的OneBot触发器",
                 "author": "WSu2059",
                 "license": "MIT",
@@ -36,28 +36,34 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-06-13T21:44:23.176952"
+            "build_time": "2025-06-21T07:05:47.805818"
         },
         "AIChat": {
-            "path": "/AIChat.zip",
+            "path": "/AIChat-1.6.0.zip",
             "meta": {
                 "name": "AIChat",
-                "author": "WSu2059",
-                "description": "AI聊天模块, 适配异步的OneBot及云湖触发器",
-                "version": "1.5.3",
+                "version": "1.6.0",
+                "description": "AIChat 聊天模块",
+                "author": "wsu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
             },
             "dependencies": {
-                "requires": [],
+                "requires": [
+                    "OpenAI"
+                ],
                 "optional": [
-                    "OneBotMessageHandler",
-                    "YunhuNormalHandler"
+                    [
+                        "OneBotAdapter",
+                        "YunhuAdapter",
+                        "TelegramAdapter"
+                    ]
                 ],
                 "pip": [
                     "openai"
                 ]
-            }
+            },
+            "build_time": "2025-06-16T03:38:14.355151"
         },
         "AIChatMessageStore": {
             "path": "/AIChatMessageStore.zip",
@@ -162,6 +168,25 @@
                 ]
             },
             "build_time": "2025-06-24T15:04:48.357680"
+        },
+        "OpenAI": {
+            "path": "/OpenAI-1.0.0.zip",
+            "meta": {
+                "name": "OpenAI",
+                "version": "1.0.0",
+                "description": "OpenAI 通用接口封装模块",
+                "author": "ErisPulse",
+                "license": "MIT",
+                "homepage": "https://github.com/ErisPulse/ErisPulse-OpenAI"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "openai>=1.0.0"
+                ]
+            },
+            "build_time": "2025-06-16T03:35:56.361639"
         }
     }
 }
