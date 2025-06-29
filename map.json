@@ -128,10 +128,10 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.2.8.zip",
+            "path": "/AnyMsgSync-1.3.2.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.2.8",
+                "version": "1.3.2",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
@@ -146,7 +146,7 @@
                 ],
                 "pip": []
             },
-            "build_time": "2025-06-09T15:44:31.867657"
+            "build_time": "2025-06-29T09:06:26.480046"
         },
         "TelegramAdapter": {
             "path": "/TelegramAdapter-1.2.1.zip",
