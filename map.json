@@ -1,12 +1,12 @@
 {
     "name": "ErisPulse 官方模块源",
-    "base": "https://sdkframe.anran.xyz/modules",
+    "base": "https://erisdev.com/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.2.5.zip",
+            "path": "/YunhuAdapter-2.4.0.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.2.5",
+                "version": "2.4.0",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -16,10 +16,11 @@
                 "requires": [],
                 "optional": [],
                 "pip": [
-                    "aiohttp"
+                    "aiohttp",
+                    "filetype"
                 ]
             },
-            "build_time": "2025-06-13T21:49:45.658302"
+            "build_time": "2025-07-01T19:55:23.197125"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.2.2.zip",
@@ -39,25 +40,31 @@
             "build_time": "2025-07-01T20:17:13.697301"
         },
         "AIChat": {
-            "path": "/AIChat.zip",
+            "path": "/AIChat-1.6.0.zip",
             "meta": {
                 "name": "AIChat",
-                "author": "WSu2059",
-                "description": "AI聊天模块, 适配异步的OneBot及云湖触发器",
-                "version": "1.5.3",
+                "version": "1.6.0",
+                "description": "AIChat 聊天模块",
+                "author": "wsu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/wsu2059q/ErisPulse-AIChat"
             },
             "dependencies": {
-                "requires": [],
+                "requires": [
+                    "OpenAI"
+                ],
                 "optional": [
-                    "OneBotMessageHandler",
-                    "YunhuNormalHandler"
+                    [
+                        "OneBotAdapter",
+                        "YunhuAdapter",
+                        "TelegramAdapter"
+                    ]
                 ],
                 "pip": [
                     "openai"
                 ]
-            }
+            },
+            "build_time": "2025-06-16T03:38:14.355151"
         },
         "AIChatMessageStore": {
             "path": "/AIChatMessageStore.zip",
@@ -122,10 +129,10 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.2.8.zip",
+            "path": "/AnyMsgSync-1.3.2.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.2.8",
+                "version": "1.3.2",
                 "description": "QQ与云湖之间的双向消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
@@ -140,13 +147,13 @@
                 ],
                 "pip": []
             },
-            "build_time": "2025-06-09T15:44:31.867657"
+            "build_time": "2025-06-29T09:06:26.480046"
         },
         "TelegramAdapter": {
-            "path": "/TelegramAdapter-1.1.6.zip",
+            "path": "/TelegramAdapter-1.2.1.zip",
             "meta": {
                 "name": "TelegramAdapter",
-                "version": "1.1.6",
+                "version": "1.2.1",
                 "description": "Telegram 协议适配器",
                 "author": "wsu2059q",
                 "license": "MIT",
@@ -161,7 +168,26 @@
                     "certifi"
                 ]
             },
-            "build_time": "2025-06-14T22:51:11.375867"
+            "build_time": "2025-06-24T15:04:48.357680"
+        },
+        "OpenAI": {
+            "path": "/OpenAI-1.0.0.zip",
+            "meta": {
+                "name": "OpenAI",
+                "version": "1.0.0",
+                "description": "OpenAI 通用接口封装模块",
+                "author": "ErisPulse",
+                "license": "MIT",
+                "homepage": "https://github.com/ErisPulse/ErisPulse-OpenAI"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "openai>=1.0.0"
+                ]
+            },
+            "build_time": "2025-06-16T03:35:56.361639"
         }
     }
 }
