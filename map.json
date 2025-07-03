@@ -188,6 +188,23 @@
                 ]
             },
             "build_time": "2025-06-16T03:35:56.361639"
+        },
+        "DFAFilter": {
+            "path": "/DFAFilter-1.0.1.zip",
+            "meta": {
+                "name": "DFAFilter",
+                "version": "1.0.1",
+                "description": "基于DFA算法的敏感词过滤模块",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": []
+            },
+            "build_time": "2025-07-03T14:54:19.390026"
         }
     }
 }
