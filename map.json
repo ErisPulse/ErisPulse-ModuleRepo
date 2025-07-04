@@ -224,6 +224,26 @@
                 "pip": []
             },
             "build_time": "2025-07-03T14:59:14.719812"
+        },
+        "Yunhu-GroupManager": {
+            "path": "/Yunhu-GroupManager-1.0.1.zip",
+            "meta": {
+                "name": "Yunhu-GroupManager",
+                "version": "1.0.1",
+                "description": "群聊管理模块，支持敏感词过滤、消息撤回和黑名单管理",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/ErisPulse-Yunhu-GroupManager"
+            },
+            "dependencies": {
+                "requires": [
+                    "DFAFilter",
+                    "YunhuAdapter"
+                ],
+                "optional": [],
+                "pip": []
+            },
+            "build_time": "2025-07-04T17:30:08.170578"
         }
     }
 }
