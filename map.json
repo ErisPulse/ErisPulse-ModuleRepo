@@ -247,10 +247,10 @@
             "build_time": "2025-07-04T17:30:08.170578"
         },
         "SystemStatus": {
-            "path": "/SystemStatus-1.0.2.zip",
+            "path": "/SystemStatus-1.0.3.zip",
             "meta": {
                 "name": "SystemStatus",
-                "version": "1.0.2",
+                "version": "1.0.3",
                 "description": "获取系统内存、CPU、硬盘占用",
                 "author": "ShanFish",
                 "license": "MIT",
@@ -263,7 +263,7 @@
                     "psutil"
                 ]
             },
-            "build_time": "2025-07-04T19:57:48.337028"
+            "build_time": "2025-07-04T20:24:12.908587"
         }
     }
 }
