@@ -206,10 +206,10 @@
             },
             "build_time": "2025-07-03T14:54:19.390026"
         },
-        "NovelGenerator": {
-            "path": "/NovelGenerator-1.0.0.zip",
+        "Yunhu-NovelGenerator": {
+            "path": "/Yunhu-NovelGenerator-1.0.0.zip",
             "meta": {
-                "name": "NovelGenerator",
+                "name": "Yunhu-NovelGenerator",
                 "version": "1.0.0",
                 "description": "群聊小说生成器模块",
                 "author": "ErisPulse",
@@ -218,7 +218,8 @@
             },
             "dependencies": {
                 "requires": [
-                    "OpenAI"
+                    "OpenAI",
+                    "DFAFilter"
                 ],
                 "optional": [],
                 "pip": []
