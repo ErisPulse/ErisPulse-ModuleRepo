@@ -190,10 +190,10 @@
             "build_time": "2025-06-16T03:35:56.361639"
         },
         "DFAFilter": {
-            "path": "/DFAFilter-1.0.1.zip",
+            "path": "/DFAFilter-1.1.0.zip",
             "meta": {
                 "name": "DFAFilter",
-                "version": "1.0.1",
+                "version": "1.1.0",
                 "description": "基于DFA算法的敏感词过滤模块",
                 "author": "wsu2059q",
                 "license": "MIT",
@@ -204,7 +204,7 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-07-03T14:54:19.390026"
+            "build_time": "2025-07-04T17:27:32.023896"
         },
         "Yunhu-NovelGenerator": {
             "path": "/Yunhu-NovelGenerator-1.0.0.zip",
