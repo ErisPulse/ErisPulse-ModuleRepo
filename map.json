@@ -245,6 +245,25 @@
                 "pip": []
             },
             "build_time": "2025-07-04T17:30:08.170578"
+        },
+        "SystemStatus": {
+            "path": "/SystemStatus-1.0.2.zip",
+            "meta": {
+                "name": "SystemStatus",
+                "version": "1.0.2",
+                "description": "获取系统内存、CPU、硬盘占用",
+                "author": "ShanFish",
+                "license": "MIT",
+                "homepage": "https://github.com/shanfishapp/ErisPulse-SystemStatus"
+            },
+            "dependencies": {
+                "requires": [],
+                "optional": [],
+                "pip": [
+                    "psutil"
+                ]
+            },
+            "build_time": "2025-07-04T19:57:48.337028"
         }
     }
 }
