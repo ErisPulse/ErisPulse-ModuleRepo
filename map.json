@@ -224,7 +224,27 @@
                 "optional": [],
                 "pip": []
             },
-            "build_time": "2025-07-04T17:19:33.628089"
+            "build_time": "2025-07-03T14:59:14.719812"
+        },
+        "Yunhu-GroupManager": {
+            "path": "/Yunhu-GroupManager-1.0.0.zip",
+            "meta": {
+                "name": "Yunhu-GroupManager",
+                "version": "1.0.0",
+                "description": "群聊管理模块，支持敏感词过滤、消息撤回和黑名单管理",
+                "author": "Craft",
+                "license": "MIT",
+                "homepage": null
+            },
+            "dependencies": {
+                "requires": [
+                    "DFAFilter",
+                    "YunhuAdapter"
+                ],
+                "optional": [],
+                "pip": []
+            },
+            "build_time": "2025-07-04T17:21:58.188892"
         }
     }
 }
