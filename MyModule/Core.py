@@ -12,7 +12,7 @@ class Main:
         self.load_config()
 
     def load_config(self):
-        self.config = self.env.loadConfig("MyModule")
+        self.config = self.env.get("MyModule", {})
 
         if self.config is None:
             self.logger.error("无法加载配置文件")
