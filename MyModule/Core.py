@@ -1,11 +1,14 @@
+# 你也可以直接导入对应的模块
+# from ErisPulse import sdk
+# from ErisPulse.Core import logger, env, raiserr, adapter
 
 class Main:
-    def __init__(self, sdk):
+    def __init__(self, sdk):    # 这里也可以不接受sdk参数
         self.sdk = sdk
         self.env = self.sdk.env
         self.logger = self.sdk.logger
-
-        self.logger.info("MyModule 初始化中完成")
+        
+        self.logger.info("MyModule 初始化完成")
         self.load_config()
 
     def load_config(self):
