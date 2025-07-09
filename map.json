@@ -3,10 +3,10 @@
     "base": "https://erisdev.com/modules",
     "modules": {
         "YunhuAdapter": {
-            "path": "/YunhuAdapter-2.5.0.zip",
+            "path": "/YunhuAdapter-2.7.0.zip",
             "meta": {
                 "name": "YunhuAdapter",
-                "version": "2.5.0",
+                "version": "2.7.0",
                 "description": "云湖协议适配器，整合所有云湖功能模块",
                 "author": "r1a, WSu2059",
                 "license": "MIT",
@@ -20,7 +20,7 @@
                     "filetype"
                 ]
             },
-            "build_time": "2025-07-04T16:34:17.434956"
+            "build_time": "2025-07-09T22:46:43.060043"
         },
         "OneBotAdapter": {
             "path": "/OneBotAdapter-2.2.3.zip",
