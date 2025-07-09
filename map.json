@@ -129,11 +129,11 @@
             }
         },
         "AnyMsgSync": {
-            "path": "/AnyMsgSync-1.3.2.zip",
+            "path": "/AnyMsgSync-1.4.0.zip",
             "meta": {
                 "name": "AnyMsgSync",
-                "version": "1.3.2",
-                "description": "QQ与云湖之间的双向消息转发器",
+                "version": "1.4.0",
+                "description": "任何平台间的消息转发器",
                 "author": "WSu2059q",
                 "license": "MIT",
                 "homepage": "https://github.com/ErisPulse/ErisPulse-AnyMsgSync"
@@ -147,7 +147,7 @@
                 ],
                 "pip": []
             },
-            "build_time": "2025-06-29T09:06:26.480046"
+            "build_time": "2025-07-05T22:09:36.558268"
         },
         "TelegramAdapter": {
             "path": "/TelegramAdapter-1.2.1.zip",
@@ -264,6 +264,25 @@
                 ]
             },
             "build_time": "2025-07-04T20:24:12.908587"
+        },
+        "ServerStatusMonitor": {
+            "path": "/ServerStatusMonitor-1.0.1.zip",
+            "meta": {
+                "name": "ServerStatusMonitor",
+                "version": "1.0.1",
+                "description": "全平台系统信息查询模块",
+                "author": "wsu2059q",
+                "license": "MIT",
+                "homepage": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor"
+            },
+            "dependencies": {
+                "requires": [
+                    "SystemStatus"
+                ],
+                "optional": [],
+                "pip": []
+            },
+            "build_time": "2025-07-04T22:08:24.727301"
         }
     }
 }
