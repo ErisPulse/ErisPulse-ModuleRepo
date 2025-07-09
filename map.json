@@ -283,30 +283,6 @@
                 "pip": []
             },
             "build_time": "2025-07-04T22:08:24.727301"
-        },
-        "RandomImage": {
-            "path": "/RandomImage-1.0.0.zip",
-            "meta": {
-                "name": "RandomImage",
-                "version": "1.0.0",
-                "description": "随机图片，支持JSON和直接图片",
-                "author": "ShanFish",
-                "license": "MIT",
-                "homepage": "https://github.com/shanfishapp/ErisPulse-RandomImage"
-            },
-            "dependencies": {
-                "requires": [],
-                "optional": [
-                    "YunhuAdapter",
-                    "OneBotAdapter",
-                    "TelegramAdapter"
-                ],
-                "pip": [
-                    "aiohttp",
-                    "jsonpath_ng"
-                ]
-            },
-            "build_time": "2025-07-06T00:35:29.471776"
         }
     }
 }
