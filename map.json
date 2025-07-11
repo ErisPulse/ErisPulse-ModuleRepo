@@ -84,50 +84,6 @@
                 "pip": []
             }
         },
-        "RemindCore": {
-            "path": "/RemindCore.zip",
-            "meta": {
-                "name": "RemindCore",
-                "author": "WSu2059",
-                "description": "通用定时提醒服务模块",
-                "version": "1.1.1",
-                "license": "MIT",
-                "homepage": "https://github.com/wsu2059q/ErisPulse-RemindCore"
-            },
-            "dependencies": {
-                "requires": [],
-                "optional": [
-                    "YunhuMessageSender",
-                    "OneBotAdapter"
-                ],
-                "pip": []
-            }
-        },
-        "App-DailyQuoteReminder": {
-            "path": "/App-DailyQuoteReminder.zip",
-            "meta": {
-                "name": "App-DailyQuoteReminder",
-                "version": "1.0.1",
-                "description": "每日灵感语录提醒器 —— 一个完整的应用项目，支持 Yunhu 和 OneBot 平台的消息推送功能",
-                "author": "WSu2059",
-                "license": "MIT",
-                "homepage": "https://github.com/wsu2059q/App-DailyQuoteReminder"
-            },
-            "dependencies": {
-                "requires": [
-                    "RemindCore"
-                ],
-                "optional": [
-                    "OneBotMessageHandler",
-                    [
-                        "YunhuNormalHandler",
-                        "YunhuCommandHandler",
-                        "YunhuBotFollowed"
-                    ]
-                ],
-                "pip": []
-            }
-        },
         "AnyMsgSync": {
             "path": "/AnyMsgSync-1.4.0.zip",
             "meta": {
