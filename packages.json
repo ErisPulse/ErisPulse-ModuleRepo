@@ -1,0 +1,50 @@
+{
+    "last_updated": "2025-07-14T08:30:00Z",
+    "modules": {
+        "SystemStatus": {
+            "package": "ErisPulse-SystemStatus",
+            "version": "1.0.3",
+            "author": "ShanFish",
+            "description": "提供获取系统内存、CPU、硬盘占用的接口",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-SystemStatus",
+            "official": true,
+            "tags": ["system-info", "api"]
+        },
+        "ServerStatusMonitor": {
+            "package": "ErisPulse-ServerStatusMonitor",
+            "version": "1.1.0",
+            "author": "wsu2059q",
+            "description": "系统信息查询模块-平台模块",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
+            "official": true,
+            "tags": []
+        }
+    },
+    "adapters": {
+        "Yunhu": {
+            "package": "ErisPulse-YunhuAdapter",
+            "version": "3.0.0",
+            "description": "云湖协议适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
+            "official": true,
+            "tags": ["adapter", "yunhu"]
+        },
+        "OneBot11": { 
+            "package": "ErisPulse-OneBot11Adapter",
+            "version": "3.0.0",
+            "description": "OneBot11协议适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
+            "official": true,
+            "tags": ["adapter", "onebot11"]
+        },
+        "Telgram": { 
+            "package": "ErisPulse-TelgramAdapter",
+            "version": "3.0.0",
+            "description": "Telgram协议适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-TelgramAdapter",
+            "official": true,
+            "tags": ["adapter", "telgram"]
+        }
+    }
+}
