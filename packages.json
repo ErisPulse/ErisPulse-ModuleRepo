@@ -1,6 +1,16 @@
 {
-    "last_updated": "2025-07-14T08:30:00Z",
+    "last_updated": "2025-07-15T16:31:10Z",
     "modules": {
+        "SeTu": {
+            "package": "ErisPulse-SeTu",
+            "version": "1.1.0",
+            "author": "ShanFish",
+            "description": "简单的色图模块",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-GetSeTu",
+            "official": false,
+            "tags": ["色图", "SeTu"]
+        },
         "SystemStatus": {
             "package": "ErisPulse-SystemStatus",
             "version": "1.0.3",
