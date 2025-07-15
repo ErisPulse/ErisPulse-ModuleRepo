@@ -1,6 +1,26 @@
 {
-    "last_updated": "2025-07-14T08:30:00Z",
+    "last_updated": "2025-07-15T22:11:00Z",
     "modules": {
+        "ErisPulse": {
+            "package": "ErisPulse",
+            "version": "2.1.0",
+            "author": "ErisPulse Team",
+            "description": "更新ErisPulse",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse",
+            "official": true,
+            "tags": ["ErisPulse"]
+        },
+        "AIChat": {
+            "package": "ErisPulse-AIChat",
+            "version": "3.0.2",
+            "author": "wsu2059q",
+            "description": "AIChat 聊天机器人模块",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-AIChat",
+            "official": false,
+            "tags": ["AIChat", "AI"]
+        },
         "OpenAI": {
             "package": "ErisPulse-OpenAI",
             "version": "2.1.0",
