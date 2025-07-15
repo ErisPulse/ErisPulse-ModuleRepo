@@ -1,6 +1,16 @@
 {
-    "last_updated": "2025-07-15T16:31:10Z",
+    "last_updated": "2025-07-14T08:30:00Z",
     "modules": {
+        "OpenAI": {
+            "package": "ErisPulse-OpenAI",
+            "version": "2.1.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse OpenAI 通用接口封装模块",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-OpenAI",
+            "official": true,
+            "tags": ["OpenAI", "AI"]
+        },
         "SeTu": {
             "package": "ErisPulse-SeTu",
             "version": "1.1.0",
