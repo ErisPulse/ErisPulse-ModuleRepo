@@ -3,7 +3,7 @@
     "modules": {
         "ErisPulse": {
             "package": "ErisPulse",
-            "version": "2.1.0",
+            "version": "2.1.10",
             "author": "ErisPulse Team",
             "description": "更新ErisPulse",
             "min_sdk_version": "2.0.0",
@@ -11,9 +11,19 @@
             "official": true,
             "tags": ["ErisPulse"]
         },
+        "Weather": {
+            "package": "ErisPulse-Weather",
+            "version": "1.2.0",
+            "author": "ShanFish",
+            "description": "天气查询，支持绑定城市、今日天气、五日天气",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-Weather",
+            "official": false,
+            "tags": ["天气", "Weather"]
+        },
         "AIChat": {
             "package": "ErisPulse-AIChat",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "author": "wsu2059q",
             "description": "AIChat 聊天机器人模块",
             "min_sdk_version": "2.0.0",
@@ -23,7 +33,7 @@
         },
         "OpenAI": {
             "package": "ErisPulse-OpenAI",
-            "version": "2.1.0",
+            "version": "2.1.3",
             "author": "wsu2059q",
             "description": "ErisPulse OpenAI 通用接口封装模块",
             "min_sdk_version": "2.0.0",
@@ -33,7 +43,7 @@
         },
         "SeTu": {
             "package": "ErisPulse-SeTu",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "author": "ShanFish",
             "description": "简单的色图模块",
             "min_sdk_version": "2.0.0",
@@ -53,7 +63,7 @@
         },
         "ServerStatusMonitor": {
             "package": "ErisPulse-ServerStatusMonitor",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "author": "wsu2059q",
             "description": "系统信息查询模块-平台模块",
             "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
@@ -64,7 +74,7 @@
     "adapters": {
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
@@ -72,7 +82,7 @@
         },
         "OneBot11": { 
             "package": "ErisPulse-OneBot11Adapter",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "description": "OneBot11协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
@@ -80,7 +90,7 @@
         },
         "Telegram": { 
             "package": "ErisPulse-TelegramAdapter",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelgramAdapter",
             "official": true,
