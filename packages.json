@@ -104,5 +104,18 @@
             "official": true,
             "tags": ["adapter", "mail", "email"]
         }
+    },
+    "cli_extensions": {
+        "Scaffold": {
+            "package": "ErisPulse-Scaffold",
+            "version": "0.1.0",
+            "author": "wsu2059q",
+            "description": "快速创建标准化的模块/CLI/适配器项目结构",
+            "min_sdk_version": "2.1.6",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Scaffold",
+            "official": false,
+            "tags": ["cli", "脚手架", "Scaffold"],
+            "command": "scaffold"
+        }
     }
 }
