@@ -95,6 +95,14 @@
             "repository": "https://github.com/ErisPulse/ErisPulse-TelgramAdapter",
             "official": true,
             "tags": ["adapter", "telgram"]
+        },
+        "Email": {
+            "package": "ErisPulse-EmailAdapter",
+            "version": "1.0.0",
+            "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
+            "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
+            "official": true,
+            "tags": ["adapter", "mail", "email"]
         }
     }
 }
