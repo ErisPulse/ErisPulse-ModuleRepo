@@ -115,7 +115,9 @@
             "repository": "https://github.com/ErisPulse/ErisPulse-Scaffold",
             "official": false,
             "tags": ["cli", "脚手架", "Scaffold"],
-            "command": "scaffold"
+            "command": [
+                "scaffold"
+            ]
         }
     }
 }
