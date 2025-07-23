@@ -68,7 +68,7 @@
             "description": "提供获取系统内存、CPU、硬盘占用的接口",
             "min_sdk_version": "2.0.0",
             "repository": "https://github.com/shanfishapp/ErisPulse-SystemStatus",
-            "official": true,
+            "official": false,
             "tags": ["system-info", "api"]
         },
         "ServerStatusMonitor": {
@@ -77,7 +77,7 @@
             "author": "wsu2059q",
             "description": "系统信息查询模块-平台模块",
             "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
-            "official": true,
+            "official": false,
             "tags": []
         }
     },
@@ -123,7 +123,7 @@
             "description": "快速创建标准化的模块/CLI/适配器项目结构",
             "min_sdk_version": "2.1.6",
             "repository": "https://github.com/ErisPulse/ErisPulse-Scaffold",
-            "official": false,
+            "official": true,
             "tags": ["cli", "脚手架", "Scaffold"],
             "command": [
                 "scaffold"
