@@ -84,6 +84,7 @@
     "adapters": {
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
+            "author": "wsu2059q",
             "version": "3.1.0",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
@@ -92,6 +93,7 @@
         },
         "OneBot11": { 
             "package": "ErisPulse-OneBot11Adapter",
+            "author": "wsu2059q",
             "version": "3.1.0",
             "description": "OneBot11协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
@@ -100,6 +102,7 @@
         },
         "Telegram": { 
             "package": "ErisPulse-TelegramAdapter",
+            "author": "wsu2059q",
             "version": "3.1.1",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelgramAdapter",
@@ -108,6 +111,7 @@
         },
         "Email": {
             "package": "ErisPulse-EmailAdapter",
+            "author": "wsu2059q",
             "version": "1.0.0",
             "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
