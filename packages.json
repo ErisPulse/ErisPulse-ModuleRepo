@@ -3,13 +3,23 @@
     "modules": {
         "ErisPulse": {
             "package": "ErisPulse",
-            "version": "2.1.10",
+            "version": "2.1.13",
             "author": "ErisPulse Team",
             "description": "更新ErisPulse",
             "min_sdk_version": "2.0.0",
             "repository": "https://github.com/ErisPulse/ErisPulse",
             "official": true,
             "tags": ["ErisPulse"]
+        },
+        "XiaomiMarathon": {
+            "package": "ErisPulse-XiaomiMarathon",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "小米马拉松模拟器",
+            "min_sdk_version": "2.1.10",
+            "repository": "https://github.com/wsu2059q/ErisPulse-XiaomiMarathon",
+            "official": false,
+            "tags": ["小米马拉松", "小米"]
         },
         "GitHubParser": {
             "package": "ErisPulse-GitHubParser",
