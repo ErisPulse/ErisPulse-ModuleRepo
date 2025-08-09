@@ -1,3 +1,4 @@
+> 这是一个归档文档，仅供1.x.x版本使用。
 # ErisPulse - 模块源仓库
 
 我们欢迎社区成员贡献新的模块！如果您希望提交一个新模块，请直接向本仓库提交 Pull Request。我们将在审核通过后将其合并到主分支。
@@ -19,12 +20,12 @@
 
 #### Linux / macOS:
 ```bash
-mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/tools/build.py
+mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/docs/archived/tools/build.py
 ```
 
 #### Windows (PowerShell):
 ```powershell
-New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/tools/build.py" -OutFile "tools/build.py"
+New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/docs/archived/tools/build.py" -OutFile "tools/build.py"
 ```
 
 ### 使用方式
