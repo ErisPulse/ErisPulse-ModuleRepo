@@ -20,12 +20,12 @@
 
 #### Linux / macOS:
 ```bash
-mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/docs/archived/tools/build.py
+mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/archived/tools/build.py
 ```
 
 #### Windows (PowerShell):
 ```powershell
-New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/docs/archived/tools/build.py" -OutFile "tools/build.py"
+New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/archived/tools/build.py" -OutFile "tools/build.py"
 ```
 
 ### 使用方式
