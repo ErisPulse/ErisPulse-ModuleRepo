@@ -1,6 +1,6 @@
 {
-    "name": "ErisPulse 官方模块源",
-    "base": "https://erisdev.com/modules",
+    "name": "ErisPulse 官方模块源 | 此版本已停止维护，请及时更新到ErisPulse最新版本",
+    "base": "https://erisdev.com/archived/modules",
     "modules": {
         "YunhuAdapter": {
             "path": "/YunhuAdapter-2.8.2.zip",
