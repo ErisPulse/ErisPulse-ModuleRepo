@@ -234,6 +234,19 @@
                 "mail",
                 "email"
             ]
+        },
+        "sandbox": {
+            "package": "ErisPulse-SandboxAdapter",
+            "author": "ErisPulse",
+            "version": "1.0.0",
+            "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
+            "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "sandbox",
+                "调试"
+            ]
         }
     },
     "cli_extensions": {
