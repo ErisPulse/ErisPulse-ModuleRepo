@@ -1,50 +1,52 @@
-> 这是一个归档文档，仅供1.x.x版本使用。
 # ErisPulse - 模块源仓库
 
-我们欢迎社区成员贡献新的模块！如果您希望提交一个新模块，请直接向本仓库提交 Pull Request。我们将在审核通过后将其合并到主分支。
+当前 2x 分支为默认分支，1x 分支为归档版本。
+
+我们欢迎社区成员贡献新的模块！提出 issue 可以添加您的模块/适配器/CLI 拓展到库中。
 
 ## 贡献模块
 
+我们采用 PyPI 包的方式管理模块。贡献者只需将模块发布到 PyPI，然后通过 issue 提交相关信息即可。
+
+### 贡献要求
+
 请确保满足以下要求：
-- 模块代码符合项目规范
+- 模块代码符合 ErisPulse 开发规范
 - 提供完整的文档和使用说明
 - 确保无版权问题，允许我们修改与发布
+- 模块已在 PyPI 发布
 
-## 模块构建工具
+### 提交流程
 
-我们提供自动化构建脚本 `tools/build.py`，帮助开发者快速打包发布。
+1. **将模块发布到 PyPI**
 
-### 快速部署构建工具
-
-请运行以下命令来下载构建工具：
-
-#### Linux / macOS:
-```bash
-mkdir -p tools && curl -o tools/build.py https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/archived/tools/build.py
-```
-
-#### Windows (PowerShell):
-```powershell
-New-Item -ItemType Directory -Path "tools" -ErrorAction SilentlyContinue; Invoke-WebRequest -Uri "https://github.com/ErisPulse/ErisPulse-ModuleRepo/raw/main/archived/tools/build.py" -OutFile "tools/build.py"
-```
-
-### 使用方式
-
-1. 登录 GitHub CLI（如尚未登录）：
+   使用 `twine` 或其他工具将您的 Python 包发布到 PyPI：
    ```bash
-   gh auth login
+   python -m build
+   twine upload dist/*
    ```
 
-2. 运行构建脚本：
-   ```bash
-   python tools/build.py
-   ```
+2. **提交 Issue**
 
-3. 脚本会自动完成以下操作：
-   - 打包模块为 ZIP 文件
-   - 更新 `map.json` 中的模块信息（路径、版本、构建时间）
-   - 推送变更到你的 Fork
-   - 向官方仓库发起 PR（需已登录 GitHub CLI）
+   访问仓库的 Issues 页面，使用"模块/适配器/CLI扩展提交"模板创建一个新的 issue，填写以下信息：
+   
+   - **提交类型**：模块 (Module)、适配器 (Adapter) 或 CLI 扩展 (CLI Extension)
+   - **基本信息**：名称、描述、作者、仓库地址
+   - **技术信息**：最低 SDK 版本要求、依赖项
+   - **PyPI 包名**：确保已在 PyPI 发布
+   - **其他信息**：标签、是否官方维护等
+
+3. **审核与合并**
+
+   我们将审核您的提交。审核通过后，会将您的模块信息添加到 `packages.json` 中，使其可以被 ErisPulse 生态系统发现和使用。
+
+### 检查清单
+
+在提交前，请确认：
+- [ ] 代码遵循 ErisPulse 开发规范
+- [ ] 包含适当的文档
+- [ ] 包含测试用例（如适用）
+- [ ] 已在 PyPI 发布
 
 ---
 
