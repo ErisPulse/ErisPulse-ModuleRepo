@@ -66,13 +66,13 @@ jobs:
           
           🌟 自动更新了模块版本信息
           📖 更多详情请查看 packages.json"
-          git push origin main
+          git push origin 2x
 
       - name: 💤 今天的魔法工作完成
         if: steps.update.outputs.has_updates == 'true'
         run: |
           echo "🌟 艾莉丝今天也努力完成了版本更新的魔法呢!"
-          echo "🌙 所有更新已直接推送到 main 分支"
+          echo "🌙 所有更新已直接推送到 2x 分支"
           echo "💫 明天再见啦~"
 
       - name: 无更新时的安慰信息
@@ -81,4 +81,3 @@ jobs:
           echo "✨ 今天没有发现需要更新的模块呢~"
           echo "🌟 艾莉丝会继续守护着我们的魔法世界!"
           echo "🌙 明天再见啦~"
-          
