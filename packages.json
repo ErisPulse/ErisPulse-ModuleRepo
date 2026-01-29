@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-01-25T13:03:30Z",
+    "last_updated": "2026-01-29T04:00:18Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -238,7 +238,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
@@ -249,6 +249,5 @@
             ]
         }
     },
-    "cli_extensions": {
-    }
+    "cli_extensions": {}
 }
