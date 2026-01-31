@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-01-30T04:00:07Z",
+    "last_updated": "2026-01-31T03:57:05Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -74,7 +74,7 @@
         },
         "GitHubParser": {
             "package": "ErisPulse-GitHubParser",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "author": "wsu2059q",
             "description": "GitHub链接解析模块，自动解析消息中的仓库/Issue/PR信息并以最佳格式展示",
             "min_sdk_version": "2.1.10",
