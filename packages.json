@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-08T04:25:59Z",
+    "last_updated": "2026-02-09T00:00:00Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -171,6 +171,21 @@
             "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
             "official": false,
             "tags": []
+        },
+        "AdminControl": {
+            "package": "ErisPulse-AdminControl",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse 管理控制模块 - 提供框架管理和命令执行功能",
+            "min_sdk_version": "2.3.4-dev.3",
+            "repository": "https://github.com/wsu2059q/ErisPulse-AdminControl",
+            "official": false,
+            "tags": [
+                "admin",
+                "management",
+                "控制",
+                "framework"
+            ]
         }
     },
     "adapters": {
