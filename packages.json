@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-12T04:14:48Z",
+    "last_updated": "2026-02-14T04:01:02Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -230,7 +230,7 @@
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
             "author": "wsu2059q",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "description": "OneBot12协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
             "official": true,
@@ -280,7 +280,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
