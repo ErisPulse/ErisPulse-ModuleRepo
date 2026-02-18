@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-17T04:09:30Z",
+    "last_updated": "2026-02-18T04:11:46Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -267,7 +267,7 @@
         "YunhuUser": {
             "package": "ErisPulse-YunhuUserAdapter",
             "author": "wsu2059q",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "description": "云湖用户账户驱动适配器，支持通过用户账号与云湖平台交互",
             "repository": "https://github.com/wsu2059q/ErisPulse-YunhuUserAdapter",
             "official": true,
