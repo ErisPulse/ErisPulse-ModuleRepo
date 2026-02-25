@@ -200,6 +200,21 @@
                 "forwarder",
                 "邮件转发"
             ]
+        },        
+        "DFAFilter": {
+            "package": "ErisPulse-DFAFilter",
+            "version": "2.0.0",
+            "author": "wsu2059q",
+            "description": "基于DFA算法的敏感词过滤模块，支持实时检测、自动替换和动态更新词库",
+            "min_sdk_version": "2.1.14-alpha.1",
+            "repository": "https://github.com/wsu2059q/ErisPulse-DFAFilter",
+            "official": false,
+            "tags": [
+                "敏感词过滤",
+                "DFA",
+                "过滤",
+                "filter"
+            ]
         }
     },
     "adapters": {
