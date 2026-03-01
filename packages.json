@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-28T03:45:43Z",
+    "last_updated": "2026-03-01T04:13:01Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -218,7 +218,7 @@
         },
         "GitHubWebhook": {
             "package": "ErisPulse-GitHubWebhook",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "author": "wsu2059",
             "description": "GitHub Webhook 聚合器模块，支持将 GitHub 事件转发到聊天平台",
             "min_sdk_version": "2.3.0",
