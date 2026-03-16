@@ -15,6 +15,21 @@
                 "命令列表"
             ]
         },
+        "Feedback": {
+            "package": "ErisPulse-Feedback",
+            "version": "1.0.0",
+            "author": "wsu2059",
+            "description": "ErisPulse 反馈系统模块，支持反馈提交、状态管理、多群聊反馈组和数据导入导出",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Feedback",
+            "official": false,
+            "tags": [
+                "反馈",
+                "feedback",
+                "群组管理",
+                "权限控制"
+            ]
+        },
         "EditVideoPlayer": {
             "package": "ErisPulse-EditVideoPlayer",
             "version": "1.0.1",
