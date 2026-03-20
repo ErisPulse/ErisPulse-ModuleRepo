@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-03-19T04:12:46Z",
+    "last_updated": "2026-03-20T04:04:49Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "author": "wsu2059q",
             "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
             "min_sdk_version": "2.2.0",
@@ -250,7 +250,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
@@ -262,7 +262,7 @@
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
             "author": "wsu2059q",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "description": "OneBot11协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
@@ -274,7 +274,7 @@
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
             "author": "wsu2059q",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "description": "OneBot12协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
             "official": true,
@@ -286,7 +286,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
@@ -324,7 +324,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
