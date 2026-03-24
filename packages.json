@@ -17,7 +17,7 @@
         },
         "ErisPulse-UmaMusume": {
   "package": "ErisPulse-UmaMusume",
-  "version": "1.0.0", // 备注：原文未明确版本号，建议根据实际填写
+  "version": "1.0.0",
   "author": "CyanTea",
   "description": "ErisPulse的赛马娘主题机器人模块",
   "min_sdk_version": "2.3.8",
