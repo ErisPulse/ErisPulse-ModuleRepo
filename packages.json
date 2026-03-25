@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-03-24T04:08:22Z",
+    "last_updated": "2026-03-25T04:10:07Z",
     "modules": {
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -16,19 +16,19 @@
             ]
         },
         "ErisPulse-UmaMusume": {
-  "package": "ErisPulse-UmaMusume",
-  "version": "1.0.0",
-  "author": "CyanTea",
-  "description": "ErisPulse的赛马娘主题机器人模块",
-  "min_sdk_version": "2.3.8",
-  "repository": "https://codeberg.org/ybr/ErisPulse-UmaMusume",
-  "official": false,
-  "tags": [
-    "赛马娘",
-    "娱乐",
-    "塔罗牌"
-  ]
-},
+            "package": "ErisPulse-UmaMusume",
+            "version": "1.0.0",
+            "author": "CyanTea",
+            "description": "ErisPulse的赛马娘主题机器人模块",
+            "min_sdk_version": "2.3.8",
+            "repository": "https://codeberg.org/ybr/ErisPulse-UmaMusume",
+            "official": false,
+            "tags": [
+                "赛马娘",
+                "娱乐",
+                "塔罗牌"
+            ]
+        },
         "Feedback": {
             "package": "ErisPulse-Feedback",
             "version": "1.0.0",
@@ -312,7 +312,7 @@
         "Email": {
             "package": "ErisPulse-EmailAdapter",
             "author": "wsu2059q",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
             "official": true,
@@ -338,7 +338,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "1.1.1",
+            "version": "2.1.2",
             "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
