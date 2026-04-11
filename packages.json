@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-10T04:38:28Z",
+    "last_updated": "2026-04-11T04:11:15Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -219,7 +219,7 @@
         },
         "AdminControl": {
             "package": "ErisPulse-AdminControl",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "author": "wsu2059q",
             "description": "ErisPulse 管理控制模块 - 提供框架管理和命令执行功能",
             "min_sdk_version": "2.3.4-dev.3",
@@ -280,7 +280,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "3.6.6",
+            "version": "3.7.0",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
@@ -292,7 +292,7 @@
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
             "author": "wsu2059q",
-            "version": "3.6.2",
+            "version": "3.7.0",
             "description": "OneBot11协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
@@ -304,7 +304,7 @@
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
             "author": "wsu2059q",
-            "version": "1.1.3",
+            "version": "1.2.0",
             "description": "OneBot12协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
             "official": true,
@@ -316,7 +316,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
@@ -341,7 +341,7 @@
         "YunhuUser": {
             "package": "ErisPulse-YunhuUserAdapter",
             "author": "wsu2059q",
-            "version": "1.2.2",
+            "version": "1.3.0",
             "description": "云湖用户账户驱动适配器，支持通过用户账号与云湖平台交互",
             "repository": "https://github.com/wsu2059q/ErisPulse-YunhuUserAdapter",
             "official": true,
