@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-04-11T04:11:15Z",
+    "last_updated": "2026-04-12T04:38:59Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "author": "ErisPulse",
             "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
             "min_sdk_version": "2.4.0",
