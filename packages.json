@@ -377,6 +377,18 @@
                 "sandbox",
                 "调试"
             ]
+        },
+        "Kook": {
+            "package": "ErisPulse-KookAdapter",
+            "author": "ShanFish",
+            "version": "0.2.0",
+            "description": "基于开源机器人框架 ErisPulse 的 Kook(开黑啦) 机器人适配器",
+            "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "kook"
+            ]
         }
     },
     "cli_extensions": {}
