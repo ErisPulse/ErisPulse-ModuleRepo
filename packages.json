@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-12T04:38:59Z",
+    "last_updated": "2026-04-13T04:50:16Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -381,7 +381,7 @@
         "Kook": {
             "package": "ErisPulse-KookAdapter",
             "author": "ShanFish",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "description": "基于开源机器人框架 ErisPulse 的 Kook(开黑啦) 机器人适配器",
             "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
             "official": true,
