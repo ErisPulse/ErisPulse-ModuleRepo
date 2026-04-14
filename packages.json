@@ -288,6 +288,21 @@
                 "virtual-pet",
                 "猫猫养成"
             ]
+        },
+        "InteractiveTest": {
+            "package": "ErisPulse-InteractiveTest",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse 交互式对话与 OneBot12 消息构建器功能测试模块，类似echo模块但功能更强大",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-InteractiveTest",
+            "official": false,
+            "tags": [
+                "测试",
+                "交互",
+                "echo",
+                "诊断"
+            ]
         }
     },
     "adapters": {
