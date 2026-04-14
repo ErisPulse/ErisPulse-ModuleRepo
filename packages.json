@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-13T04:50:16Z",
+    "last_updated": "2026-04-14T04:37:36Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -277,7 +277,7 @@
         },
         "NekoCare": {
             "package": "ErisPulse-NekoCare",
-            "version": "1.0.0",
+            "version": "1.10.0",
             "author": "wsu2059q, lin",
             "description": "NekoCare - 虚拟猫猫养成模块",
             "min_sdk_version": "2.2.0",
@@ -294,7 +294,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "3.7.0",
+            "version": "3.7.2",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
