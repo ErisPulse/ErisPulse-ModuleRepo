@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-14T04:37:36Z",
+    "last_updated": "2026-04-15T04:38:00Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -234,7 +234,7 @@
         },
         "EmailForwarder": {
             "package": "ErisPulse-EmailForwarder",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "author": "wsu2059q",
             "description": "监听邮件适配器并将邮件转发到其他平台的 ErisPulse 模块",
             "min_sdk_version": "2.3.0",
@@ -277,7 +277,7 @@
         },
         "NekoCare": {
             "package": "ErisPulse-NekoCare",
-            "version": "1.10.0",
+            "version": "2.0.0",
             "author": "wsu2059q, lin",
             "description": "NekoCare - 虚拟猫猫养成模块",
             "min_sdk_version": "2.2.0",
