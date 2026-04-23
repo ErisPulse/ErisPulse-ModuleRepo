@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-22T04:38:27Z",
+    "last_updated": "2026-04-23T04:43:17Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -277,7 +277,7 @@
         },
         "NekoCare": {
             "package": "ErisPulse-NekoCare",
-            "version": "2.0.0",
+            "version": "2.1.5",
             "author": "wsu2059q, lin",
             "description": "NekoCare - 虚拟猫猫养成模块",
             "min_sdk_version": "2.2.0",
