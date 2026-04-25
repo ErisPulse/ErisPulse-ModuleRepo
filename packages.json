@@ -404,6 +404,32 @@
                 "adapter",
                 "kook"
             ]
+        },
+        "Matrix": {
+            "package": "ErisPulse-MatrixAdapter",
+            "author": "wsu2059",
+            "version": "1.0.0",
+            "description": "ErisPulse的Matrix协议适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "matrix"
+            ]
+        },
+        "QQBot": {
+            "package": "ErisPulse-QQBotAdapter",
+            "author": "wsu2059",
+            "version": "1.0.0",
+            "description": "ErisPulse的QQ官方机器人适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
+            "official": true,
+            "tags": [
+                "bot",
+                "adapter",
+                "qq",
+                "qbot"
+            ]
         }
     },
     "cli_extensions": {}
