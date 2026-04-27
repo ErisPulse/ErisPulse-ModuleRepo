@@ -73,10 +73,6 @@ def update_packages():
         print(f"无法打开 packages.json 魔法书: {e}")
         return
     
-    current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-    packages['last_updated'] = current_time
-    print(f"更新时间戳: {current_time}")
-    
     updated_count = 0
     
     for category in ['modules', 'adapters', 'cli_extensions']:
@@ -107,19 +103,21 @@ def update_packages():
                 except Exception as e:
                     print(f"处理 {name} 时遇到了意外: {e}")
     
-    # 写回魔法书
+    if updated_count > 0:
+        current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+        packages['last_updated'] = current_time
+        print(f"更新时间戳: {current_time}")
+        print("艾莉丝的版本探知魔法大成功!")
+    else:
+        print("今天没有发现需要更新的模块呢~")
+        return
+    
     try:
         with open('packages.json', 'w', encoding='utf-8') as f:
             json.dump(packages, f, ensure_ascii=False, indent=4)
         print(f"魔法书更新完成! 共更新了 {updated_count} 个模块~")
     except Exception as e:
         print(f"无法保存魔法书: {e}")
-        return
-    
-    if updated_count > 0:
-        print("艾莉丝的版本探知魔法大成功!")
-    else:
-        print("今天没有发现需要更新的模块呢~")
 
 if __name__ == '__main__':
     update_packages()
