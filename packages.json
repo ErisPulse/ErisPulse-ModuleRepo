@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-29T05:18:55Z",
+    "last_updated": "2026-04-30T05:22:40Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -360,7 +360,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "3.6.0",
+            "version": "3.6.5",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
