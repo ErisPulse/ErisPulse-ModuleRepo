@@ -318,6 +318,21 @@
                 "visualization",
                 "group-chat"
             ]
+        },
+        "BiliParser": {
+            "package": "ErisPulse-BiliParser",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-BiliParser",
+            "official": false,
+            "tags": [
+                "bilibili",
+                "解析",
+                "视频",
+                "parser"
+            ]
         }
     },
     "adapters": {
