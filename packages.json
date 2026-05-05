@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-04T05:25:15Z",
+    "last_updated": "2026-05-05T04:53:38Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -306,7 +306,7 @@
         },
         "ChatSonar": {
             "package": "ErisPulse-ChatSonar",
-            "version": "1.1.0",
+            "version": "1.2.5",
             "author": "wsu2059q",
             "description": "消息声呐 - 可视化群聊社交距离与岛屿群落",
             "min_sdk_version": "2.4.0",
@@ -390,7 +390,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "3.6.9",
+            "version": "3.6.12",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
