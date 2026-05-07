@@ -348,6 +348,21 @@
                 "视频",
                 "parser"
             ]
+        },
+        "RssReader": {
+            "package": "ErisPulse-RssReader",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "RSS订阅器模块——在聊天中订阅任意RSS/Atom源，自动推送更新",
+            "min_sdk_version": "2.0.0", 
+            "repository": "https://github.com/ErisPulse/ErisPulse-RssReader",
+            "official": false,
+            "tags": [
+                "rss",
+                "atom",
+                "订阅",
+                "news"
+            ]
         }
     },
     "adapters": {
