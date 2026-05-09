@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-08T04:47:58Z",
+    "last_updated": "2026-05-09T05:14:16Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -336,7 +336,7 @@
         },
         "BiliParser": {
             "package": "ErisPulse-BiliParser",
-            "version": "1.0.0",
+            "version": "1.0.4",
             "author": "wsu2059q",
             "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
             "min_sdk_version": "2.4.0",
@@ -369,7 +369,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "3.9.0",
+            "version": "3.9.1",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
