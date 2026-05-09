@@ -490,6 +490,19 @@
                 "qq",
                 "qbot"
             ]
+        },
+        "Ideaura": {
+            "package": "ErisPulse-Ideaura",
+            "author": "ErisPulse",
+            "version": "0.1.0",
+            "description": "ErisPulse的Ideaura平台适配器（花枫咖啡馆/Allons协议）",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
+            "official": true,
+            "tags": [
+                "adapter",
+                "ideaura",
+                "allons"
+            ]
         }
     },
     "cli_extensions": {}
