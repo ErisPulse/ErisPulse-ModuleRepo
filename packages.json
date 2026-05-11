@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-09T05:14:16Z",
+    "last_updated": "2026-05-11T05:50:42Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -369,7 +369,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
