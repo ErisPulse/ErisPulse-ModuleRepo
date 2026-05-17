@@ -378,6 +378,22 @@
                 "订阅",
                 "news"
             ]
+        },
+        "Raffle": {
+            "package": "ErisPulse-Raffle",
+            "version": "1.0.0",
+            "author": "ErisPulse",
+            "description": "通用抽奖模块 - Dashboard可视化管理、群聊关键词报名、开奖动画、广播通知",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Raffle",
+            "official": true,
+            "tags": [
+                "抽奖",
+                "raffle",
+                "lottery",
+                "dashboard",
+                "通知"
+            ]
         }
     },
     "adapters": {
