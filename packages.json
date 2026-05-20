@@ -394,6 +394,21 @@
                 "dashboard",
                 "通知"
             ]
+        },
+        "AdapterConfig": {
+            "package": "ErisPulse-AdapterConfig",
+            "version": "1.0.0",
+            "author": "ErisPulse",
+            "description": "Dashboard 适配器配置扩展模块，提供可视化界面快速配置各类适配器参数",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Dash-AdapterConfig",
+            "official": true,
+            "tags": [
+                "dashboard",
+                "适配器配置",
+                "adapter",
+                "config"
+            ]
         }
     },
     "adapters": {
