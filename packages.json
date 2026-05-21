@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-20T05:57:24Z",
+    "last_updated": "2026-05-21T06:01:11Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -381,7 +381,7 @@
         },
         "Raffle": {
             "package": "ErisPulse-Raffle",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "author": "ErisPulse",
             "description": "通用抽奖模块 - Dashboard可视化管理、群聊关键词报名、开奖动画、广播通知",
             "min_sdk_version": "2.4.0",
