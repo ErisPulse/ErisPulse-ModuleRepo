@@ -7,28 +7,61 @@ import re
 import sys
 from datetime import datetime, timezone
 
+try:
+    import requests
+except ImportError:
+    requests = None
+
+
+def check_pypi_exists(package_name):
+    if requests is None:
+        print(f"WARNING: requests not available, skipping PyPI check for {package_name}")
+        return True
+
+    try:
+        resp = requests.get(f'https://pypi.org/pypi/{package_name}/json', timeout=15)
+        if resp.status_code == 200:
+            data = resp.json()
+            version = data['info'].get('version', '0.0.0')
+            print(f"PyPI package '{package_name}' found, version: {version}")
+            return True
+        else:
+            print(f"PyPI package '{package_name}' NOT found (HTTP {resp.status_code})")
+            return False
+    except Exception as e:
+        print(f"PyPI check error for {package_name}: {e}")
+        return False
+
 
 def validate_submission(data):
     required_fields = ['name', 'package', 'description', 'author', 'repository']
     for field in required_fields:
         if not data.get(field):
             print(f"Missing required field: {field}")
-            return False
+            return False, f"Missing required field: {field}"
 
     if not re.match(r'^[a-zA-Z0-9_-]+$', data['name']):
         print(f"Invalid module name: {data['name']}")
-        return False
+        return False, f"Invalid module name format: {data['name']}"
 
     if not re.match(r'^[a-zA-Z0-9_.-]+$', data['package']):
         print(f"Invalid package name: {data['package']}")
-        return False
+        return False, f"Invalid package name format: {data['package']}"
 
     repo = data.get('repository', '')
     if not (repo.startswith('https://github.com/') or repo.startswith('https://codeberg.org/')):
         print(f"Invalid repository URL: {repo}")
-        return False
+        return False, f"Invalid repository URL: {repo}"
 
-    return True
+    if len(data.get('description', '')) < 10:
+        print("Description too short (minimum 10 characters)")
+        return False, "Description too short (minimum 10 characters)"
+
+    if not check_pypi_exists(data['package']):
+        print(f"Package '{data['package']}' not found on PyPI. Module must be published to PyPI first.")
+        return False, f"Package '{data['package']}' not found on PyPI. Please publish your package to PyPI before submitting."
+
+    return True, None
 
 
 def handle_submission():
@@ -43,8 +76,11 @@ def handle_submission():
         print(f"Invalid JSON in SUBMISSION_DATA: {e}")
         sys.exit(1)
 
-    if not validate_submission(submission):
-        print("Validation failed")
+    valid, error_msg = validate_submission(submission)
+    if not valid:
+        print(f"Validation failed: {error_msg}")
+        with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+            f.write(f"error_message={error_msg}\n")
         sys.exit(1)
 
     try:
@@ -57,8 +93,7 @@ def handle_submission():
     submit_type = submission.get('type', 'module')
     category_map = {
         'module': 'modules',
-        'adapter': 'adapters',
-        'cli_extension': 'cli_extensions'
+        'adapter': 'adapters'
     }
     category = category_map.get(submit_type, 'modules')
 
@@ -67,19 +102,48 @@ def handle_submission():
         sys.exit(1)
 
     module_name = submission['name']
-    if module_name in packages[category]:
-        print(f"Module '{module_name}' already exists in {category}")
+
+    for cat in ['modules', 'adapters']:
+        if module_name in packages.get(cat, {}):
+            print(f"Module '{module_name}' already exists in {cat}")
+            with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+                f.write(f"error_message=Module '{module_name}' already exists\n")
+            sys.exit(1)
+
+    submitted_by = submission.get('submitted_by', '')
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    user_daily_count = 0
+    for cat in ['modules', 'adapters']:
+        for name, info in packages.get(cat, {}).items():
+            sb = info.get('submitted_by', '')
+            if sb == submitted_by:
+                user_daily_count += 1
+
+    if user_daily_count >= 3:
+        error_msg = f"User '{submitted_by}' has already submitted {user_daily_count} modules. Daily limit is 3."
+        print(error_msg)
+        with open(os.environ.get('GITHUB_OUTPUT', 'a'), 'a') as f:
+            f.write(f"error_message={error_msg}\n")
         sys.exit(1)
+
+    pypi_version = '0.0.0'
+    if requests:
+        try:
+            resp = requests.get(f'https://pypi.org/pypi/{submission["package"]}/json', timeout=15)
+            if resp.status_code == 200:
+                pypi_version = resp.json()['info'].get('version', '0.0.0')
+        except Exception:
+            pass
 
     entry = {
         'package': submission['package'],
-        'version': submission.get('version', '0.0.0'),
+        'version': pypi_version,
         'author': submission['author'],
         'description': submission['description'],
         'repository': submission['repository'],
-        'official': submission.get('official', False),
+        'official': False,
         'verified': False,
-        'submitted_by': submission.get('submitted_by', ''),
+        'submitted_by': submitted_by,
         'tags': submission.get('tags', [])
     }
 
@@ -98,8 +162,8 @@ def handle_submission():
         print(f"Cannot write packages.json: {e}")
         sys.exit(1)
 
-    print(f"Successfully added '{module_name}' to {category}")
-    print(f"verified: false, submitted_by: {submission.get('submitted_by', '')}")
+    print(f"Successfully added '{module_name}' to {category} (version {pypi_version})")
+    print(f"verified: false, submitted_by: {submitted_by}")
 
     with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
         f.write(f"module_name={module_name}\n")
