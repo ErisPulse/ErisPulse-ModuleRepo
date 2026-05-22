@@ -59,7 +59,7 @@ jobs:
       - name: 保存魔法成果
         if: steps.update.outputs.has_updates == 'true'
         run: |
-          git config --local user.email "eris@magic-circle.dev"
+          git config --local user.email "eris@erisdev.com"
           git config --local user.name "Eris the Mage"
           git add packages.json
           git commit -m "✨ 艾莉丝的每日版本更新魔法 [skip ci]

@@ -32,8 +32,8 @@ jobs:
       - name: 提交更改
         if: success()
         run: |
-          git config user.name "ErisPulse Bot"
-          git config user.email "bot@erispulse.dev"
+          git config user.name "Eris Sub"
+          git config user.email "eris@erisdev.com"
           git add packages.json
           git diff --cached --quiet || git commit -m "📦 新模块提交: ${{ steps.process.outputs.module_name }} [skip ci]
 
