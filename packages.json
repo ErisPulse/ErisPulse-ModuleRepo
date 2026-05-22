@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-22T05:57:18Z",
+    "last_updated": "2026-05-22T17:27:11Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -409,6 +409,20 @@
                 "adapter",
                 "config"
             ]
+        },
+        "yunhu2onebot12": {
+            "package": "yunhu2onebot12",
+            "version": "0.0.0",
+            "author": "wsu2059q",
+            "description": "这是一个自助提交测试模块",
+            "repository": "https://github.com/wsu2059q/YunhuEventToOnebot12",
+            "official": false,
+            "verified": false,
+            "submitted_by": "wsu2059q",
+            "tags": [
+                "测试"
+            ],
+            "min_sdk_version": "2.0.0"
         }
     },
     "adapters": {
