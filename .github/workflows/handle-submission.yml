@@ -1,0 +1,50 @@
+name: 📦 处理模块提交
+
+permissions:
+  contents: write
+
+on:
+  repository_dispatch:
+    types: [submit_module]
+
+jobs:
+  process-submission:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          ref: 2x
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 准备 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 处理提交数据
+        id: process
+        env:
+          SUBMISSION_DATA: ${{ toJson(github.event.client_payload) }}
+          GITHUB_OUTPUT: ${{ github.output }}
+        run: python .github/scripts/handle_submission.py
+
+      - name: 提交更改
+        if: success()
+        run: |
+          git config user.name "ErisPulse Bot"
+          git config user.email "bot@erispulse.dev"
+          git add packages.json
+          git diff --cached --quiet || git commit -m "📦 新模块提交: ${{ steps.process.outputs.module_name }} [skip ci]
+
+          新模块提交（未验证）
+          提交者: ${{ github.event.client_payload.submitted_by }}
+          类型: ${{ github.event.client_payload.type }}
+          包名: ${{ github.event.client_payload.package }}"
+          git push origin 2x
+
+      - name: 处理失败通知
+        if: failure()
+        run: |
+          echo "❌ 模块提交处理失败"
+          echo "提交数据: ${{ toJson(github.event.client_payload) }}"
