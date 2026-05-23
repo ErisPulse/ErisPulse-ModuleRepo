@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-22T17:27:11Z",
+    "last_updated": "2026-05-23T05:32:12Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -134,7 +134,7 @@
         },
         "GitHubParser": {
             "package": "ErisPulse-GitHubParser",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "author": "wsu2059q",
             "description": "GitHub链接解析模块，自动解析消息中的仓库/Issue/PR信息并以最佳格式展示",
             "min_sdk_version": "2.1.10",
