@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-23T05:32:12Z",
+    "last_updated": "2026-05-24T15:29:42Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -409,6 +409,20 @@
                 "adapter",
                 "config"
             ]
+        },
+        "Test": {
+            "package": "ErisPulse-Dashboard",
+            "version": "0.0.0",
+            "author": "wsu2059q",
+            "description": "测试测试测试测试测试测试",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Dashboard",
+            "official": false,
+            "verified": false,
+            "submitted_by": "wsu2059q",
+            "tags": [
+                "测试"
+            ],
+            "min_sdk_version": "2.0.0"
         }
     },
     "adapters": {
