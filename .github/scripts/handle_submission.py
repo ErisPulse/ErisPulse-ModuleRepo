@@ -140,8 +140,8 @@ def handle_submission():
             f.write(f"error_message={error_msg}\n")
         sys.exit(1)
 
-    pypi_version = '0.0.0'
-    if requests:
+    pypi_version = submission.get('version', '0.0.0') or '0.0.0'
+    if pypi_version == '0.0.0' and requests:
         try:
             resp = requests.get(f'https://pypi.org/pypi/{submission["package"]}/json', timeout=15)
             if resp.status_code == 200:
