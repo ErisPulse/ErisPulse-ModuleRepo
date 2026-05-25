@@ -110,8 +110,20 @@ def handle_submission():
                 f.write(f"error_message=Module '{module_name}' already exists\n")
             sys.exit(1)
 
-    submitted_by = submission.get('submitted_by', '')
-    submitted_by_uid = submission.get('submitted_by_uid', '')
+    submitter_raw = submission.get('submitter', '{}')
+    try:
+        submitter_info = json.loads(submitter_raw) if isinstance(submitter_raw, str) else submitter_raw
+    except (json.JSONDecodeError, TypeError):
+        submitter_info = {}
+    submitted_by = submitter_info.get('name', '')
+    submitted_by_uid = submitter_info.get('uid', '')
+    oauth_provider = submitter_info.get('provider', '')
+
+    tags_raw = submission.get('tags', '[]')
+    try:
+        tags = json.loads(tags_raw) if isinstance(tags_raw, str) else tags_raw
+    except (json.JSONDecodeError, TypeError):
+        tags = []
     today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
     user_daily_count = 0
     for cat in ['modules', 'adapters']:
@@ -147,8 +159,8 @@ def handle_submission():
         'verified': False,
         'submitted_by': submitted_by,
         'submitted_by_uid': submitted_by_uid,
-        'oauth_provider': submission.get('oauth_provider', ''),
-        'tags': submission.get('tags', [])
+        'oauth_provider': oauth_provider,
+        'tags': tags
     }
 
     if submit_type != 'adapter' and submission.get('min_sdk_version'):
