@@ -1,0 +1,48 @@
+name: 🔧 处理模块管理
+
+permissions:
+  contents: write
+
+on:
+  repository_dispatch:
+    types: [manage_module]
+
+jobs:
+  process-management:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          ref: 2x
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 准备 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 处理管理操作
+        id: manage
+        env:
+          MANAGEMENT_DATA: ${{ toJson(github.event.client_payload) }}
+          GITHUB_OUTPUT: ${{ github.output }}
+        run: python .github/scripts/handle_management.py
+
+      - name: 提交更改
+        if: success()
+        run: |
+          git config user.name "Eris Sub"
+          git config user.email "eris@erisdev.com"
+          git add packages.json
+          git diff --cached --quiet || git commit -m "模块管理: ${{ steps.manage.outputs.action }} ${{ steps.manage.outputs.module_name }} [skip ci]
+
+          操作: ${{ steps.manage.outputs.action }}
+          模块: ${{ steps.manage.outputs.module_name }}"
+          git push origin 2x
+
+      - name: 处理失败通知
+        if: failure()
+        run: |
+          echo "模块管理操作失败"
+          echo "操作数据: ${{ toJson(github.event.client_payload) }}"

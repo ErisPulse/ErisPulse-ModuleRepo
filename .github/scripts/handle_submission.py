@@ -111,12 +111,14 @@ def handle_submission():
             sys.exit(1)
 
     submitted_by = submission.get('submitted_by', '')
+    submitted_by_uid = submission.get('submitted_by_uid', '')
     today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
     user_daily_count = 0
     for cat in ['modules', 'adapters']:
         for name, info in packages.get(cat, {}).items():
-            sb = info.get('submitted_by', '')
-            if sb == submitted_by:
+            if submitted_by_uid and info.get('submitted_by_uid', '') == submitted_by_uid:
+                user_daily_count += 1
+            elif not submitted_by_uid and info.get('submitted_by', '') == submitted_by:
                 user_daily_count += 1
 
     if user_daily_count >= 3:
@@ -144,6 +146,8 @@ def handle_submission():
         'official': False,
         'verified': False,
         'submitted_by': submitted_by,
+        'submitted_by_uid': submitted_by_uid,
+        'oauth_provider': submission.get('oauth_provider', ''),
         'tags': submission.get('tags', [])
     }
 
