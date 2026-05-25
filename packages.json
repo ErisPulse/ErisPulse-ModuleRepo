@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-25T11:41:29Z",
+    "last_updated": "2026-05-25T12:10:36Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -425,7 +425,8 @@
                 "dashboard",
                 "chat"
             ],
-            "min_sdk_version": "2.4.5"
+            "min_sdk_version": "2.4.5",
+            "hidden": true
         }
     },
     "adapters": {
