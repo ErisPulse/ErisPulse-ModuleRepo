@@ -410,14 +410,14 @@
                 "config"
             ]
         },
-        "ErisPulse-DashChat": {
+        "DashChat": {
             "package": "ErisPulse-DashChat",
             "version": "1.0.0",
             "author": "樱城の心",
             "description": "跨平台实时消息收发模块，提供一个类即时通讯的聊天界面，支持用户在仪表盘内与各个平台进行对话",
             "repository": "https://github.com/wsu2059q/ErisPulse-DashChat",
             "official": false,
-            "verified": false,
+            "verified": true,
             "submitted_by": "樱城の心",
             "submitted_by_uid": "yunhu:5197892",
             "oauth_provider": "yunhu",
