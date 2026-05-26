@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-26T05:58:15Z",
+    "last_updated": "2026-05-26T07:15:56Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -426,6 +426,23 @@
                 "chat"
             ],
             "hidden": true
+        },
+        "Echo": {
+            "package": "ErisPulse-Echo",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "Echo - 回显消息内容，支持文本、图片等多种类型，支持引用回显",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Echo",
+            "official": false,
+            "verified": false,
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "tags": [
+                "Echo",
+                "回显"
+            ],
+            "min_sdk_version": "2.4.0"
         }
     },
     "adapters": {
