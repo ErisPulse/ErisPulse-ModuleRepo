@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-28T06:01:21Z",
+    "last_updated": "2026-05-30T07:07:41Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -443,6 +443,22 @@
                 "回显"
             ],
             "min_sdk_version": "2.4.0"
+        },
+        "MyServer": {
+            "package": "ErisPulse-MyServer",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "服务器管理模块 - 支持远程监控、WebSocket终端、Dashboard管理",
+            "repository": "https://github.com/wsu2059q/ErisPulse-MyServer",
+            "official": false,
+            "verified": false,
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "tags": [
+                "工具"
+            ],
+            "min_sdk_version": "2.4.5"
         }
     },
     "adapters": {
