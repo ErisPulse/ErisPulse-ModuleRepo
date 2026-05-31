@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-30T07:07:41Z",
+    "last_updated": "2026-05-31T06:08:21Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -576,7 +576,7 @@
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
             "author": "wsu2059",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "description": "ErisPulse的QQ官方机器人适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
             "official": true,
