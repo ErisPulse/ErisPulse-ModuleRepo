@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-06-02T06:26:56Z",
+    "last_updated": "2026-06-03T06:43:40Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.5.5",
+            "version": "1.5.8",
             "author": "ErisPulse",
             "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
             "min_sdk_version": "2.4.0",
@@ -62,7 +62,7 @@
         },
         "Feedback": {
             "package": "ErisPulse-Feedback",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "author": "wsu2059",
             "description": "ErisPulse 反馈系统模块，支持反馈提交、状态管理、多群聊反馈组和数据导入导出",
             "min_sdk_version": "2.3.0",
