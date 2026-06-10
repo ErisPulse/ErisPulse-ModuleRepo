@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-06-03T06:43:40Z",
+    "last_updated": "2026-06-10T06:13:34Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.5.8",
+            "version": "1.5.9",
             "author": "ErisPulse",
             "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
             "min_sdk_version": "2.4.0",
@@ -351,7 +351,7 @@
         },
         "BiliParser": {
             "package": "ErisPulse-BiliParser",
-            "version": "1.0.4",
+            "version": "1.1.1",
             "author": "wsu2059q",
             "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
             "min_sdk_version": "2.4.0",
@@ -366,7 +366,7 @@
         },
         "RssReader": {
             "package": "ErisPulse-RssReader",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "author": "wsu2059q",
             "description": "RSS订阅器模块——在聊天中订阅任意RSS/Atom源，自动推送更新",
             "min_sdk_version": "2.0.0",
@@ -477,7 +477,7 @@
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
             "author": "wsu2059q",
-            "version": "3.7.0",
+            "version": "4.0.1",
             "description": "OneBot11协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
