@@ -472,7 +472,8 @@
             "tags": [
                 "adapter",
                 "yunhu"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
@@ -496,7 +497,8 @@
             "tags": [
                 "adapter",
                 "onebot12"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
@@ -508,7 +510,8 @@
             "tags": [
                 "adapter",
                 "telgram"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "Email": {
             "package": "ErisPulse-EmailAdapter",
@@ -534,7 +537,8 @@
                 "adapter",
                 "yunhu",
                 "user"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
@@ -547,7 +551,8 @@
                 "adapter",
                 "sandbox",
                 "调试"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "Kook": {
             "package": "ErisPulse-KookAdapter",
@@ -585,7 +590,8 @@
                 "adapter",
                 "qq",
                 "qbot"
-            ]
+            ],
+            "min_sdk_version": "2.4.6"
         },
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
