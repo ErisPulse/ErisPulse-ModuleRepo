@@ -577,7 +577,21 @@
                 "adapter",
                 "Discord"
             ]
-        }
+        },
+        "WechatMp": {
+            "package": "ErisPulse-WechatMpAdapter",
+            "author": "ErisPulse",
+            "version": "4.0.0",
+            "description": "ErisPulse的微信公众号(WechatMp)适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-WechatMpAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "wechat",
+                "微信",
+                "公众号"
+            ]
+        },
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
