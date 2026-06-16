@@ -605,6 +605,18 @@
                 "ideaura",
                 "allons"
             ]
+        },
+        "Webhook": {
+            "package": "ErisPulse-WebhookAdapter",
+            "author": "ErisPulse",
+            "version": "4.0.0",
+            "description": "ErisPulse的Webhook通用桥接适配模块",
+            "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "webhook"
+            ]
         }
     },
     "cli_extensions": {}
