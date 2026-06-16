@@ -566,6 +566,18 @@
                 "kook"
             ]
         },
+        "Discord": {
+            "package": "ErisPulse-DiscordAdapter",
+            "author": "ErisPulse",
+            "version": "4.0.0",
+            "description": "A Discord Bot adapter for the ErisPulse",
+            "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "Discord"
+            ]
+        }
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
