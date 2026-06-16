@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-16T04:30:52Z",
+    "last_updated": "2026-06-16T07:32:41Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -19,7 +19,7 @@
         },
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "author": "wsu2059q",
             "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
             "min_sdk_version": "2.2.0",
@@ -622,7 +622,7 @@
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
             "author": "ErisPulse",
-            "version": "0.1.0",
+            "version": "4.0.0",
             "description": "ErisPulse的Ideaura平台适配器（花枫咖啡馆/Allons协议）",
             "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
             "official": true,
