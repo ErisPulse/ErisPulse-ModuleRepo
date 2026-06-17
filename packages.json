@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-06-16T07:32:41Z",
+    "last_updated": "2026-06-17T06:58:53Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.5.13",
+            "version": "1.5.14",
             "author": "ErisPulse",
             "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
             "min_sdk_version": "2.4.0",
@@ -19,7 +19,7 @@
         },
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "author": "wsu2059q",
             "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
             "min_sdk_version": "2.2.0",
@@ -516,7 +516,7 @@
         "Email": {
             "package": "ErisPulse-EmailAdapter",
             "author": "wsu2059q",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
             "official": true,
@@ -543,7 +543,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "4.0.0",
+            "version": "4.0.2",
             "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
@@ -595,7 +595,7 @@
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "description": "ErisPulse的Matrix协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
             "official": true,
@@ -635,7 +635,7 @@
         "Webhook": {
             "package": "ErisPulse-WebhookAdapter",
             "author": "ErisPulse",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "description": "ErisPulse的Webhook通用桥接适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
             "official": true,
