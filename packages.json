@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-07-04T05:36:55Z",
+    "last_updated": "2026-07-06T06:17:55Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "author": "ErisPulse",
             "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
             "min_sdk_version": "2.4.0",
@@ -465,7 +465,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "4.0.5",
+            "version": "4.0.6",
             "description": "云湖协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
