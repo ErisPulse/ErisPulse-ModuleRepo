@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-09T06:40:54Z",
+    "last_updated": "2026-07-09T06:42:29Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -508,6 +508,43 @@
                 "复读机"
             ],
             "min_sdk_version": "2.4.6"
+        },
+        "RateLimiter": {
+            "package": "ErisPulse-RateLimiter",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "ErisPulse message rate limiting module to prevent spam, supports fixed/sliding window, multi-dimensional limiting, and whitelist immunity | ErisPulse 消息速率限制模块，防止刷屏，支持固定/滑动窗口、多维度限流、白名单免疫",
+            "repository": "https://github.com/wsu2059q/ErisPulse-RateLimiter",
+            "official": false,
+            "verified": false,
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-09T06:42:29Z",
+            "tags": [
+                "限流",
+                "反刷屏",
+                "熔断",
+                "保护",
+                "窗口",
+                "滑动窗口",
+                "固定窗口",
+                "白名单",
+                "多维",
+                "消息",
+                "拦截",
+                "流控",
+                "rate",
+                "limiter",
+                "spam",
+                "guard",
+                "window",
+                "whitelist",
+                "throttle",
+                "protect",
+                "filter"
+            ],
+            "min_sdk_version": "2.5.3"
         }
     },
     "adapters": {
