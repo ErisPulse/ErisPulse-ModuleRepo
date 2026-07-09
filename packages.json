@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-09T05:54:52Z",
+    "last_updated": "2026-07-09T06:40:54Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -491,6 +491,23 @@
             ],
             "min_sdk_version": "2.4.5",
             "submitted_at": "2026-05-30T07:07:41Z"
+        },
+        "CopyCat": {
+            "package": "ErisPulse-CopyCat",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "复读机模块 - 检测群聊/私聊中连续重复消息并自动复读",
+            "repository": "https://github.com/wsu2059q/ErisPulse-CopyCat",
+            "official": false,
+            "verified": false,
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-09T06:40:54Z",
+            "tags": [
+                "复读机"
+            ],
+            "min_sdk_version": "2.4.6"
         }
     },
     "adapters": {
