@@ -15,7 +15,8 @@
                 "admin",
                 "management",
                 "monitor"
-            ]
+            ],
+            "submitted_at": "2026-04-06T07:05:21Z"
         },
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
@@ -29,7 +30,8 @@
                 "help",
                 "command",
                 "命令列表"
-            ]
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "Cron": {
             "package": "ErisPulse-Cron",
@@ -44,7 +46,8 @@
                 "定时任务",
                 "调度",
                 "scheduler"
-            ]
+            ],
+            "submitted_at": "2026-05-13T08:52:32Z"
         },
         "UmaMusume": {
             "package": "ErisPulse-UmaMusume",
@@ -58,7 +61,8 @@
                 "赛马娘",
                 "娱乐",
                 "塔罗牌"
-            ]
+            ],
+            "submitted_at": "2026-05-04T14:14:42Z"
         },
         "Feedback": {
             "package": "ErisPulse-Feedback",
@@ -73,7 +77,8 @@
                 "feedback",
                 "群组管理",
                 "权限控制"
-            ]
+            ],
+            "submitted_at": "2026-03-16T13:11:57Z"
         },
         "EditVideoPlayer": {
             "package": "ErisPulse-EditVideoPlayer",
@@ -88,7 +93,8 @@
                 "视频播放",
                 "编辑消息",
                 "editor"
-            ]
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "InfoQuery": {
             "package": "ErisPulse-InfoQuery",
@@ -101,7 +107,8 @@
             "tags": [
                 "信息查询",
                 "InfoStats"
-            ]
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "XiaomiMarathon": {
             "package": "ErisPulse-XiaomiMarathon",
@@ -114,7 +121,8 @@
             "tags": [
                 "小米马拉松",
                 "小米"
-            ]
+            ],
+            "submitted_at": "2025-07-29T04:01:30Z"
         },
         "InfoStats": {
             "package": "ErisPulse-InfoStats",
@@ -130,7 +138,8 @@
                 "analytics",
                 "事件跟踪",
                 "data-analysis"
-            ]
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "GitHubParser": {
             "package": "ErisPulse-GitHubParser",
@@ -143,7 +152,8 @@
             "tags": [
                 "github",
                 "解析"
-            ]
+            ],
+            "submitted_at": "2025-07-23T01:40:06Z"
         },
         "Weather": {
             "package": "ErisPulse-Weather",
@@ -156,7 +166,8 @@
             "tags": [
                 "天气",
                 "Weather"
-            ]
+            ],
+            "submitted_at": "2025-07-20T18:05:38Z"
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
@@ -169,7 +180,8 @@
             "tags": [
                 "QvQChat",
                 "AI"
-            ]
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "OpenAI": {
             "package": "ErisPulse-OpenAI",
@@ -182,7 +194,8 @@
             "tags": [
                 "OpenAI",
                 "AI"
-            ]
+            ],
+            "submitted_at": "2025-07-15T08:58:41Z"
         },
         "AIChat": {
             "package": "ErisPulse-AIChat",
@@ -195,7 +208,8 @@
             "tags": [
                 "AIChat",
                 "AI"
-            ]
+            ],
+            "submitted_at": "2025-07-15T14:11:20Z"
         },
         "SeTu": {
             "package": "ErisPulse-SeTu",
@@ -208,7 +222,8 @@
             "tags": [
                 "色图",
                 "SeTu"
-            ]
+            ],
+            "submitted_at": "2025-07-15T08:31:44Z"
         },
         "SystemStatus": {
             "package": "ErisPulse-SystemStatus",
@@ -221,7 +236,8 @@
             "tags": [
                 "system-info",
                 "api"
-            ]
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
         },
         "ServerStatusMonitor": {
             "package": "ErisPulse-ServerStatusMonitor",
@@ -230,7 +246,8 @@
             "description": "系统信息查询模块-平台模块",
             "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
             "official": false,
-            "tags": []
+            "tags": [],
+            "submitted_at": "2025-07-14T10:40:27Z"
         },
         "AdminControl": {
             "package": "ErisPulse-AdminControl",
@@ -245,7 +262,8 @@
                 "management",
                 "控制",
                 "framework"
-            ]
+            ],
+            "submitted_at": "2026-02-08T17:48:01Z"
         },
         "EmailForwarder": {
             "package": "ErisPulse-EmailForwarder",
@@ -259,7 +277,8 @@
                 "email",
                 "forwarder",
                 "邮件转发"
-            ]
+            ],
+            "submitted_at": "2026-02-12T21:37:45Z"
         },
         "DFAFilter": {
             "package": "ErisPulse-DFAFilter",
@@ -274,7 +293,8 @@
                 "DFA",
                 "过滤",
                 "filter"
-            ]
+            ],
+            "submitted_at": "2026-02-25T16:03:32Z"
         },
         "GitHubWebhook": {
             "package": "ErisPulse-GitHubWebhook",
@@ -288,7 +308,8 @@
                 "github",
                 "webhook",
                 "事件转发"
-            ]
+            ],
+            "submitted_at": "2026-02-26T09:19:25Z"
         },
         "NekoCare": {
             "package": "ErisPulse-NekoCare",
@@ -302,7 +323,8 @@
                 "neko",
                 "virtual-pet",
                 "猫猫养成"
-            ]
+            ],
+            "submitted_at": "2026-04-11T17:42:22Z"
         },
         "InteractiveTest": {
             "package": "ErisPulse-InteractiveTest",
@@ -317,7 +339,8 @@
                 "交互",
                 "echo",
                 "诊断"
-            ]
+            ],
+            "submitted_at": "2026-04-14T06:32:31Z"
         },
         "ChatSonar": {
             "package": "ErisPulse-ChatSonar",
@@ -332,7 +355,8 @@
                 "chat-analysis",
                 "visualization",
                 "group-chat"
-            ]
+            ],
+            "submitted_at": "2026-04-27T01:19:51Z"
         },
         "UniBind": {
             "package": "ErisPulse-UniBind",
@@ -347,7 +371,8 @@
                 "跨平台",
                 "unibind",
                 "identity"
-            ]
+            ],
+            "submitted_at": "2026-05-04T14:14:42Z"
         },
         "BiliParser": {
             "package": "ErisPulse-BiliParser",
@@ -362,7 +387,8 @@
                 "解析",
                 "视频",
                 "parser"
-            ]
+            ],
+            "submitted_at": "2026-05-02T13:31:13Z"
         },
         "RssReader": {
             "package": "ErisPulse-RssReader",
@@ -377,7 +403,8 @@
                 "atom",
                 "订阅",
                 "news"
-            ]
+            ],
+            "submitted_at": "2026-05-07T14:57:57Z"
         },
         "Raffle": {
             "package": "ErisPulse-Raffle",
@@ -393,7 +420,8 @@
                 "lottery",
                 "dashboard",
                 "通知"
-            ]
+            ],
+            "submitted_at": "2026-05-17T16:01:16Z"
         },
         "AdapterConfig": {
             "package": "ErisPulse-AdapterConfig",
@@ -408,7 +436,8 @@
                 "适配器配置",
                 "adapter",
                 "config"
-            ]
+            ],
+            "submitted_at": "2026-05-20T12:35:28Z"
         },
         "DashChat": {
             "package": "ErisPulse-DashChat",
@@ -425,7 +454,8 @@
                 "dashboard",
                 "chat"
             ],
-            "hidden": true
+            "hidden": true,
+            "submitted_at": "2026-05-25T15:17:20Z"
         },
         "Echo": {
             "package": "ErisPulse-Echo",
@@ -442,7 +472,8 @@
                 "Echo",
                 "回显"
             ],
-            "min_sdk_version": "2.4.0"
+            "min_sdk_version": "2.4.0",
+            "submitted_at": "2026-05-26T07:15:56Z"
         },
         "MyServer": {
             "package": "ErisPulse-MyServer",
@@ -458,7 +489,8 @@
             "tags": [
                 "工具"
             ],
-            "min_sdk_version": "2.4.5"
+            "min_sdk_version": "2.4.5",
+            "submitted_at": "2026-05-30T07:07:41Z"
         }
     },
     "adapters": {
@@ -473,7 +505,8 @@
                 "adapter",
                 "yunhu"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2025-07-14T10:40:27Z"
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
@@ -485,7 +518,8 @@
             "tags": [
                 "adapter",
                 "onebot11"
-            ]
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
         },
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
@@ -498,7 +532,8 @@
                 "adapter",
                 "onebot12"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2026-01-25T12:57:42Z"
         },
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
@@ -511,7 +546,8 @@
                 "adapter",
                 "telgram"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2025-07-17T01:54:15Z"
         },
         "Email": {
             "package": "ErisPulse-EmailAdapter",
@@ -524,7 +560,8 @@
                 "adapter",
                 "mail",
                 "email"
-            ]
+            ],
+            "submitted_at": "2025-07-21T08:56:52Z"
         },
         "YunhuUser": {
             "package": "ErisPulse-YunhuUserAdapter",
@@ -538,7 +575,8 @@
                 "yunhu",
                 "user"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2026-02-14T18:05:15Z"
         },
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
@@ -552,7 +590,8 @@
                 "sandbox",
                 "调试"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2026-01-25T18:24:18Z"
         },
         "Kook": {
             "package": "ErisPulse-KookAdapter",
@@ -564,7 +603,8 @@
             "tags": [
                 "adapter",
                 "kook"
-            ]
+            ],
+            "submitted_at": "2026-04-12T04:42:32Z"
         },
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
@@ -576,7 +616,8 @@
             "tags": [
                 "adapter",
                 "Discord"
-            ]
+            ],
+            "submitted_at": "2026-06-16T05:38:05Z"
         },
         "WechatMp": {
             "package": "ErisPulse-WechatMpAdapter",
@@ -590,7 +631,8 @@
                 "wechat",
                 "微信",
                 "公众号"
-            ]
+            ],
+            "submitted_at": "2026-06-16T07:32:08Z"
         },
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
@@ -602,7 +644,8 @@
             "tags": [
                 "adapter",
                 "matrix"
-            ]
+            ],
+            "submitted_at": "2026-04-25T14:54:50Z"
         },
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
@@ -617,7 +660,8 @@
                 "qq",
                 "qbot"
             ],
-            "min_sdk_version": "2.4.6"
+            "min_sdk_version": "2.4.6",
+            "submitted_at": "2026-04-25T14:54:50Z"
         },
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
@@ -630,7 +674,8 @@
                 "adapter",
                 "ideaura",
                 "allons"
-            ]
+            ],
+            "submitted_at": "2026-05-09T16:23:30Z"
         },
         "Webhook": {
             "package": "ErisPulse-WebhookAdapter",
@@ -642,7 +687,8 @@
             "tags": [
                 "adapter",
                 "webhook"
-            ]
+            ],
+            "submitted_at": "2026-06-16T03:37:55Z"
         }
     },
     "cli_extensions": {}

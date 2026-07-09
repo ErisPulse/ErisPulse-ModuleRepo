@@ -128,13 +128,16 @@ def handle_submission():
     user_daily_count = 0
     for cat in ['modules', 'adapters']:
         for name, info in packages.get(cat, {}).items():
+            submitted_at = info.get('submitted_at', '')
+            if not submitted_at or not submitted_at.startswith(today):
+                continue
             if submitted_by_uid and info.get('submitted_by_uid', '') == submitted_by_uid:
                 user_daily_count += 1
             elif not submitted_by_uid and info.get('submitted_by', '') == submitted_by:
                 user_daily_count += 1
 
     if user_daily_count >= 3:
-        error_msg = f"User '{submitted_by}' has already submitted {user_daily_count} modules. Daily limit is 3."
+        error_msg = f"User '{submitted_by}' has already submitted {user_daily_count} modules today. Daily limit is 3."
         print(error_msg)
         with open(os.environ.get('GITHUB_OUTPUT', 'a'), 'a') as f:
             f.write(f"error_message={error_msg}\n")
@@ -149,6 +152,8 @@ def handle_submission():
         except Exception:
             pass
 
+    current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
     entry = {
         'package': submission['package'],
         'version': pypi_version,
@@ -160,6 +165,7 @@ def handle_submission():
         'submitted_by': submitted_by,
         'submitted_by_uid': submitted_by_uid,
         'oauth_provider': oauth_provider,
+        'submitted_at': current_time,
         'tags': tags
     }
 
@@ -168,7 +174,6 @@ def handle_submission():
 
     packages[category][module_name] = entry
 
-    current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     packages['last_updated'] = current_time
 
     try:
