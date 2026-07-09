@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-06T06:17:55Z",
+    "last_updated": "2026-07-09T05:54:52Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -503,7 +503,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "4.0.1",
+            "version": "4.1.0",
             "description": "Telgram协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
@@ -516,7 +516,7 @@
         "Email": {
             "package": "ErisPulse-EmailAdapter",
             "author": "wsu2059q",
-            "version": "4.0.2",
+            "version": "4.1.0",
             "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
             "official": true,
@@ -569,7 +569,7 @@
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
             "author": "ErisPulse",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "description": "A Discord Bot adapter for the ErisPulse",
             "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
             "official": true,
@@ -595,7 +595,7 @@
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
-            "version": "4.0.2",
+            "version": "4.1.0",
             "description": "ErisPulse的Matrix协议适配模块",
             "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
             "official": true,
