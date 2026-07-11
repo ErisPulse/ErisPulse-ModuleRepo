@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-09T06:42:29Z",
+    "last_updated": "2026-07-11T04:53:12Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -171,7 +171,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "2.5.0",
+            "version": "2.6.1",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
