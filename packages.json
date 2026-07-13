@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-12T05:16:18Z",
+    "last_updated": "2026-07-13T03:22:31Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -545,6 +545,21 @@
                 "filter"
             ],
             "min_sdk_version": "2.5.3"
+        },
+        "MsgCounter": {
+            "package": "ErisPulse-MsgCounter",
+            "version": "1.0.0",
+            "author": "Future Tasks",
+            "description": "一个用于统计消息的模块，末日水系列机器人同款",
+            "repository": "https://github.com/Teddyxiongtdx/YBot-Ep-MsgCounter",
+            "official": false,
+            "verified": false,
+            "submitted_by": "Future Tasks",
+            "submitted_by_uid": "yunhu:7384288",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-13T03:22:31Z",
+            "tags": [],
+            "min_sdk_version": ">=2.4.6"
         }
     },
     "adapters": {
