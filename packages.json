@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-18T04:38:20Z",
+    "last_updated": "2026-07-26T05:20:50Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -548,7 +548,7 @@
         },
         "MsgCounter": {
             "package": "ErisPulse-MsgCounter",
-            "version": "1.0.11",
+            "version": "1.1.0",
             "author": "Future Tasks",
             "description": "一个用于统计消息的模块，末日水系列机器人同款",
             "repository": "https://github.com/Teddyxiongtdx/YBot-Ep-MsgCounter",
