@@ -5,7 +5,7 @@
             "package": "ErisPulse-Dashboard",
             "version": "1.9.0",
             "author": "ErisPulse",
-            "description": "ErisPulse 框架官方 Web 管理面板，提供系统监控、模块管理、配置编辑、事件流查看等功能",
+            "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-Dashboard",
             "official": true,
@@ -128,7 +128,7 @@
             "package": "ErisPulse-InfoStats",
             "version": "1.0.0",
             "author": "wsu2059q",
-            "description": "信息统计模块，用于监听和统计事件",
+            "description": "Event listener & statistics module for analytics | 信息统计模块 — 监听事件并统计分析",
             "min_sdk_version": "2.1.14-alpha.1",
             "repository": "https://github.com/wsu2059q/ErisPulse-InfoStats",
             "official": true,
@@ -187,7 +187,7 @@
             "package": "ErisPulse-OpenAI",
             "version": "2.1.3",
             "author": "wsu2059q",
-            "description": "ErisPulse OpenAI 通用接口封装模块",
+            "description": "A unified OpenAI API wrapper module for ErisPulse | OpenAI 通用接口封装模块",
             "min_sdk_version": "2.0.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-OpenAI",
             "official": true,
@@ -410,7 +410,7 @@
             "package": "ErisPulse-Raffle",
             "version": "1.0.1",
             "author": "ErisPulse",
-            "description": "通用抽奖模块 - Dashboard可视化管理、群聊关键词报名、开奖动画、广播通知",
+            "description": "General raffle module with Dashboard visualization, keyword signup & draw animation | 通用抽奖模块 — Dashboard 可视化管理、群聊关键词报名、开奖动画、广播通知",
             "min_sdk_version": "2.4.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-Raffle",
             "official": true,
@@ -427,7 +427,7 @@
             "package": "ErisPulse-AdapterConfig",
             "version": "1.0.0",
             "author": "ErisPulse",
-            "description": "Dashboard 适配器配置扩展模块，提供可视化界面快速配置各类适配器参数",
+            "description": "Dashboard extension for visually configuring adapter parameters | Dashboard 适配器配置扩展 — 可视化界面快速配置适配器参数",
             "min_sdk_version": "2.0.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-Dash-AdapterConfig",
             "official": true,
@@ -567,7 +567,7 @@
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
             "version": "4.2.0",
-            "description": "云湖协议适配模块",
+            "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
             "tags": [
@@ -581,7 +581,7 @@
             "package": "ErisPulse-OneBot11Adapter",
             "author": "wsu2059q",
             "version": "4.1.2",
-            "description": "OneBot11协议适配模块",
+            "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
             "tags": [
@@ -594,7 +594,7 @@
             "package": "ErisPulse-OneBot12Adapter",
             "author": "wsu2059q",
             "version": "4.0.1",
-            "description": "OneBot12协议适配模块",
+            "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
             "official": true,
             "tags": [
@@ -608,12 +608,12 @@
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
             "version": "4.1.0",
-            "description": "Telgram协议适配模块",
+            "description": "ErisPulse Telegram adapter — Bot API with multi-account & rich media | ErisPulse Telegram 适配器 — Bot API，多账户 + 富媒体",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
             "tags": [
                 "adapter",
-                "telgram"
+                "telegram"
             ],
             "min_sdk_version": "2.4.6",
             "submitted_at": "2025-07-17T01:54:15Z"
@@ -622,7 +622,7 @@
             "package": "ErisPulse-EmailAdapter",
             "author": "wsu2059q",
             "version": "4.1.0",
-            "description": "支持在 ErisPulse 生态系统中以事件形式收发电子邮件。",
+            "description": "ErisPulse Email adapter — turn any mailbox into a Bot | ErisPulse 邮箱适配器 — 把任意邮箱变成机器人",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
             "official": true,
             "tags": [
@@ -636,7 +636,7 @@
             "package": "ErisPulse-YunhuUserAdapter",
             "author": "wsu2059q",
             "version": "4.0.0",
-            "description": "云湖用户账户驱动适配器，支持通过用户账号与云湖平台交互",
+            "description": "ErisPulse Yunhu-User adapter — driven by user-account protocol | ErisPulse 云湖用户适配器 — 用户账户协议驱动",
             "repository": "https://github.com/wsu2059q/ErisPulse-YunhuUserAdapter",
             "official": true,
             "tags": [
@@ -651,7 +651,7 @@
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
             "version": "4.0.2",
-            "description": "ErisPulse 的沙箱适配器，提供网页界面用于调试和模拟消息， 可以帮助您在不接入实际机器人平台的情况下进行开发和测试。",
+            "description": "ErisPulse Sandbox adapter — test your Bot in a web UI, zero setup | ErisPulse 沙箱适配器 — 网页 UI 调试，零平台接入即测即用",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
             "tags": [
@@ -666,7 +666,7 @@
             "package": "ErisPulse-KookAdapter",
             "author": "ShanFish",
             "version": "4.0.0",
-            "description": "基于开源机器人框架 ErisPulse 的 Kook(开黑啦) 机器人适配器",
+            "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
             "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
             "official": true,
             "tags": [
@@ -679,7 +679,7 @@
             "package": "ErisPulse-DiscordAdapter",
             "author": "ErisPulse",
             "version": "4.1.0",
-            "description": "A Discord Bot adapter for the ErisPulse",
+            "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
             "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
             "official": true,
             "tags": [
@@ -692,7 +692,7 @@
             "package": "ErisPulse-WechatMpAdapter",
             "author": "ErisPulse",
             "version": "4.0.0",
-            "description": "ErisPulse的微信公众号(WechatMp)适配模块",
+            "description": "ErisPulse WeChat MP adapter — webhook callback + customer/template messages | ErisPulse 微信公众号适配器 — Webhook 回调 + 客服 / 模板消息",
             "repository": "https://github.com/ErisPulse/ErisPulse-WechatMpAdapter",
             "official": true,
             "tags": [
@@ -707,7 +707,7 @@
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
             "version": "4.1.0",
-            "description": "ErisPulse的Matrix协议适配模块",
+            "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
             "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
             "official": true,
             "tags": [
@@ -720,7 +720,7 @@
             "package": "ErisPulse-QQBotAdapter",
             "author": "wsu2059",
             "version": "4.0.2",
-            "description": "ErisPulse的QQ官方机器人适配模块",
+            "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
             "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
             "official": true,
             "tags": [
@@ -736,7 +736,7 @@
             "package": "ErisPulse-Ideaura",
             "author": "ErisPulse",
             "version": "4.0.0",
-            "description": "ErisPulse的Ideaura平台适配器（花枫咖啡馆/Allons协议）",
+            "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
             "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
             "official": true,
             "tags": [
@@ -750,7 +750,7 @@
             "package": "ErisPulse-WebhookAdapter",
             "author": "ErisPulse",
             "version": "4.0.1",
-            "description": "ErisPulse的Webhook通用桥接适配模块",
+            "description": "ErisPulse Webhook adapter — a low-code HTTP bridge to any system | ErisPulse Webhook 适配器 — 通用 HTTP 桥接，低代码接任意系统",
             "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
             "official": true,
             "tags": [
