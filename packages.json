@@ -758,6 +758,22 @@
                 "webhook"
             ],
             "submitted_at": "2026-06-16T03:37:55Z"
+        },
+        "Terminal": {
+            "package": "ErisPulse-TerminalAdapter",
+            "author": "ErisPulse",
+            "version": "1.0.0",
+            "description": "ErisPulse Terminal adapter — the terminal is the chat, zero-config | ErisPulse 终端适配器 — 命令行即聊天，零配置开发调试",
+            "repository": "https://github.com/ErisPulse/ErisPulse-TerminalAdapter",
+            "official": true,
+            "tags": [
+                "adapter",
+                "terminal",
+                "cli",
+                "debug"
+            ],
+            "min_sdk_version": "2.7.0",
+            "submitted_at": "2026-08-03T00:00:00Z"
         }
     },
     "cli_extensions": {}
