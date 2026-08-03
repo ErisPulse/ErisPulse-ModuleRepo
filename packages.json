@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-02T05:16:28Z",
+    "last_updated": "2026-08-03T05:30:50Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -735,7 +735,7 @@
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
             "author": "ErisPulse",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
             "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
             "official": true,
