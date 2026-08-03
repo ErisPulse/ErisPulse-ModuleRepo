@@ -560,6 +560,25 @@
             "submitted_at": "2026-07-13T03:22:31Z",
             "tags": [],
             "min_sdk_version": ">=2.4.6"
+        },
+        "Takumi": {
+            "package": "ErisPulse-Takumi",
+            "version": "1.1.0",
+            "author": "ccd2s",
+            "description": "Use takumi-py to quickly render images.",
+            "min_sdk_version": "2.7.0-dev.0",
+            "repository": "https://github.com/ccd2s/ErisPulse-Takumi",
+            "official": false,
+            "verified": true,
+            "tags": [
+                "图片渲染",
+                "render",
+                "html",
+                "svg",
+                "font",
+                "字体"
+            ],
+            "submitted_at": "2026-08-04T00:00:00Z"
         }
     },
     "adapters": {
