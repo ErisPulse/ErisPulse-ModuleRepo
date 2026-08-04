@@ -1,4 +1,19 @@
-# ErisPulse - 模块源仓库
+<div align="center">
+
+<img src=".github/assets/ErisPulseLogo.png" width="180" alt="ErisPulse-ModuleRepo" />
+
+# ErisPulse-ModuleRepo
+
+**ErisPulse 模块源仓库 —— 贡献并发布你的模块 / 适配器 / CLI 扩展。**
+
+<p>
+  <a href="https://github.com/ErisPulse/ErisPulse-ModuleRepo"><img src="https://img.shields.io/github/stars/ErisPulse/ErisPulse-ModuleRepo?style=for-the-badge&logo=github&color=brightgreen" alt="Stars"></a>
+  <a href="https://github.com/ErisPulse/ErisPulse"><img src="https://img.shields.io/badge/Powered_by-ErisPulse-FF6B9D?style=for-the-badge&logo=bookstack&logoColor=white" alt="ErisPulse"></a>
+</p>
+
+</div>
+
+---
 
 当前 2x 分支为默认分支，1x 分支为归档版本。
 
