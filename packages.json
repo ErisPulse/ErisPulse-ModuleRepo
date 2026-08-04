@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-04T04:53:34Z",
+    "last_updated": "2026-08-04T12:49:40Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -465,7 +465,7 @@
             "repository": "https://github.com/wsu2059q/ErisPulse-Echo",
             "official": false,
             "verified": true,
-            "submitted_by": "樱城の心",
+            "submitted_by": "YingXinche",
             "submitted_by_uid": "yunhu:5197892",
             "oauth_provider": "yunhu",
             "tags": [
