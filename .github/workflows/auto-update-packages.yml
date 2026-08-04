@@ -87,8 +87,8 @@ jobs:
           git add packages.json
           git commit -m "✨ 艾莉丝的每日版本更新魔法 [skip ci]
 
-🌟 自动更新了模块版本信息
-📖 更多详情请查阅 packages.json" || echo "No changes"
+          🌟 自动更新了模块版本信息
+          📖 更多详情请查阅 packages.json" || echo "No changes"
           git push origin 2x
 
       - name: 💤 今天的魔法工作完成

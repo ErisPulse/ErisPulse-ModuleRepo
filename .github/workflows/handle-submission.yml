@@ -65,10 +65,10 @@ jobs:
           git add packages.json
           git diff --cached --quiet || git commit -m "📦 新模块提交: ${{ steps.process.outputs.module_name }} [skip ci]
 
-新模块提交（未验证）
-提交者: ${{ github.event.client_payload.submitted_by }}
-类型: ${{ github.event.client_payload.type }}
-包名: ${{ github.event.client_payload.package }}"
+          新模块提交（未验证）
+          提交者: ${{ github.event.client_payload.submitted_by }}
+          类型: ${{ github.event.client_payload.type }}
+          包名: ${{ github.event.client_payload.package }}"
           git push origin 2x
 
       - name: 处理失败通知

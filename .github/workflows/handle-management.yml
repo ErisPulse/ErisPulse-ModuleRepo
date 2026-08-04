@@ -60,8 +60,8 @@ jobs:
           git add packages.json
           git diff --cached --quiet || git commit -m "模块管理: ${{ steps.manage.outputs.action }} ${{ steps.manage.outputs.module_name }} [skip ci]
 
-操作: ${{ steps.manage.outputs.action }}
-模块: ${{ steps.manage.outputs.module_name }}"
+          操作: ${{ steps.manage.outputs.action }}
+          模块: ${{ steps.manage.outputs.module_name }}"
           git push origin 2x
 
       - name: 处理失败通知
