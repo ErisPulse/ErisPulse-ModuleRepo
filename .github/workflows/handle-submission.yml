@@ -11,11 +11,28 @@ jobs:
   process-submission:
     runs-on: ubuntu-latest
     steps:
+      - name: 生成 App Token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.ERISBOT_APP_ID }}
+          private-key: ${{ secrets.ERISBOT_PRIVATE_KEY }}
+
+      - name: 获取 bot 用户 ID
+        id: bot-info
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+        run: |
+          BOT_USER_ID=$(gh api "users/${APP_SLUG}%5Bbot%5D" --jq '.id')
+          echo "bot-user-id=$BOT_USER_ID" >> $GITHUB_OUTPUT
+
       - name: 检出仓库
         uses: actions/checkout@v4
         with:
           ref: 2x
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
       - name: 准备 Python 环境
         uses: actions/setup-python@v5
@@ -36,16 +53,22 @@ jobs:
 
       - name: 提交更改
         if: success()
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          BOT_USER_ID: ${{ steps.bot-info.outputs.bot-user-id }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
         run: |
-          git config user.name "Eris Sub"
-          git config user.email "eris@erisdev.com"
+          git config user.name "${APP_SLUG}[bot]"
+          git config user.email "${BOT_USER_ID}+${APP_SLUG}[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git config --unset-all http.https://github.com/.extraheader || true
           git add packages.json
           git diff --cached --quiet || git commit -m "📦 新模块提交: ${{ steps.process.outputs.module_name }} [skip ci]
 
-          新模块提交（未验证）
-          提交者: ${{ github.event.client_payload.submitted_by }}
-          类型: ${{ github.event.client_payload.type }}
-          包名: ${{ github.event.client_payload.package }}"
+新模块提交（未验证）
+提交者: ${{ github.event.client_payload.submitted_by }}
+类型: ${{ github.event.client_payload.type }}
+包名: ${{ github.event.client_payload.package }}"
           git push origin 2x
 
       - name: 处理失败通知

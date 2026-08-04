@@ -14,11 +14,28 @@ jobs:
   auto-update-packages:
     runs-on: ubuntu-latest
     steps:
+      - name: 生成 App Token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.ERISBOT_APP_ID }}
+          private-key: ${{ secrets.ERISBOT_PRIVATE_KEY }}
+
+      - name: 获取 bot 用户 ID
+        id: bot-info
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+        run: |
+          BOT_USER_ID=$(gh api "users/${APP_SLUG}%5Bbot%5D" --jq '.id')
+          echo "bot-user-id=$BOT_USER_ID" >> $GITHUB_OUTPUT
+
       - name: 检出魔法书
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
       - name: 准备魔法环境
         uses: actions/setup-python@v5
@@ -33,7 +50,7 @@ jobs:
       - name: 施展版本探知魔法
         id: update
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           echo "艾莉丝开始探查各个模块的最新版本了哦~"
           
@@ -42,10 +59,10 @@ jobs:
           
           # 检查是否有更新
           if git diff --quiet packages.json; then
-            echo "✨ 没有发现新的版本更新呢~"
+            echo "没有发现新的版本更新呢~"
             echo "has_updates=false" >> $GITHUB_OUTPUT
           else
-            echo "🌟 发现了新的版本信息!"
+            echo "🌟 发现了新的版本信息"
             echo "has_updates=true" >> $GITHUB_OUTPUT
           fi
 
@@ -58,26 +75,32 @@ jobs:
 
       - name: 保存魔法成果
         if: steps.update.outputs.has_updates == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          BOT_USER_ID: ${{ steps.bot-info.outputs.bot-user-id }}
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
         run: |
-          git config --local user.email "eris@erisdev.com"
-          git config --local user.name "Eris the Mage"
+          git config user.name "${APP_SLUG}[bot]"
+          git config user.email "${BOT_USER_ID}+${APP_SLUG}[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git config --unset-all http.https://github.com/.extraheader || true
           git add packages.json
           git commit -m "✨ 艾莉丝的每日版本更新魔法 [skip ci]
-          
-          🌟 自动更新了模块版本信息
-          📖 更多详情请查看 packages.json"
+
+🌟 自动更新了模块版本信息
+📖 更多详情请查阅 packages.json" || echo "No changes"
           git push origin 2x
 
       - name: 💤 今天的魔法工作完成
         if: steps.update.outputs.has_updates == 'true'
         run: |
-          echo "🌟 艾莉丝今天也努力完成了版本更新的魔法呢!"
+          echo "🌟 艾莉丝今天也努力完成了版本更新的魔法"
           echo "🌙 所有更新已直接推送到 2x 分支"
           echo "💫 明天再见啦~"
 
       - name: 无更新时的安慰信息
         if: steps.update.outputs.has_updates != 'true'
         run: |
-          echo "✨ 今天没有发现需要更新的模块呢~"
-          echo "🌟 艾莉丝会继续守护着我们的魔法世界!"
+          echo "今天没有发现需要更新的模块呢~"
+          echo "🌟 艾莉丝会继续守护着我们的魔法世界"
           echo "🌙 明天再见啦~"
