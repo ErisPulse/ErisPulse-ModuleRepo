@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-08-04T12:55:24Z",
+    "last_updated": "2026-08-05T05:18:07Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -143,7 +143,7 @@
         },
         "GitHubParser": {
             "package": "ErisPulse-GitHubParser",
-            "version": "2.0.1",
+            "version": "3.0.0",
             "author": "wsu2059q",
             "description": "GitHub链接解析模块，自动解析消息中的仓库/Issue/PR信息并以最佳格式展示",
             "min_sdk_version": "2.1.10",
