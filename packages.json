@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-06T05:20:06Z",
+    "last_updated": "2026-08-07T04:28:01Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -586,7 +586,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
