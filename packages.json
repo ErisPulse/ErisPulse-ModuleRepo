@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-08-07T04:28:01Z",
+    "last_updated": "2026-08-08T03:35:38Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.10.1",
+            "version": "1.10.3",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -171,7 +171,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "2.7.0",
+            "version": "3.0.0",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
