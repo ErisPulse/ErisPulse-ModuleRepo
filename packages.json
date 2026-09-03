@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-08-10T03:59:30Z",
+    "last_updated": "2026-09-03T06:59:22Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.10.3",
+            "version": "1.10.5",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
