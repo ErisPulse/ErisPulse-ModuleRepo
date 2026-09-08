@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-05T06:47:30Z",
+    "last_updated": "2026-09-08T07:02:06Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -344,7 +344,7 @@
         },
         "ChatSonar": {
             "package": "ErisPulse-ChatSonar",
-            "version": "1.2.5",
+            "version": "2.0.0",
             "author": "wsu2059q",
             "description": "消息声呐 - 可视化群聊社交距离与岛屿群落",
             "min_sdk_version": "2.4.0",
