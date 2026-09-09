@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-08T07:02:06Z",
+    "last_updated": "2026-09-09T05:42:16Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -580,6 +580,25 @@
                 "字体"
             ],
             "submitted_at": "2026-08-04T00:00:00Z"
+        },
+        "HelpNext": {
+            "package": "ErisPulse-HelpNext",
+            "version": "0.1.0",
+            "author": "YingXinche",
+            "description": "Modern help command module, session-aware listing & full i18n (requires ErisPulse 2.8.0+) | 现代化帮助命令模块，会话感知列表与完整多语言（需 ErisPulse 2.8.0+）",
+            "repository": "https://github.com/wsu2059q/ErisPulse-HelpNext",
+            "official": false,
+            "verified": false,
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-09-09T05:42:16Z",
+            "tags": [
+                "help",
+                "命令帮助",
+                "i18n"
+            ],
+            "min_sdk_version": "2.8.0"
         }
     },
     "adapters": {
