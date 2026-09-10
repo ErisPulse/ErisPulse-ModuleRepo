@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-09-09T07:11:21Z",
+    "last_updated": "2026-09-10T07:07:35Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.10.6",
+            "version": "1.10.7",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -20,7 +20,7 @@
         },
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "author": "wsu2059q",
             "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
             "min_sdk_version": "2.2.0",
@@ -171,7 +171,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
@@ -583,7 +583,7 @@
         },
         "HelpNext": {
             "package": "ErisPulse-HelpNext",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "author": "YingXinche",
             "description": "Modern help command module, session-aware listing & full i18n (requires ErisPulse 2.8.0+) | 现代化帮助命令模块，会话感知列表与完整多语言（需 ErisPulse 2.8.0+）",
             "repository": "https://github.com/wsu2059q/ErisPulse-HelpNext",
