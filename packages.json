@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-09-10T07:07:35Z",
+    "last_updated": "2026-09-13T07:17:42Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "1.10.7",
+            "version": "1.11.1",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -605,7 +605,7 @@
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
             "author": "wsu2059q",
-            "version": "4.3.0",
+            "version": "4.4.0",
             "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
             "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
             "official": true,
@@ -619,7 +619,7 @@
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
             "author": "wsu2059q",
-            "version": "4.1.2",
+            "version": "4.3.0",
             "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
             "official": true,
@@ -632,7 +632,7 @@
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
             "author": "wsu2059q",
-            "version": "4.0.1",
+            "version": "4.3.0",
             "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
             "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
             "official": true,
@@ -646,7 +646,7 @@
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
             "author": "wsu2059q",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "description": "ErisPulse Telegram adapter — Bot API with multi-account & rich media | ErisPulse Telegram 适配器 — Bot API，多账户 + 富媒体",
             "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
             "official": true,
@@ -660,7 +660,7 @@
         "Email": {
             "package": "ErisPulse-EmailAdapter",
             "author": "wsu2059q",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "description": "ErisPulse Email adapter — turn any mailbox into a Bot | ErisPulse 邮箱适配器 — 把任意邮箱变成机器人",
             "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
             "official": true,
@@ -689,7 +689,7 @@
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
             "author": "ErisPulse",
-            "version": "4.0.2",
+            "version": "4.1.0",
             "description": "ErisPulse Sandbox adapter — test your Bot in a web UI, zero setup | ErisPulse 沙箱适配器 — 网页 UI 调试，零平台接入即测即用",
             "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
             "official": true,
@@ -717,7 +717,7 @@
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
             "author": "ErisPulse",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
             "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
             "official": true,
@@ -730,7 +730,7 @@
         "WechatMp": {
             "package": "ErisPulse-WechatMpAdapter",
             "author": "ErisPulse",
-            "version": "4.0.0",
+            "version": "4.2.0",
             "description": "ErisPulse WeChat MP adapter — webhook callback + customer/template messages | ErisPulse 微信公众号适配器 — Webhook 回调 + 客服 / 模板消息",
             "repository": "https://github.com/ErisPulse/ErisPulse-WechatMpAdapter",
             "official": true,
@@ -745,7 +745,7 @@
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
             "author": "wsu2059",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
             "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
             "official": true,
@@ -758,7 +758,7 @@
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
             "author": "wsu2059",
-            "version": "4.0.2",
+            "version": "5.0.1",
             "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
             "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
             "official": true,
@@ -774,7 +774,7 @@
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
             "author": "ErisPulse",
-            "version": "4.0.1",
+            "version": "4.1.0",
             "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
             "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
             "official": true,
@@ -788,7 +788,7 @@
         "Webhook": {
             "package": "ErisPulse-WebhookAdapter",
             "author": "ErisPulse",
-            "version": "4.0.1",
+            "version": "4.2.0",
             "description": "ErisPulse Webhook adapter — a low-code HTTP bridge to any system | ErisPulse Webhook 适配器 — 通用 HTTP 桥接，低代码接任意系统",
             "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
             "official": true,
@@ -801,7 +801,7 @@
         "Terminal": {
             "package": "ErisPulse-TerminalAdapter",
             "author": "ErisPulse",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "description": "ErisPulse Terminal adapter — the terminal is the chat, zero-config | ErisPulse 终端适配器 — 命令行即聊天，零配置开发调试",
             "repository": "https://github.com/ErisPulse/ErisPulse-TerminalAdapter",
             "official": true,
