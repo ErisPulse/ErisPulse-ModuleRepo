@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-13T07:17:42Z",
+    "last_updated": "2026-09-14T07:41:52Z",
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
@@ -376,7 +376,7 @@
         },
         "BiliParser": {
             "package": "ErisPulse-BiliParser",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "author": "wsu2059q",
             "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
             "min_sdk_version": "2.4.0",
@@ -704,7 +704,7 @@
         "Kook": {
             "package": "ErisPulse-KookAdapter",
             "author": "ShanFish",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
             "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
             "official": true,
