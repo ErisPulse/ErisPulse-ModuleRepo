@@ -51,7 +51,7 @@
             "min_sdk_version": "2.8.0",
             "repository": "https://github.com/wsu2059q/ErisPulse-HelpNext",
             "official": false,
-            "verified": false,
+            "verified": true,
             "featured": true,
             "category": 1,
             "tags": [
