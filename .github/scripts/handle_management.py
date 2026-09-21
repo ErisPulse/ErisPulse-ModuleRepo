@@ -6,6 +6,8 @@ import os
 import sys
 from datetime import datetime, timezone
 
+from packages_lib import normalize_category, normalize_tags, write_packages
+
 
 def handle_management():
     payload_json = os.environ.get('MANAGEMENT_DATA')
@@ -64,7 +66,8 @@ def handle_management():
         except (json.JSONDecodeError, TypeError):
             submitter_info = {}
 
-        tags_raw = edit_data.get('tags', '[]')
+        tags_raw = edit_data.get('tags', None)
+        tags_provided = tags_raw is not None
         try:
             tags = json.loads(tags_raw) if isinstance(tags_raw, str) else tags_raw
         except (json.JSONDecodeError, TypeError):
@@ -80,8 +83,15 @@ def handle_management():
             module_info['repository'] = edit_data['repository']
         if edit_data.get('version') and edit_data['version'] != '0.0.0':
             module_info['version'] = edit_data['version']
-        if tags:
-            module_info['tags'] = tags
+        # 标签：自由文本，只做卫生处理。显式提交（即使清空为空列表）即整体替换，
+        # 未提交则视为「不改动」，沿用索引里的原值
+        if tags_provided:
+            module_info['tags'] = normalize_tags(tags)
+
+        # 分类：受控字段，非法值忽略（提交入口 Worker 已先行校验）
+        category_id = normalize_category(edit_data.get('category'))
+        if category_id is not None:
+            module_info['category'] = category_id
 
         if edit_data.get('min_sdk_version'):
             module_info['min_sdk_version'] = edit_data['min_sdk_version']
@@ -102,8 +112,8 @@ def handle_management():
     packages['last_updated'] = current_time
 
     try:
-        with open('packages.json', 'w', encoding='utf-8') as f:
-            json.dump(packages, f, ensure_ascii=False, indent=4)
+        # 统一经 packages_lib 落盘：编辑后仍保持排序与字段顺序稳定
+        write_packages('packages.json', packages)
     except Exception as e:
         print(f"Cannot write packages.json: {e}")
         sys.exit(1)

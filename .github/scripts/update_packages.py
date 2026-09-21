@@ -12,6 +12,8 @@ import os
 from datetime import datetime, timezone
 import re
 
+from packages_lib import write_packages
+
 # 魔法咒语准备
 headers = {
     'Authorization': f'token {os.environ["GITHUB_TOKEN"]}',
@@ -113,8 +115,8 @@ def update_packages():
         return
     
     try:
-        with open('packages.json', 'w', encoding='utf-8') as f:
-            json.dump(packages, f, ensure_ascii=False, indent=4)
+        # 统一经 packages_lib 落盘：保持条目排序与字段顺序稳定
+        write_packages('packages.json', packages)
         print(f"魔法书更新完成! 共更新了 {updated_count} 个模块~")
     except Exception as e:
         print(f"无法保存魔法书: {e}")
