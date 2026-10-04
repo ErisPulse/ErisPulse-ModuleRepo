@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-22T07:28:43Z",
+    "last_updated": "2026-10-04T07:56:11Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -12,7 +12,7 @@
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -666,7 +666,7 @@
         },
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "author": "wsu2059",
             "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
             "min_sdk_version": "2.7.0",
