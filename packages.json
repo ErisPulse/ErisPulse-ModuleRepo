@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-10T04:42:35Z",
+    "last_updated": "2026-10-10T04:49:02Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -349,6 +349,33 @@
                 "转发"
             ],
             "submitted_at": "2026-02-26T09:19:25Z"
+        },
+        "GovReport": {
+            "package": "ErisPulse-GovReport",
+            "version": "0.1.0",
+            "author": "YingXinche",
+            "description": "治理观测模块 - 命令执行、事件拦截与配额消耗的统计报表。Governance observability for ErisPulse 2.9+ with command/blocked/quota reports, ORM persistence, and Takumi cards.",
+            "min_sdk_version": "2.9.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-GovReport",
+            "official": false,
+            "verified": false,
+            "category": 1,
+            "tags": [
+                "通知",
+                "监控",
+                "命令"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T04:49:02Z"
         },
         "InfoQuery": {
             "package": "ErisPulse-InfoQuery",
