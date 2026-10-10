@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-10T02:05:58Z",
+    "last_updated": "2026-10-10T04:42:35Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -556,6 +556,32 @@
                 "娱乐"
             ],
             "submitted_at": "2025-07-15T08:31:44Z"
+        },
+        "ShadowOps": {
+            "package": "ErisPulse-ShadowOps",
+            "version": "0.1.0",
+            "author": "YingXinche",
+            "description": "影子灰度运营模块：在聊天中启动、对比、转正、放弃影子模块。Shadow canary ops for ErisPulse with ownership audit, trace diff, and Takumi card reports.",
+            "min_sdk_version": "2.9.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ShadowOps",
+            "official": false,
+            "verified": false,
+            "category": 3,
+            "tags": [
+                "管理",
+                "统计"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T04:42:35Z"
         },
         "SystemStatus": {
             "package": "ErisPulse-SystemStatus",
