@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-09T08:39:00Z",
+    "last_updated": "2026-10-10T02:05:58Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -172,6 +172,32 @@
                 "可视化"
             ],
             "submitted_at": "2026-04-27T01:19:51Z"
+        },
+        "ConnHub": {
+            "package": "ErisPulse-ConnHub",
+            "version": "0.1.0",
+            "author": "YingXinche",
+            "description": "View/broadcast/close framework-registered WS/SSE connections via HTTP API, SSE stream & live dashboard — 通过 HTTP API、SSE 流与实时面板查看/广播/关闭框架登记的 WS/SSE 连接。",
+            "min_sdk_version": "2.10.0.dev0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ConnHub",
+            "official": false,
+            "verified": false,
+            "category": 3,
+            "tags": [
+                "管理",
+                "i18n"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T02:05:58Z"
         },
         "CopyCat": {
             "package": "ErisPulse-CopyCat",
