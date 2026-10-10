@@ -124,6 +124,19 @@ def handle_submission():
         print(f"Invalid JSON in SUBMISSION_DATA: {e}")
         sys.exit(1)
 
+    # 兼容打包载荷：GitHub dispatch 的 client_payload 最多 10 个属性，
+    # Worker 把 min_sdk_version / category / i18n 统一打包进 data（JSON 字符串）；
+    # 旧版平铺字段仍然可读（直接覆盖到顶层后走原校验流程）
+    data_raw = submission.get('data', '{}')
+    try:
+        data_extra = json.loads(data_raw) if isinstance(data_raw, str) else (data_raw or {})
+    except (json.JSONDecodeError, TypeError):
+        print(f"Invalid data payload: {data_raw!r}")
+        sys.exit(1)
+    for key in ('min_sdk_version', 'category', 'tags', 'i18n'):
+        if key in data_extra and data_extra[key] is not None:
+            submission[key] = data_extra[key]
+
     valid, error_msg = validate_submission(submission)
     if not valid:
         print(f"Validation failed: {error_msg}")
