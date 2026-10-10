@@ -6,7 +6,7 @@ import os
 import sys
 from datetime import datetime, timezone
 
-from packages_lib import normalize_category, normalize_tags, write_packages
+from packages_lib import normalize_category, normalize_i18n, normalize_tags, write_packages
 
 
 def handle_management():
@@ -87,6 +87,15 @@ def handle_management():
         # 未提交则视为「不改动」，沿用索引里的原值
         if tags_provided:
             module_info['tags'] = normalize_tags(tags)
+
+        # 界面语言：与 tags 相同的 provided 语义——未提供即不改动
+        i18n_raw = edit_data.get('i18n', None)
+        i18n_provided = i18n_raw is not None
+        if i18n_provided:
+            i18n = json.loads(i18n_raw) if isinstance(i18n_raw, str) else i18n_raw
+            if not isinstance(i18n, (list, tuple)):
+                i18n = []
+            module_info['i18n'] = normalize_i18n(i18n)
 
         # 分类：受控字段，非法值忽略（提交入口 Worker 已先行校验）
         category_id = normalize_category(edit_data.get('category'))

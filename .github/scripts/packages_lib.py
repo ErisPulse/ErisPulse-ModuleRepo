@@ -68,6 +68,7 @@ ENTRY_FIELD_ORDER = (
     "hidden",
     "category",
     "tags",
+    "i18n",
     "submitted_by",
     "submitted_by_uid",
     "oauth_provider",
@@ -99,6 +100,38 @@ CATEGORY_MIN_SDK_FLOOR = {
 # 字符规则（允许的字符、单个标签长度）由提交入口把关（Cloudflare Worker 的
 # ``TAG_RE``），仓库侧不重复校验：这里既要处理历史数据，也要处理来自
 # Worker 的数据，两边的上限保持一致即可。
+# ── 界面语言（i18n）──
+#
+# 与标签相反，这是受控的结构化字段：语言代码必须是 BCP-47 风格
+# （``zh-CN`` / ``en`` / ``pt-BR``），供市场按语言筛选与原生名渲染。
+# 仓库侧只做卫生处理（小写规范化、去重、截断），格式校验由提交入口把关。
+I18N_MAX = 12
+
+_LANG_CODE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$")
+
+
+def normalize_i18n(langs):
+    """规范化界面语言列表
+
+    :param langs: 原始语言代码列表（非列表一律返回空列表）
+    :return: 新列表（小写、去重、保序、截断到 :data:`I18N_MAX`）
+    """
+    if isinstance(langs, str) or not isinstance(langs, (list, tuple)):
+        return []
+
+    result = []
+    for lang in langs:
+        if not isinstance(lang, str):
+            continue
+        code = _WHITESPACE_RE.sub(' ', lang.strip()).replace(' ', '-')
+        if not code or not _LANG_CODE_RE.match(code.lower()):
+            continue
+        lowered = code.lower()
+        if lowered not in result:
+            result.append(lowered)
+    return result[:I18N_MAX]
+
+
 TAG_MAX = 20
 
 # 单个标签最长字符数：与 Worker 入口的 TAG_RE 上限一致
@@ -296,6 +329,8 @@ def normalize_entry(entry, min_sdk_floor=None):
                     continue
             elif key == "tags":
                 value = normalize_tags(value)
+            elif key == "i18n":
+                value = normalize_i18n(value)
             result[key] = value
 
     for key, value in entry.items():

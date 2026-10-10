@@ -15,6 +15,7 @@ except ImportError:
 from packages_lib import (
     CATEGORY_IDS,
     normalize_category,
+    normalize_i18n,
     normalize_tags,
     write_packages,
 )
@@ -77,6 +78,20 @@ def validate_submission(data):
         print(f"Invalid tags payload: {data.get('tags')!r}")
         return False, "Invalid tags payload."
     data['tags'] = normalize_tags(tags)
+
+    # 界面语言：结构化受控字段，格式不合法的代码直接拒绝（与卫生处理不同，
+    # 这里是提交入口，拒绝比静默丢弃更能让作者发现问题）
+    i18n = data.get('i18n', [])
+    if isinstance(i18n, str):
+        try:
+            i18n = json.loads(i18n)
+        except (json.JSONDecodeError, TypeError):
+            print(f"Invalid i18n payload: {data.get('i18n')!r}")
+            return False, "Invalid i18n payload."
+    if not isinstance(i18n, (list, tuple)):
+        print(f"Invalid i18n payload: {data.get('i18n')!r}")
+        return False, "Invalid i18n payload."
+    data['i18n'] = normalize_i18n(i18n)
 
     # 分类：受控字段（编号），与自由标签相反 —— 必须落在词表内
     raw_category = data.get('category')
@@ -200,7 +215,8 @@ def handle_submission():
         'oauth_provider': oauth_provider,
         'submitted_at': current_time,
         'category': category_id,
-        'tags': tags
+        'tags': tags,
+        'i18n': normalize_i18n(submission.get('i18n') or [])
     }
 
     if submit_type != 'adapter' and submission.get('min_sdk_version'):
