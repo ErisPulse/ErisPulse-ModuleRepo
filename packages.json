@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-10T08:13:53Z",
+    "last_updated": "2026-10-11T08:27:55Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -175,7 +175,7 @@
         },
         "ConnHub": {
             "package": "ErisPulse-ConnHub",
-            "version": "0.1.3",
+            "version": "0.1.5",
             "author": "YingXinche",
             "description": "View/broadcast/close framework-registered WS/SSE connections via HTTP API, SSE stream & live dashboard — 通过 HTTP API、SSE 流与实时面板查看/广播/关闭框架登记的 WS/SSE 连接。",
             "min_sdk_version": "2.10.0.dev0",
@@ -352,7 +352,7 @@
         },
         "GovReport": {
             "package": "ErisPulse-GovReport",
-            "version": "0.1.0",
+            "version": "0.1.2",
             "author": "YingXinche",
             "description": "治理观测模块 - 命令执行、事件拦截与配额消耗的统计报表。Governance observability for ErisPulse 2.9+ with command/blocked/quota reports, ORM persistence, and Takumi cards.",
             "min_sdk_version": "2.9.0",
@@ -586,7 +586,7 @@
         },
         "ShadowOps": {
             "package": "ErisPulse-ShadowOps",
-            "version": "0.1.0",
+            "version": "0.1.2",
             "author": "YingXinche",
             "description": "影子灰度运营模块：在聊天中启动、对比、转正、放弃影子模块。Shadow canary ops for ErisPulse with ownership audit, trace diff, and Takumi card reports.",
             "min_sdk_version": "2.9.0",
