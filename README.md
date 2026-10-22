@@ -1,6 +1,8 @@
-<div align="center">
+<p align="center">
+<img src=".github/assets/banner.png" alt="ErisPulse" width="1280">
+</p>
 
-<img src=".github/assets/ErisPulseLogo.png" width="180" alt="ErisPulse-ModuleRepo" />
+<div align="center">
 
 # ErisPulse-ModuleRepo
 
@@ -15,9 +17,25 @@
 
 ---
 
+这里是 [ErisPulse 模块市场](https://www.erisdev.com/#market)的数据源仓库：社区开发的模块与适配器收录在 [`packages.json`](packages.json)，官网在线展示，`epsdk` CLI 一条命令即可安装。
+
+**想给机器人加功能**：到[模块市场](https://www.erisdev.com/#market)逛一圈，或者用命令行直接浏览远端收录：
+
+```bash
+# 列出所有已收录的模块与适配器
+epsdk list-remote
+
+# 安装看中的包
+epsdk install Weather
+```
+
+安装走 PyPI，版本号由每日工作流从 PyPI 同步，`packages.json` 只负责收录与发现。
+
+**想发布自己的创意**：写好模块或适配器，发布到 PyPI，再提交收录申请。通过审核后，所有 ErisPulse 用户都能在市场里找到它、一条命令装上它。完整流程见[发布指南](https://www.erisdev.com/#docs/developer-guide/publishing.md)，本仓库的具体要求见下方「贡献模块」。
+
 当前 2x 分支为默认分支，1x 分支为归档版本。
 
-我们欢迎社区成员贡献新的模块！提出 issue 可以添加您的模块/适配器/CLI 拓展到库中。
+我们欢迎社区成员贡献新的模块！提出 issue 可以添加您的模块/适配器/CLI 扩展到库中。
 
 ## 贡献模块
 
@@ -119,5 +137,20 @@
 > 为什么必须由脚本兜底：CLI 的安装兼容性检查以"字段存在"为前提（`if "min_sdk_version" in package_info`），字段缺失时检查会被**完全跳过**，等于该组件没有版本门槛。
 
 ---
+
+## 相关链接
+
+**我想装模块**
+- [模块市场（在线浏览）](https://www.erisdev.com/#market)
+- [`epsdk` 命令参考](https://www.erisdev.com/#docs/user-guide/cli-reference.md)
+
+**我想发布模块**
+- [模块开发入门](https://www.erisdev.com/#docs/developer-guide/modules/getting-started.md)
+- [发布指南](https://www.erisdev.com/#docs/developer-guide/publishing.md)
+- [提交收录 Issue](https://github.com/ErisPulse/ErisPulse-ModuleRepo/issues/new?template=module_submission.md)
+
+**我想了解 ErisPulse**
+- [ErisPulse 主仓库](https://github.com/ErisPulse/ErisPulse)
+- [官方文档中心](https://www.erisdev.com/docs.html)
 
 ## 感谢您的支持与贡献！
