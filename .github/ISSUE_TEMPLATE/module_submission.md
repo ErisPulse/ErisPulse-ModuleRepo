@@ -1,6 +1,6 @@
 ---
-name: 模块/适配器/CLI扩展提交
-about: 提交一个新的模块、适配器或CLI扩展到 ErisPulse 生态系统
+name: 模块/适配器提交
+about: 提交一个新的模块或适配器到 ErisPulse 生态系统
 title: '[提交] '
 labels: 'submission'
 assignees: ''
@@ -11,7 +11,6 @@ assignees: ''
 <!-- 请在适用的选项前打勾 -->
 - [ ] 模块 (Module)
 - [ ] 适配器 (Adapter)
-- [ ] CLI 扩展 (CLI Extension)
 
 ## 基本信息
 - **名称**: 

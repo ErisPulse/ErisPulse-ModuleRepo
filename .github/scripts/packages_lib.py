@@ -10,7 +10,7 @@ packages.json 规范化读写工具（唯一写入口）
    - 条目带 ``featured: true`` 者置顶，内部顺序由 :data:`FEATURED_PRIORITY` 决定
      （未列入该表但标了 ``featured`` 的，按字母序排在已列出者之后）；
    - 其余条目按名称字典序（大小写不敏感）排序；
-   - 顶层分类顺序固定为 modules → adapters → cli_extensions。
+   - 顶层分类顺序固定为 modules → adapters。
 2. **条目结构**：字段顺序固定为 :data:`ENTRY_FIELD_ORDER`；
    未声明的自定义字段按原相对顺序追加到末尾（不丢字段，向后兼容）。
 3. **值规范化**：``min_sdk_version`` 去掉 ``>=`` ``^`` ``v`` 等前缀，
@@ -36,7 +36,7 @@ import re
 from pathlib import Path
 
 # 分类容器顺序（与既有文件一致，便于人工阅读与 diff）
-CATEGORY_ORDER = ("modules", "adapters", "cli_extensions")
+CATEGORY_ORDER = ("modules", "adapters")
 
 # 推荐位顺序：名称按此处顺序置顶展示，人工维护
 #

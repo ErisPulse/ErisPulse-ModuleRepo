@@ -77,7 +77,7 @@ def update_packages():
     
     updated_count = 0
     
-    for category in ['modules', 'adapters', 'cli_extensions']:
+    for category in ['modules', 'adapters']:
         if category in packages:
             print(f"开始探查 {category} 分类...")
             for name, info in packages[category].items():

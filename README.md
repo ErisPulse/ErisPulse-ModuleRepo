@@ -6,7 +6,7 @@
 
 # ErisPulse-ModuleRepo
 
-**ErisPulse 模块源仓库 —— 贡献并发布你的模块 / 适配器 / CLI 扩展。**
+**ErisPulse 模块源仓库 —— 贡献并发布你的模块 / 适配器。**
 
 <p>
   <a href="https://github.com/ErisPulse/ErisPulse-ModuleRepo"><img src="https://img.shields.io/github/stars/ErisPulse/ErisPulse-ModuleRepo?style=for-the-badge&logo=github&color=brightgreen" alt="Stars"></a>
@@ -35,7 +35,7 @@ epsdk install Weather
 
 当前 2x 分支为默认分支，1x 分支为归档版本。
 
-我们欢迎社区成员贡献新的模块！提出 issue 可以添加您的模块/适配器/CLI 扩展到库中。
+我们欢迎社区成员贡献新的模块！提出 issue 可以添加您的模块/适配器到库中。
 
 ## 贡献模块
 
@@ -61,9 +61,9 @@ epsdk install Weather
 
 2. **提交 Issue**
 
-   访问仓库的 Issues 页面，使用"模块/适配器/CLI扩展提交"模板创建一个新的 issue，填写以下信息：
+   访问仓库的 Issues 页面，使用"模块/适配器提交"模板创建一个新的 issue，填写以下信息：
    
-   - **提交类型**：模块 (Module)、适配器 (Adapter) 或 CLI 扩展 (CLI Extension)
+   - **提交类型**：模块 (Module) 或适配器 (Adapter)
    - **基本信息**：名称、描述、作者、仓库地址
    - **技术信息**：最低 SDK 版本要求、依赖项
    - **PyPI 包名**：确保已在 PyPI 发布
@@ -98,10 +98,10 @@ epsdk install Weather
 
 ### 分组与字段
 
-顶层分组（JSON 顶层键）：`modules`、`adapters`、`cli_extensions`（预留，当前为空且 SDK 未读取）。
+顶层分组（JSON 顶层键）：`modules`、`adapters`。
 另有 `categories` 键随索引发布分类词表（编号 → 语义名），供官网提交表单与筛选面板渲染本地化名称。
 
-> 注意区分两个「分类」：顶层分组是**索引容器的结构**（模块 / 适配器 / CLI 扩展）；
+> 注意区分两个「分类」：顶层分组是**索引容器的结构**（模块 / 适配器）；
 > 条目里的 `category` 是**模块类型分类**（工具、娱乐、管理……）。
 
 | 字段 | 说明 |
