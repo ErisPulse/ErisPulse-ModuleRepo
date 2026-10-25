@@ -1,941 +1,941 @@
 {
-  "last_updated": "2026-10-21T07:16:02Z",
-  "categories": {
-    "1": "tool",
-    "2": "fun",
-    "3": "admin",
-    "4": "notify",
-    "5": "ai",
-    "6": "platform",
-    "7": "analytics"
-  },
-  "modules": {
-    "Dashboard": {
-      "package": "ErisPulse-Dashboard",
-      "version": "2.2.2",
-      "author": "ErisPulse",
-      "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
-      "min_sdk_version": "2.4.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-Dashboard",
-      "official": true,
-      "featured": true,
-      "category": 3,
-      "tags": [
-        "WebUI",
-        "管理",
-        "监控"
-      ],
-      "submitted_at": "2026-04-06T07:05:21Z"
+    "last_updated": "2026-10-25T07:23:34Z",
+    "categories": {
+        "1": "tool",
+        "2": "fun",
+        "3": "admin",
+        "4": "notify",
+        "5": "ai",
+        "6": "platform",
+        "7": "analytics"
     },
-    "HelpModule": {
-      "package": "ErisPulse-HelpModule",
-      "version": "2.1.3",
-      "author": "wsu2059q",
-      "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
-      "min_sdk_version": "2.2.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-HelpModule",
-      "official": false,
-      "featured": true,
-      "category": 1,
-      "tags": [
-        "帮助",
-        "命令"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
+    "modules": {
+        "Dashboard": {
+            "package": "ErisPulse-Dashboard",
+            "version": "2.3.1",
+            "author": "ErisPulse",
+            "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Dashboard",
+            "official": true,
+            "featured": true,
+            "category": 3,
+            "tags": [
+                "WebUI",
+                "管理",
+                "监控"
+            ],
+            "submitted_at": "2026-04-06T07:05:21Z"
+        },
+        "HelpModule": {
+            "package": "ErisPulse-HelpModule",
+            "version": "2.1.3",
+            "author": "wsu2059q",
+            "description": "为统一的命令系统提供一个help命令，用来在平台查看现有命令",
+            "min_sdk_version": "2.2.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-HelpModule",
+            "official": false,
+            "featured": true,
+            "category": 1,
+            "tags": [
+                "帮助",
+                "命令"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "HelpNext": {
+            "package": "ErisPulse-HelpNext",
+            "version": "0.1.2",
+            "author": "YingXinche",
+            "description": "Modern help command module, session-aware listing & full i18n (requires ErisPulse 2.8.0+) | 现代化帮助命令模块，会话感知列表与完整多语言（需 ErisPulse 2.8.0+）",
+            "min_sdk_version": "2.8.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-HelpNext",
+            "official": false,
+            "verified": true,
+            "featured": true,
+            "category": 1,
+            "tags": [
+                "帮助",
+                "命令",
+                "i18n"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-09-09T05:42:16Z"
+        },
+        "Takumi": {
+            "package": "ErisPulse-Takumi",
+            "version": "1.3.0",
+            "author": "ccd2s",
+            "description": "Use takumi-py to quickly render images.",
+            "min_sdk_version": "2.7.0-dev.0",
+            "repository": "https://github.com/ccd2s/ErisPulse-Takumi",
+            "official": false,
+            "verified": true,
+            "featured": true,
+            "category": 1,
+            "tags": [
+                "图片渲染",
+                "字体"
+            ],
+            "submitted_at": "2026-08-04T00:00:00Z"
+        },
+        "Cron": {
+            "package": "ErisPulse-Cron",
+            "version": "1.0.1",
+            "author": "wsu2059q",
+            "description": "ErisPulse 定时任务调度模块 - 支持一次性/间隔/Cron定时，回调传参，SQLite持久化",
+            "min_sdk_version": "2.4.3",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Cron",
+            "official": false,
+            "featured": true,
+            "category": 1,
+            "tags": [
+                "定时任务"
+            ],
+            "submitted_at": "2026-05-13T08:52:32Z"
+        },
+        "AdapterConfig": {
+            "package": "ErisPulse-AdapterConfig",
+            "version": "1.0.0",
+            "author": "ErisPulse",
+            "description": "Dashboard extension for visually configuring adapter parameters | Dashboard 适配器配置扩展 — 可视化界面快速配置适配器参数",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Dash-AdapterConfig",
+            "official": true,
+            "category": 3,
+            "tags": [
+                "适配器",
+                "配置管理",
+                "WebUI"
+            ],
+            "submitted_at": "2026-05-20T12:35:28Z"
+        },
+        "AdminControl": {
+            "package": "ErisPulse-AdminControl",
+            "version": "2.0.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse 管理控制模块 - 提供框架管理和命令执行功能",
+            "min_sdk_version": "2.3.4-dev.3",
+            "repository": "https://github.com/wsu2059q/ErisPulse-AdminControl",
+            "official": false,
+            "category": 3,
+            "tags": [
+                "管理",
+                "权限控制",
+                "命令"
+            ],
+            "submitted_at": "2026-02-08T17:48:01Z"
+        },
+        "AIChat": {
+            "package": "ErisPulse-AIChat",
+            "version": "3.0.4",
+            "author": "wsu2059q",
+            "description": "AIChat 聊天机器人模块（停更）",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-AIChat",
+            "official": false,
+            "category": 5,
+            "tags": [
+                "AI",
+                "对话"
+            ],
+            "submitted_at": "2025-07-15T14:11:20Z"
+        },
+        "BiliParser": {
+            "package": "ErisPulse-BiliParser",
+            "version": "1.2.0",
+            "author": "wsu2059q",
+            "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-BiliParser",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "哔哩哔哩",
+                "解析"
+            ],
+            "submitted_at": "2026-05-02T13:31:13Z"
+        },
+        "ChatSonar": {
+            "package": "ErisPulse-ChatSonar",
+            "version": "2.0.0",
+            "author": "wsu2059q",
+            "description": "消息声呐 - 可视化群聊社交距离与岛屿群落",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ChatSonar",
+            "official": false,
+            "category": 7,
+            "tags": [
+                "数据分析",
+                "可视化"
+            ],
+            "submitted_at": "2026-04-27T01:19:51Z"
+        },
+        "ConnHub": {
+            "package": "ErisPulse-ConnHub",
+            "version": "0.1.5",
+            "author": "YingXinche",
+            "description": "View/broadcast/close framework-registered WS/SSE connections via HTTP API, SSE stream & live dashboard — 通过 HTTP API、SSE 流与实时面板查看/广播/关闭框架登记的 WS/SSE 连接。",
+            "min_sdk_version": "2.10.0.dev0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ConnHub",
+            "official": false,
+            "verified": false,
+            "category": 3,
+            "tags": [
+                "管理",
+                "i18n"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T02:05:58Z"
+        },
+        "CopyCat": {
+            "package": "ErisPulse-CopyCat",
+            "version": "1.0.1",
+            "author": "樱城の心",
+            "description": "复读机模块 - 检测群聊/私聊中连续重复消息并自动复读",
+            "min_sdk_version": "2.4.6",
+            "repository": "https://github.com/wsu2059q/ErisPulse-CopyCat",
+            "official": false,
+            "verified": true,
+            "category": 2,
+            "tags": [
+                "复读",
+                "娱乐"
+            ],
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-09T06:40:54Z"
+        },
+        "DashChat": {
+            "package": "ErisPulse-DashChat",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "跨平台实时消息收发模块，提供一个类即时通讯的聊天界面，支持用户在仪表盘内与各个平台进行对话",
+            "min_sdk_version": "2.5.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-DashChat",
+            "official": false,
+            "verified": true,
+            "hidden": true,
+            "category": 6,
+            "tags": [
+                "WebUI",
+                "对话",
+                "跨平台"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-05-25T15:17:20Z"
+        },
+        "DFAFilter": {
+            "package": "ErisPulse-DFAFilter",
+            "version": "2.0.0",
+            "author": "wsu2059q",
+            "description": "基于DFA算法的敏感词过滤模块，支持实时检测、自动替换和动态更新词库",
+            "min_sdk_version": "2.1.14-alpha.1",
+            "repository": "https://github.com/wsu2059q/ErisPulse-DFAFilter",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "内容过滤",
+                "防护"
+            ],
+            "submitted_at": "2026-02-25T16:03:32Z"
+        },
+        "Echo": {
+            "package": "ErisPulse-Echo",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "Echo - 回显消息内容，支持文本、图片等多种类型，支持引用回显",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Echo",
+            "official": false,
+            "verified": true,
+            "category": 1,
+            "tags": [
+                "回显"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-05-26T07:15:56Z"
+        },
+        "EditVideoPlayer": {
+            "package": "ErisPulse-EditVideoPlayer",
+            "version": "1.0.1",
+            "author": "wsu2059q",
+            "description": "一个通用的视频播放器模块，可将视频转换为点阵字符并在支持消息编辑的平台上播放",
+            "min_sdk_version": "2.1.14-alpha.1",
+            "repository": "https://github.com/wsu2059q/ErisPulse-EditVideoPlayer",
+            "official": false,
+            "category": 2,
+            "tags": [
+                "视频播放",
+                "消息编辑"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "EmailForwarder": {
+            "package": "ErisPulse-EmailForwarder",
+            "version": "1.0.1",
+            "author": "wsu2059q",
+            "description": "监听邮件适配器并将邮件转发到其他平台的 ErisPulse 模块",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-EmailForwarder",
+            "official": false,
+            "category": 4,
+            "tags": [
+                "邮件",
+                "转发",
+                "通知"
+            ],
+            "submitted_at": "2026-02-12T21:37:45Z"
+        },
+        "Feedback": {
+            "package": "ErisPulse-Feedback",
+            "version": "1.1.2",
+            "author": "wsu2059",
+            "description": "ErisPulse 反馈系统模块，支持反馈提交、状态管理、多群聊反馈组和数据导入导出",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Feedback",
+            "official": false,
+            "category": 3,
+            "tags": [
+                "反馈",
+                "管理",
+                "权限控制"
+            ],
+            "submitted_at": "2026-03-16T13:11:57Z"
+        },
+        "GitHubParser": {
+            "package": "ErisPulse-GitHubParser",
+            "version": "3.0.0",
+            "author": "wsu2059q",
+            "description": "GitHub链接解析模块，自动解析消息中的仓库/Issue/PR信息并以最佳格式展示",
+            "min_sdk_version": "2.1.10",
+            "repository": "https://github.com/wsu2059q/ErisPulse-GitHubParser",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "GitHub",
+                "解析"
+            ],
+            "submitted_at": "2025-07-23T01:40:06Z"
+        },
+        "GitHubWebhook": {
+            "package": "ErisPulse-GitHubWebhook",
+            "version": "1.4.0",
+            "author": "wsu2059",
+            "description": "GitHub Webhook 聚合器模块，支持将 GitHub 事件转发到聊天平台",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059/ErisPulse-GitHubWebhook",
+            "official": false,
+            "category": 4,
+            "tags": [
+                "GitHub",
+                "Webhook",
+                "转发"
+            ],
+            "submitted_at": "2026-02-26T09:19:25Z"
+        },
+        "GovReport": {
+            "package": "ErisPulse-GovReport",
+            "version": "0.1.2",
+            "author": "YingXinche",
+            "description": "治理观测模块 - 命令执行、事件拦截与配额消耗的统计报表。Governance observability for ErisPulse 2.9+ with command/blocked/quota reports, ORM persistence, and Takumi cards.",
+            "min_sdk_version": "2.9.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-GovReport",
+            "official": false,
+            "verified": false,
+            "category": 1,
+            "tags": [
+                "通知",
+                "监控",
+                "命令"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T04:49:02Z"
+        },
+        "InfoQuery": {
+            "package": "ErisPulse-InfoQuery",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "信息统计查询模块，用于查询InfoStats收集的统计数据",
+            "min_sdk_version": "2.1.14-alpha.1",
+            "repository": "https://github.com/wsu2059q/ErisPulse-InfoQuery",
+            "official": false,
+            "category": 7,
+            "tags": [
+                "统计",
+                "命令"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "InfoStats": {
+            "package": "ErisPulse-InfoStats",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "Event listener & statistics module for analytics | 信息统计模块 — 监听事件并统计分析",
+            "min_sdk_version": "2.1.14-alpha.1",
+            "repository": "https://github.com/wsu2059q/ErisPulse-InfoStats",
+            "official": true,
+            "category": 7,
+            "tags": [
+                "统计",
+                "监控",
+                "数据分析"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "InteractiveTest": {
+            "package": "ErisPulse-InteractiveTest",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse 交互式对话与 OneBot12 消息构建器功能测试模块，类似echo模块但功能更强大",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-InteractiveTest",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "测试",
+                "回显",
+                "调试"
+            ],
+            "submitted_at": "2026-04-14T06:32:31Z"
+        },
+        "MsgCounter": {
+            "package": "ErisPulse-MsgCounter",
+            "version": "1.1.3",
+            "author": "Future Tasks",
+            "description": "一个用于统计消息的模块，末日水系列机器人同款",
+            "min_sdk_version": "2.4.6",
+            "repository": "https://github.com/Teddyxiongtdx/YBot-Ep-MsgCounter",
+            "official": false,
+            "verified": true,
+            "category": 7,
+            "tags": [
+                "统计"
+            ],
+            "submitted_by": "Future Tasks",
+            "submitted_by_uid": "yunhu:7384288",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-13T03:22:31Z"
+        },
+        "MyServer": {
+            "package": "ErisPulse-MyServer",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "服务器管理模块 - 支持远程监控、WebSocket终端、Dashboard管理",
+            "min_sdk_version": "2.4.5",
+            "repository": "https://github.com/wsu2059q/ErisPulse-MyServer",
+            "official": false,
+            "verified": true,
+            "category": 3,
+            "tags": [
+                "管理",
+                "系统信息"
+            ],
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-05-30T07:07:41Z"
+        },
+        "NekoCare": {
+            "package": "ErisPulse-NekoCare",
+            "version": "2.2.1",
+            "author": "wsu2059q, lin",
+            "description": "NekoCare - 虚拟猫猫养成模块",
+            "min_sdk_version": "2.2.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-NekoCare",
+            "official": false,
+            "category": 2,
+            "tags": [
+                "娱乐"
+            ],
+            "submitted_at": "2026-04-11T17:42:22Z"
+        },
+        "OpenAI": {
+            "package": "ErisPulse-OpenAI",
+            "version": "2.1.3",
+            "author": "wsu2059q",
+            "description": "A unified OpenAI API wrapper module for ErisPulse | OpenAI 通用接口封装模块",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-OpenAI",
+            "official": true,
+            "category": 5,
+            "tags": [
+                "AI",
+                "对话"
+            ],
+            "submitted_at": "2025-07-15T08:58:41Z"
+        },
+        "QvQChat": {
+            "package": "ErisPulse-QvQChat",
+            "version": "4.0.1",
+            "author": "wsu2059q",
+            "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
+            "min_sdk_version": "2.3.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-QvQChat",
+            "official": false,
+            "category": 5,
+            "tags": [
+                "AI",
+                "对话"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "Raffle": {
+            "package": "ErisPulse-Raffle",
+            "version": "1.0.1",
+            "author": "ErisPulse",
+            "description": "General raffle module with Dashboard visualization, keyword signup & draw animation | 通用抽奖模块 — Dashboard 可视化管理、群聊关键词报名、开奖动画、广播通知",
+            "min_sdk_version": "2.4.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Raffle",
+            "official": true,
+            "category": 2,
+            "tags": [
+                "抽奖",
+                "WebUI",
+                "通知"
+            ],
+            "submitted_at": "2026-05-17T16:01:16Z"
+        },
+        "RateLimiter": {
+            "package": "ErisPulse-RateLimiter",
+            "version": "1.0.0",
+            "author": "樱城の心",
+            "description": "ErisPulse message rate limiting module to prevent spam, supports fixed/sliding window, multi-dimensional limiting, and whitelist immunity | ErisPulse 消息速率限制模块，防止刷屏，支持固定/滑动窗口、多维度限流、白名单免疫",
+            "min_sdk_version": "2.5.3",
+            "repository": "https://github.com/wsu2059q/ErisPulse-RateLimiter",
+            "official": false,
+            "verified": true,
+            "category": 1,
+            "tags": [
+                "限流",
+                "防护"
+            ],
+            "submitted_by": "樱城の心",
+            "submitted_by_uid": "yunhu:5197892",
+            "oauth_provider": "yunhu",
+            "submitted_at": "2026-07-09T06:42:29Z"
+        },
+        "Reminder": {
+            "package": "ErisPulse-Reminder",
+            "version": "0.1.2",
+            "author": "YingXinche",
+            "description": "聊天中设置定时提醒。Lightweight reminder module for ErisPulse 2.10+ with declarative durations, ORM persistence, and owned scheduling.",
+            "min_sdk_version": "2.10.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-Reminder",
+            "official": false,
+            "verified": false,
+            "category": 4,
+            "tags": [
+                "通知",
+                "管理"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-16T10:52:45Z"
+        },
+        "RssReader": {
+            "package": "ErisPulse-RssReader",
+            "version": "1.2.0",
+            "author": "wsu2059q",
+            "description": "RSS订阅器模块——在聊天中订阅任意RSS/Atom源，自动推送更新",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-RssReader",
+            "official": false,
+            "category": 4,
+            "tags": [
+                "RSS",
+                "订阅",
+                "通知"
+            ],
+            "submitted_at": "2026-05-07T14:57:57Z"
+        },
+        "ServerStatusMonitor": {
+            "package": "ErisPulse-ServerStatusMonitor",
+            "version": "1.1.1",
+            "author": "wsu2059q",
+            "description": "系统信息查询模块-平台模块",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "系统信息",
+                "监控"
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
+        },
+        "SeTu": {
+            "package": "ErisPulse-SeTu",
+            "version": "1.2.0",
+            "author": "ShanFish",
+            "description": "简单的色图模块",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-GetSeTu",
+            "official": false,
+            "category": 2,
+            "tags": [
+                "娱乐"
+            ],
+            "submitted_at": "2025-07-15T08:31:44Z"
+        },
+        "ShadowOps": {
+            "package": "ErisPulse-ShadowOps",
+            "version": "0.1.2",
+            "author": "YingXinche",
+            "description": "影子灰度运营模块：在聊天中启动、对比、转正、放弃影子模块。Shadow canary ops for ErisPulse with ownership audit, trace diff, and Takumi card reports.",
+            "min_sdk_version": "2.9.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ShadowOps",
+            "official": false,
+            "verified": false,
+            "category": 3,
+            "tags": [
+                "管理",
+                "统计"
+            ],
+            "i18n": [
+                "zh-cn",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "github:186432158",
+            "oauth_provider": "github",
+            "submitted_at": "2026-10-10T04:42:35Z"
+        },
+        "SystemStatus": {
+            "package": "ErisPulse-SystemStatus",
+            "version": "1.0.3",
+            "author": "ShanFish",
+            "description": "提供获取系统内存、CPU、硬盘占用的接口",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-SystemStatus",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "系统信息"
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
+        },
+        "UmaMusume": {
+            "package": "ErisPulse-UmaMusume",
+            "version": "1.0.0",
+            "author": "CyanTea",
+            "description": "ErisPulse的赛马娘主题机器人模块",
+            "min_sdk_version": "2.3.8",
+            "repository": "https://codeberg.org/ybr/ErisPulse-UmaMusume",
+            "official": false,
+            "category": 2,
+            "tags": [
+                "娱乐"
+            ],
+            "submitted_at": "2026-05-04T14:14:42Z"
+        },
+        "UniBind": {
+            "package": "ErisPulse-UniBind",
+            "version": "1.0.0",
+            "author": "wsu2059q",
+            "description": "跨平台用户身份绑定模块，通过验证码关联不同平台的同一用户",
+            "min_sdk_version": "2.4.3",
+            "repository": "https://github.com/ErisPulse/ErisPulse-UniBind",
+            "official": false,
+            "category": 6,
+            "tags": [
+                "身份绑定",
+                "跨平台"
+            ],
+            "submitted_at": "2026-05-04T14:14:42Z"
+        },
+        "Weather": {
+            "package": "ErisPulse-Weather",
+            "version": "1.2.0",
+            "author": "ShanFish",
+            "description": "天气查询，支持绑定城市、今日天气、五日天气",
+            "min_sdk_version": "2.0.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-Weather",
+            "official": false,
+            "category": 1,
+            "tags": [
+                "天气"
+            ],
+            "submitted_at": "2025-07-20T18:05:38Z"
+        },
+        "XiaomiMarathon": {
+            "package": "ErisPulse-XiaomiMarathon",
+            "version": "1.0.1",
+            "author": "wsu2059q",
+            "description": "小米马拉松模拟器",
+            "min_sdk_version": "2.1.10",
+            "repository": "https://github.com/wsu2059q/ErisPulse-XiaomiMarathon",
+            "official": false,
+            "category": 2,
+            "tags": [
+                "娱乐"
+            ],
+            "submitted_at": "2025-07-29T04:01:30Z"
+        }
     },
-    "HelpNext": {
-      "package": "ErisPulse-HelpNext",
-      "version": "0.1.2",
-      "author": "YingXinche",
-      "description": "Modern help command module, session-aware listing & full i18n (requires ErisPulse 2.8.0+) | 现代化帮助命令模块，会话感知列表与完整多语言（需 ErisPulse 2.8.0+）",
-      "min_sdk_version": "2.8.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-HelpNext",
-      "official": false,
-      "verified": true,
-      "featured": true,
-      "category": 1,
-      "tags": [
-        "帮助",
-        "命令",
-        "i18n"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "github:186432158",
-      "oauth_provider": "github",
-      "submitted_at": "2026-09-09T05:42:16Z"
-    },
-    "Takumi": {
-      "package": "ErisPulse-Takumi",
-      "version": "1.3.0",
-      "author": "ccd2s",
-      "description": "Use takumi-py to quickly render images.",
-      "min_sdk_version": "2.7.0-dev.0",
-      "repository": "https://github.com/ccd2s/ErisPulse-Takumi",
-      "official": false,
-      "verified": true,
-      "featured": true,
-      "category": 1,
-      "tags": [
-        "图片渲染",
-        "字体"
-      ],
-      "submitted_at": "2026-08-04T00:00:00Z"
-    },
-    "Cron": {
-      "package": "ErisPulse-Cron",
-      "version": "1.0.1",
-      "author": "wsu2059q",
-      "description": "ErisPulse 定时任务调度模块 - 支持一次性/间隔/Cron定时，回调传参，SQLite持久化",
-      "min_sdk_version": "2.4.3",
-      "repository": "https://github.com/wsu2059q/ErisPulse-Cron",
-      "official": false,
-      "featured": true,
-      "category": 1,
-      "tags": [
-        "定时任务"
-      ],
-      "submitted_at": "2026-05-13T08:52:32Z"
-    },
-    "AdapterConfig": {
-      "package": "ErisPulse-AdapterConfig",
-      "version": "1.0.0",
-      "author": "ErisPulse",
-      "description": "Dashboard extension for visually configuring adapter parameters | Dashboard 适配器配置扩展 — 可视化界面快速配置适配器参数",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-Dash-AdapterConfig",
-      "official": true,
-      "category": 3,
-      "tags": [
-        "适配器",
-        "配置管理",
-        "WebUI"
-      ],
-      "submitted_at": "2026-05-20T12:35:28Z"
-    },
-    "AdminControl": {
-      "package": "ErisPulse-AdminControl",
-      "version": "2.0.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse 管理控制模块 - 提供框架管理和命令执行功能",
-      "min_sdk_version": "2.3.4-dev.3",
-      "repository": "https://github.com/wsu2059q/ErisPulse-AdminControl",
-      "official": false,
-      "category": 3,
-      "tags": [
-        "管理",
-        "权限控制",
-        "命令"
-      ],
-      "submitted_at": "2026-02-08T17:48:01Z"
-    },
-    "AIChat": {
-      "package": "ErisPulse-AIChat",
-      "version": "3.0.4",
-      "author": "wsu2059q",
-      "description": "AIChat 聊天机器人模块（停更）",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-AIChat",
-      "official": false,
-      "category": 5,
-      "tags": [
-        "AI",
-        "对话"
-      ],
-      "submitted_at": "2025-07-15T14:11:20Z"
-    },
-    "BiliParser": {
-      "package": "ErisPulse-BiliParser",
-      "version": "1.2.0",
-      "author": "wsu2059q",
-      "description": "B站视频解析模块，自动解析消息中的B站视频链接并展示详细信息",
-      "min_sdk_version": "2.4.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-BiliParser",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "哔哩哔哩",
-        "解析"
-      ],
-      "submitted_at": "2026-05-02T13:31:13Z"
-    },
-    "ChatSonar": {
-      "package": "ErisPulse-ChatSonar",
-      "version": "2.0.0",
-      "author": "wsu2059q",
-      "description": "消息声呐 - 可视化群聊社交距离与岛屿群落",
-      "min_sdk_version": "2.4.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-ChatSonar",
-      "official": false,
-      "category": 7,
-      "tags": [
-        "数据分析",
-        "可视化"
-      ],
-      "submitted_at": "2026-04-27T01:19:51Z"
-    },
-    "ConnHub": {
-      "package": "ErisPulse-ConnHub",
-      "version": "0.1.5",
-      "author": "YingXinche",
-      "description": "View/broadcast/close framework-registered WS/SSE connections via HTTP API, SSE stream & live dashboard — 通过 HTTP API、SSE 流与实时面板查看/广播/关闭框架登记的 WS/SSE 连接。",
-      "min_sdk_version": "2.10.0.dev0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-ConnHub",
-      "official": false,
-      "verified": false,
-      "category": 3,
-      "tags": [
-        "管理",
-        "i18n"
-      ],
-      "i18n": [
-        "zh-cn",
-        "zh-tw",
-        "en",
-        "ja",
-        "ru"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "github:186432158",
-      "oauth_provider": "github",
-      "submitted_at": "2026-10-10T02:05:58Z"
-    },
-    "CopyCat": {
-      "package": "ErisPulse-CopyCat",
-      "version": "1.0.1",
-      "author": "樱城の心",
-      "description": "复读机模块 - 检测群聊/私聊中连续重复消息并自动复读",
-      "min_sdk_version": "2.4.6",
-      "repository": "https://github.com/wsu2059q/ErisPulse-CopyCat",
-      "official": false,
-      "verified": true,
-      "category": 2,
-      "tags": [
-        "复读",
-        "娱乐"
-      ],
-      "submitted_by": "樱城の心",
-      "submitted_by_uid": "yunhu:5197892",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-07-09T06:40:54Z"
-    },
-    "DashChat": {
-      "package": "ErisPulse-DashChat",
-      "version": "1.0.0",
-      "author": "樱城の心",
-      "description": "跨平台实时消息收发模块，提供一个类即时通讯的聊天界面，支持用户在仪表盘内与各个平台进行对话",
-      "min_sdk_version": "2.5.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-DashChat",
-      "official": false,
-      "verified": true,
-      "hidden": true,
-      "category": 6,
-      "tags": [
-        "WebUI",
-        "对话",
-        "跨平台"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "yunhu:5197892",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-05-25T15:17:20Z"
-    },
-    "DFAFilter": {
-      "package": "ErisPulse-DFAFilter",
-      "version": "2.0.0",
-      "author": "wsu2059q",
-      "description": "基于DFA算法的敏感词过滤模块，支持实时检测、自动替换和动态更新词库",
-      "min_sdk_version": "2.1.14-alpha.1",
-      "repository": "https://github.com/wsu2059q/ErisPulse-DFAFilter",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "内容过滤",
-        "防护"
-      ],
-      "submitted_at": "2026-02-25T16:03:32Z"
-    },
-    "Echo": {
-      "package": "ErisPulse-Echo",
-      "version": "1.0.0",
-      "author": "樱城の心",
-      "description": "Echo - 回显消息内容，支持文本、图片等多种类型，支持引用回显",
-      "min_sdk_version": "2.4.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-Echo",
-      "official": false,
-      "verified": true,
-      "category": 1,
-      "tags": [
-        "回显"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "yunhu:5197892",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-05-26T07:15:56Z"
-    },
-    "EditVideoPlayer": {
-      "package": "ErisPulse-EditVideoPlayer",
-      "version": "1.0.1",
-      "author": "wsu2059q",
-      "description": "一个通用的视频播放器模块，可将视频转换为点阵字符并在支持消息编辑的平台上播放",
-      "min_sdk_version": "2.1.14-alpha.1",
-      "repository": "https://github.com/wsu2059q/ErisPulse-EditVideoPlayer",
-      "official": false,
-      "category": 2,
-      "tags": [
-        "视频播放",
-        "消息编辑"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
-    },
-    "EmailForwarder": {
-      "package": "ErisPulse-EmailForwarder",
-      "version": "1.0.1",
-      "author": "wsu2059q",
-      "description": "监听邮件适配器并将邮件转发到其他平台的 ErisPulse 模块",
-      "min_sdk_version": "2.3.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-EmailForwarder",
-      "official": false,
-      "category": 4,
-      "tags": [
-        "邮件",
-        "转发",
-        "通知"
-      ],
-      "submitted_at": "2026-02-12T21:37:45Z"
-    },
-    "Feedback": {
-      "package": "ErisPulse-Feedback",
-      "version": "1.1.2",
-      "author": "wsu2059",
-      "description": "ErisPulse 反馈系统模块，支持反馈提交、状态管理、多群聊反馈组和数据导入导出",
-      "min_sdk_version": "2.3.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-Feedback",
-      "official": false,
-      "category": 3,
-      "tags": [
-        "反馈",
-        "管理",
-        "权限控制"
-      ],
-      "submitted_at": "2026-03-16T13:11:57Z"
-    },
-    "GitHubParser": {
-      "package": "ErisPulse-GitHubParser",
-      "version": "3.0.0",
-      "author": "wsu2059q",
-      "description": "GitHub链接解析模块，自动解析消息中的仓库/Issue/PR信息并以最佳格式展示",
-      "min_sdk_version": "2.1.10",
-      "repository": "https://github.com/wsu2059q/ErisPulse-GitHubParser",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "GitHub",
-        "解析"
-      ],
-      "submitted_at": "2025-07-23T01:40:06Z"
-    },
-    "GitHubWebhook": {
-      "package": "ErisPulse-GitHubWebhook",
-      "version": "1.4.0",
-      "author": "wsu2059",
-      "description": "GitHub Webhook 聚合器模块，支持将 GitHub 事件转发到聊天平台",
-      "min_sdk_version": "2.3.0",
-      "repository": "https://github.com/wsu2059/ErisPulse-GitHubWebhook",
-      "official": false,
-      "category": 4,
-      "tags": [
-        "GitHub",
-        "Webhook",
-        "转发"
-      ],
-      "submitted_at": "2026-02-26T09:19:25Z"
-    },
-    "GovReport": {
-      "package": "ErisPulse-GovReport",
-      "version": "0.1.2",
-      "author": "YingXinche",
-      "description": "治理观测模块 - 命令执行、事件拦截与配额消耗的统计报表。Governance observability for ErisPulse 2.9+ with command/blocked/quota reports, ORM persistence, and Takumi cards.",
-      "min_sdk_version": "2.9.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-GovReport",
-      "official": false,
-      "verified": false,
-      "category": 1,
-      "tags": [
-        "通知",
-        "监控",
-        "命令"
-      ],
-      "i18n": [
-        "zh-cn",
-        "zh-tw",
-        "en",
-        "ja",
-        "ru"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "github:186432158",
-      "oauth_provider": "github",
-      "submitted_at": "2026-10-10T04:49:02Z"
-    },
-    "InfoQuery": {
-      "package": "ErisPulse-InfoQuery",
-      "version": "1.0.0",
-      "author": "wsu2059q",
-      "description": "信息统计查询模块，用于查询InfoStats收集的统计数据",
-      "min_sdk_version": "2.1.14-alpha.1",
-      "repository": "https://github.com/wsu2059q/ErisPulse-InfoQuery",
-      "official": false,
-      "category": 7,
-      "tags": [
-        "统计",
-        "命令"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
-    },
-    "InfoStats": {
-      "package": "ErisPulse-InfoStats",
-      "version": "1.0.0",
-      "author": "wsu2059q",
-      "description": "Event listener & statistics module for analytics | 信息统计模块 — 监听事件并统计分析",
-      "min_sdk_version": "2.1.14-alpha.1",
-      "repository": "https://github.com/wsu2059q/ErisPulse-InfoStats",
-      "official": true,
-      "category": 7,
-      "tags": [
-        "统计",
-        "监控",
-        "数据分析"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
-    },
-    "InteractiveTest": {
-      "package": "ErisPulse-InteractiveTest",
-      "version": "1.0.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse 交互式对话与 OneBot12 消息构建器功能测试模块，类似echo模块但功能更强大",
-      "min_sdk_version": "2.3.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-InteractiveTest",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "测试",
-        "回显",
-        "调试"
-      ],
-      "submitted_at": "2026-04-14T06:32:31Z"
-    },
-    "MsgCounter": {
-      "package": "ErisPulse-MsgCounter",
-      "version": "1.1.3",
-      "author": "Future Tasks",
-      "description": "一个用于统计消息的模块，末日水系列机器人同款",
-      "min_sdk_version": "2.4.6",
-      "repository": "https://github.com/Teddyxiongtdx/YBot-Ep-MsgCounter",
-      "official": false,
-      "verified": true,
-      "category": 7,
-      "tags": [
-        "统计"
-      ],
-      "submitted_by": "Future Tasks",
-      "submitted_by_uid": "yunhu:7384288",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-07-13T03:22:31Z"
-    },
-    "MyServer": {
-      "package": "ErisPulse-MyServer",
-      "version": "1.0.0",
-      "author": "樱城の心",
-      "description": "服务器管理模块 - 支持远程监控、WebSocket终端、Dashboard管理",
-      "min_sdk_version": "2.4.5",
-      "repository": "https://github.com/wsu2059q/ErisPulse-MyServer",
-      "official": false,
-      "verified": true,
-      "category": 3,
-      "tags": [
-        "管理",
-        "系统信息"
-      ],
-      "submitted_by": "樱城の心",
-      "submitted_by_uid": "yunhu:5197892",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-05-30T07:07:41Z"
-    },
-    "NekoCare": {
-      "package": "ErisPulse-NekoCare",
-      "version": "2.2.1",
-      "author": "wsu2059q, lin",
-      "description": "NekoCare - 虚拟猫猫养成模块",
-      "min_sdk_version": "2.2.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-NekoCare",
-      "official": false,
-      "category": 2,
-      "tags": [
-        "娱乐"
-      ],
-      "submitted_at": "2026-04-11T17:42:22Z"
-    },
-    "OpenAI": {
-      "package": "ErisPulse-OpenAI",
-      "version": "2.1.3",
-      "author": "wsu2059q",
-      "description": "A unified OpenAI API wrapper module for ErisPulse | OpenAI 通用接口封装模块",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-OpenAI",
-      "official": true,
-      "category": 5,
-      "tags": [
-        "AI",
-        "对话"
-      ],
-      "submitted_at": "2025-07-15T08:58:41Z"
-    },
-    "QvQChat": {
-      "package": "ErisPulse-QvQChat",
-      "version": "4.0.1",
-      "author": "wsu2059q",
-      "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
-      "min_sdk_version": "2.3.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-QvQChat",
-      "official": false,
-      "category": 5,
-      "tags": [
-        "AI",
-        "对话"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
-    },
-    "Raffle": {
-      "package": "ErisPulse-Raffle",
-      "version": "1.0.1",
-      "author": "ErisPulse",
-      "description": "General raffle module with Dashboard visualization, keyword signup & draw animation | 通用抽奖模块 — Dashboard 可视化管理、群聊关键词报名、开奖动画、广播通知",
-      "min_sdk_version": "2.4.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-Raffle",
-      "official": true,
-      "category": 2,
-      "tags": [
-        "抽奖",
-        "WebUI",
-        "通知"
-      ],
-      "submitted_at": "2026-05-17T16:01:16Z"
-    },
-    "RateLimiter": {
-      "package": "ErisPulse-RateLimiter",
-      "version": "1.0.0",
-      "author": "樱城の心",
-      "description": "ErisPulse message rate limiting module to prevent spam, supports fixed/sliding window, multi-dimensional limiting, and whitelist immunity | ErisPulse 消息速率限制模块，防止刷屏，支持固定/滑动窗口、多维度限流、白名单免疫",
-      "min_sdk_version": "2.5.3",
-      "repository": "https://github.com/wsu2059q/ErisPulse-RateLimiter",
-      "official": false,
-      "verified": true,
-      "category": 1,
-      "tags": [
-        "限流",
-        "防护"
-      ],
-      "submitted_by": "樱城の心",
-      "submitted_by_uid": "yunhu:5197892",
-      "oauth_provider": "yunhu",
-      "submitted_at": "2026-07-09T06:42:29Z"
-    },
-    "Reminder": {
-      "package": "ErisPulse-Reminder",
-      "version": "0.1.2",
-      "author": "YingXinche",
-      "description": "聊天中设置定时提醒。Lightweight reminder module for ErisPulse 2.10+ with declarative durations, ORM persistence, and owned scheduling.",
-      "min_sdk_version": "2.10.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-Reminder",
-      "official": false,
-      "verified": false,
-      "category": 4,
-      "tags": [
-        "通知",
-        "管理"
-      ],
-      "i18n": [
-        "zh-cn",
-        "zh-tw",
-        "en",
-        "ja",
-        "ru"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "github:186432158",
-      "oauth_provider": "github",
-      "submitted_at": "2026-10-16T10:52:45Z"
-    },
-    "RssReader": {
-      "package": "ErisPulse-RssReader",
-      "version": "1.2.0",
-      "author": "wsu2059q",
-      "description": "RSS订阅器模块——在聊天中订阅任意RSS/Atom源，自动推送更新",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-RssReader",
-      "official": false,
-      "category": 4,
-      "tags": [
-        "RSS",
-        "订阅",
-        "通知"
-      ],
-      "submitted_at": "2026-05-07T14:57:57Z"
-    },
-    "ServerStatusMonitor": {
-      "package": "ErisPulse-ServerStatusMonitor",
-      "version": "1.1.1",
-      "author": "wsu2059q",
-      "description": "系统信息查询模块-平台模块",
-      "repository": "https://github.com/wsu2059q/ErisPulse-ServerStatusMonitor",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "系统信息",
-        "监控"
-      ],
-      "submitted_at": "2025-07-14T10:40:27Z"
-    },
-    "SeTu": {
-      "package": "ErisPulse-SeTu",
-      "version": "1.2.0",
-      "author": "ShanFish",
-      "description": "简单的色图模块",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/shanfishapp/ErisPulse-GetSeTu",
-      "official": false,
-      "category": 2,
-      "tags": [
-        "娱乐"
-      ],
-      "submitted_at": "2025-07-15T08:31:44Z"
-    },
-    "ShadowOps": {
-      "package": "ErisPulse-ShadowOps",
-      "version": "0.1.2",
-      "author": "YingXinche",
-      "description": "影子灰度运营模块：在聊天中启动、对比、转正、放弃影子模块。Shadow canary ops for ErisPulse with ownership audit, trace diff, and Takumi card reports.",
-      "min_sdk_version": "2.9.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-ShadowOps",
-      "official": false,
-      "verified": false,
-      "category": 3,
-      "tags": [
-        "管理",
-        "统计"
-      ],
-      "i18n": [
-        "zh-cn",
-        "zh-tw",
-        "en",
-        "ja",
-        "ru"
-      ],
-      "submitted_by": "YingXinche",
-      "submitted_by_uid": "github:186432158",
-      "oauth_provider": "github",
-      "submitted_at": "2026-10-10T04:42:35Z"
-    },
-    "SystemStatus": {
-      "package": "ErisPulse-SystemStatus",
-      "version": "1.0.3",
-      "author": "ShanFish",
-      "description": "提供获取系统内存、CPU、硬盘占用的接口",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/shanfishapp/ErisPulse-SystemStatus",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "系统信息"
-      ],
-      "submitted_at": "2025-07-14T10:40:27Z"
-    },
-    "UmaMusume": {
-      "package": "ErisPulse-UmaMusume",
-      "version": "1.0.0",
-      "author": "CyanTea",
-      "description": "ErisPulse的赛马娘主题机器人模块",
-      "min_sdk_version": "2.3.8",
-      "repository": "https://codeberg.org/ybr/ErisPulse-UmaMusume",
-      "official": false,
-      "category": 2,
-      "tags": [
-        "娱乐"
-      ],
-      "submitted_at": "2026-05-04T14:14:42Z"
-    },
-    "UniBind": {
-      "package": "ErisPulse-UniBind",
-      "version": "1.0.0",
-      "author": "wsu2059q",
-      "description": "跨平台用户身份绑定模块，通过验证码关联不同平台的同一用户",
-      "min_sdk_version": "2.4.3",
-      "repository": "https://github.com/ErisPulse/ErisPulse-UniBind",
-      "official": false,
-      "category": 6,
-      "tags": [
-        "身份绑定",
-        "跨平台"
-      ],
-      "submitted_at": "2026-05-04T14:14:42Z"
-    },
-    "Weather": {
-      "package": "ErisPulse-Weather",
-      "version": "1.2.0",
-      "author": "ShanFish",
-      "description": "天气查询，支持绑定城市、今日天气、五日天气",
-      "min_sdk_version": "2.0.0",
-      "repository": "https://github.com/shanfishapp/ErisPulse-Weather",
-      "official": false,
-      "category": 1,
-      "tags": [
-        "天气"
-      ],
-      "submitted_at": "2025-07-20T18:05:38Z"
-    },
-    "XiaomiMarathon": {
-      "package": "ErisPulse-XiaomiMarathon",
-      "version": "1.0.1",
-      "author": "wsu2059q",
-      "description": "小米马拉松模拟器",
-      "min_sdk_version": "2.1.10",
-      "repository": "https://github.com/wsu2059q/ErisPulse-XiaomiMarathon",
-      "official": false,
-      "category": 2,
-      "tags": [
-        "娱乐"
-      ],
-      "submitted_at": "2025-07-29T04:01:30Z"
+    "adapters": {
+        "Discord": {
+            "package": "ErisPulse-DiscordAdapter",
+            "version": "4.3.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "Discord"
+            ],
+            "submitted_at": "2026-06-16T05:38:05Z"
+        },
+        "Email": {
+            "package": "ErisPulse-EmailAdapter",
+            "version": "4.3.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse Email adapter — turn any mailbox into a Bot | ErisPulse 邮箱适配器 — 把任意邮箱变成机器人",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "邮件"
+            ],
+            "submitted_at": "2025-07-21T08:56:52Z"
+        },
+        "Ideaura": {
+            "package": "ErisPulse-Ideaura",
+            "version": "4.2.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "Ideaura"
+            ],
+            "submitted_at": "2026-05-09T16:23:30Z"
+        },
+        "Kook": {
+            "package": "ErisPulse-KookAdapter",
+            "version": "4.2.0",
+            "author": "ShanFish",
+            "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "KOOK"
+            ],
+            "submitted_at": "2026-04-12T04:42:32Z"
+        },
+        "Matrix": {
+            "package": "ErisPulse-MatrixAdapter",
+            "version": "4.4.0",
+            "author": "wsu2059",
+            "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "Matrix"
+            ],
+            "submitted_at": "2026-04-25T14:54:50Z"
+        },
+        "OneBot11": {
+            "package": "ErisPulse-OneBot11Adapter",
+            "version": "4.4.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "OneBot11"
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
+        },
+        "OneBot12": {
+            "package": "ErisPulse-OneBot12Adapter",
+            "version": "4.4.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "OneBot12"
+            ],
+            "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "QQBot": {
+            "package": "ErisPulse-QQBotAdapter",
+            "version": "5.1.0",
+            "author": "wsu2059",
+            "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "QQ"
+            ],
+            "submitted_at": "2026-04-25T14:54:50Z"
+        },
+        "sandbox": {
+            "package": "ErisPulse-SandboxAdapter",
+            "version": "4.2.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse Sandbox adapter — test your Bot in a web UI, zero setup | ErisPulse 沙箱适配器 — 网页 UI 调试，零平台接入即测即用",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "调试"
+            ],
+            "submitted_at": "2026-01-25T18:24:18Z"
+        },
+        "Telegram": {
+            "package": "ErisPulse-TelegramAdapter",
+            "version": "4.3.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse Telegram adapter — Bot API with multi-account & rich media | ErisPulse Telegram 适配器 — Bot API，多账户 + 富媒体",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "Telegram"
+            ],
+            "submitted_at": "2025-07-17T01:54:15Z"
+        },
+        "Terminal": {
+            "package": "ErisPulse-TerminalAdapter",
+            "version": "1.2.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse Terminal adapter — the terminal is the chat, zero-config | ErisPulse 终端适配器 — 命令行即聊天，零配置开发调试",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-TerminalAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "终端",
+                "调试"
+            ],
+            "submitted_at": "2026-08-03T00:00:00Z"
+        },
+        "Webhook": {
+            "package": "ErisPulse-WebhookAdapter",
+            "version": "4.3.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse Webhook adapter — a low-code HTTP bridge to any system | ErisPulse Webhook 适配器 — 通用 HTTP 桥接，低代码接任意系统",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "Webhook"
+            ],
+            "submitted_at": "2026-06-16T03:37:55Z"
+        },
+        "WechatMp": {
+            "package": "ErisPulse-WechatMpAdapter",
+            "version": "4.3.0",
+            "author": "ErisPulse",
+            "description": "ErisPulse WeChat MP adapter — webhook callback + customer/template messages | ErisPulse 微信公众号适配器 — Webhook 回调 + 客服 / 模板消息",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-WechatMpAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "微信",
+                "公众号"
+            ],
+            "submitted_at": "2026-06-16T07:32:08Z"
+        },
+        "Yunhu": {
+            "package": "ErisPulse-YunhuAdapter",
+            "version": "4.5.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "云湖"
+            ],
+            "submitted_at": "2025-07-14T10:40:27Z"
+        },
+        "YunhuUser": {
+            "package": "ErisPulse-YunhuUserAdapter",
+            "version": "4.4.0",
+            "author": "wsu2059q",
+            "description": "ErisPulse Yunhu-User adapter — driven by user-account protocol | ErisPulse 云湖用户适配器 — 用户账户协议驱动",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-YunhuUserAdapter",
+            "official": true,
+            "category": 6,
+            "tags": [
+                "适配器",
+                "云湖",
+                "用户账号"
+            ],
+            "submitted_at": "2026-02-14T18:05:15Z"
+        }
     }
-  },
-  "adapters": {
-    "Discord": {
-      "package": "ErisPulse-DiscordAdapter",
-      "version": "4.3.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-DiscordAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "Discord"
-      ],
-      "submitted_at": "2026-06-16T05:38:05Z"
-    },
-    "Email": {
-      "package": "ErisPulse-EmailAdapter",
-      "version": "4.3.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse Email adapter — turn any mailbox into a Bot | ErisPulse 邮箱适配器 — 把任意邮箱变成机器人",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-EmailAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "邮件"
-      ],
-      "submitted_at": "2025-07-21T08:56:52Z"
-    },
-    "Ideaura": {
-      "package": "ErisPulse-Ideaura",
-      "version": "4.2.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-Ideaura",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "Ideaura"
-      ],
-      "submitted_at": "2026-05-09T16:23:30Z"
-    },
-    "Kook": {
-      "package": "ErisPulse-KookAdapter",
-      "version": "4.2.0",
-      "author": "ShanFish",
-      "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/shanfishapp/ErisPulse-KookAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "KOOK"
-      ],
-      "submitted_at": "2026-04-12T04:42:32Z"
-    },
-    "Matrix": {
-      "package": "ErisPulse-MatrixAdapter",
-      "version": "4.4.0",
-      "author": "wsu2059",
-      "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-MatrixAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "Matrix"
-      ],
-      "submitted_at": "2026-04-25T14:54:50Z"
-    },
-    "OneBot11": {
-      "package": "ErisPulse-OneBot11Adapter",
-      "version": "4.4.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-OneBot11Adapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "OneBot11"
-      ],
-      "submitted_at": "2025-07-14T10:40:27Z"
-    },
-    "OneBot12": {
-      "package": "ErisPulse-OneBot12Adapter",
-      "version": "4.4.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-OneBot12Adapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "OneBot12"
-      ],
-      "submitted_at": "2026-01-25T12:57:42Z"
-    },
-    "QQBot": {
-      "package": "ErisPulse-QQBotAdapter",
-      "version": "5.1.0",
-      "author": "wsu2059",
-      "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-QQBotAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "QQ"
-      ],
-      "submitted_at": "2026-04-25T14:54:50Z"
-    },
-    "sandbox": {
-      "package": "ErisPulse-SandboxAdapter",
-      "version": "4.2.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse Sandbox adapter — test your Bot in a web UI, zero setup | ErisPulse 沙箱适配器 — 网页 UI 调试，零平台接入即测即用",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-SandboxAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "调试"
-      ],
-      "submitted_at": "2026-01-25T18:24:18Z"
-    },
-    "Telegram": {
-      "package": "ErisPulse-TelegramAdapter",
-      "version": "4.3.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse Telegram adapter — Bot API with multi-account & rich media | ErisPulse Telegram 适配器 — Bot API，多账户 + 富媒体",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-TelegramAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "Telegram"
-      ],
-      "submitted_at": "2025-07-17T01:54:15Z"
-    },
-    "Terminal": {
-      "package": "ErisPulse-TerminalAdapter",
-      "version": "1.2.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse Terminal adapter — the terminal is the chat, zero-config | ErisPulse 终端适配器 — 命令行即聊天，零配置开发调试",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-TerminalAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "终端",
-        "调试"
-      ],
-      "submitted_at": "2026-08-03T00:00:00Z"
-    },
-    "Webhook": {
-      "package": "ErisPulse-WebhookAdapter",
-      "version": "4.3.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse Webhook adapter — a low-code HTTP bridge to any system | ErisPulse Webhook 适配器 — 通用 HTTP 桥接，低代码接任意系统",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-WebhookAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "Webhook"
-      ],
-      "submitted_at": "2026-06-16T03:37:55Z"
-    },
-    "WechatMp": {
-      "package": "ErisPulse-WechatMpAdapter",
-      "version": "4.3.0",
-      "author": "ErisPulse",
-      "description": "ErisPulse WeChat MP adapter — webhook callback + customer/template messages | ErisPulse 微信公众号适配器 — Webhook 回调 + 客服 / 模板消息",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-WechatMpAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "微信",
-        "公众号"
-      ],
-      "submitted_at": "2026-06-16T07:32:08Z"
-    },
-    "Yunhu": {
-      "package": "ErisPulse-YunhuAdapter",
-      "version": "4.5.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/ErisPulse/ErisPulse-YunhuAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "云湖"
-      ],
-      "submitted_at": "2025-07-14T10:40:27Z"
-    },
-    "YunhuUser": {
-      "package": "ErisPulse-YunhuUserAdapter",
-      "version": "4.4.0",
-      "author": "wsu2059q",
-      "description": "ErisPulse Yunhu-User adapter — driven by user-account protocol | ErisPulse 云湖用户适配器 — 用户账户协议驱动",
-      "min_sdk_version": "2.7.0",
-      "repository": "https://github.com/wsu2059q/ErisPulse-YunhuUserAdapter",
-      "official": true,
-      "category": 6,
-      "tags": [
-        "适配器",
-        "云湖",
-        "用户账号"
-      ],
-      "submitted_at": "2026-02-14T18:05:15Z"
-    }
-  }
 }
