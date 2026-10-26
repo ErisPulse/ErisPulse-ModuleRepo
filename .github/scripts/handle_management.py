@@ -107,6 +107,13 @@ def handle_management():
         elif 'min_sdk_version' in module_info:
             del module_info['min_sdk_version']
 
+        # 验证状态：仅显式提交时改动（true = 转正；false = 撤销验证并移除标记）
+        if 'verified' in edit_data:
+            if edit_data['verified']:
+                module_info['verified'] = True
+            else:
+                module_info.pop('verified', None)
+
         if submitter_info:
             module_info['submitted_by'] = submitter_info.get('name', module_info.get('submitted_by', ''))
             module_info['submitted_by_uid'] = submitter_info.get('uid', module_info.get('submitted_by_uid', ''))
