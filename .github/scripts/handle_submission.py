@@ -105,6 +105,15 @@ def validate_submission(data):
         )
     data['category'] = category_id
 
+    # logo：可选。https URL 或 data:image URL（解码后 ≤100KB；后续提交脚本将自动压缩）
+    logo = data.get('logo', '')
+    if logo:
+        if not (str(logo).startswith('https://') or str(logo).startswith('data:image/')):
+            print(f"Invalid logo: {str(logo)[:60]!r}")
+            return False, "Invalid logo: expected an https URL or data:image URL (<=100KB)."
+        if str(logo).startswith('data:image/') and len(str(logo)) > 140 * 1024:
+            return False, "Logo data URL too large (>100KB)."
+
     if not check_pypi_exists(data['package']):
         print(f"Package '{data['package']}' not found on PyPI. Module must be published to PyPI first.")
         return False, f"Package '{data['package']}' not found on PyPI. Please publish your package to PyPI before submitting."
@@ -234,6 +243,9 @@ def handle_submission():
 
     if submit_type != 'adapter' and submission.get('min_sdk_version'):
         entry['min_sdk_version'] = submission['min_sdk_version']
+
+    if submission.get('logo'):
+        entry['logo'] = submission['logo']
 
     packages[container][module_name] = entry
 

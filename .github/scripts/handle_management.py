@@ -107,6 +107,20 @@ def handle_management():
         elif 'min_sdk_version' in module_info:
             del module_info['min_sdk_version']
 
+        # logo：可选字段，https URL 或 data:image URL（≤100KB）；空字符串 = 移除
+        if 'logo' in edit_data:
+            logo_val = str(edit_data['logo'] or '')
+            if logo_val:
+                if not (logo_val.startswith('https://') or logo_val.startswith('data:image/')):
+                    print(f"Invalid logo: {logo_val[:60]!r}")
+                    sys.exit(1)
+                if logo_val.startswith('data:image/') and len(logo_val) > 140 * 1024:
+                    print("Logo data URL too large (>100KB)")
+                    sys.exit(1)
+                module_info['logo'] = logo_val
+            else:
+                module_info.pop('logo', None)
+
         # 验证状态：仅显式提交时改动（true = 转正；false = 撤销验证并移除标记）
         if 'verified' in edit_data:
             if edit_data['verified']:
