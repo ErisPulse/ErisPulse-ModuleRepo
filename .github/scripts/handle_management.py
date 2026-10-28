@@ -44,8 +44,13 @@ def apply_item(packages, item):
 
     module_info = packages[category][module_name]
 
-    if uid and module_info.get('submitted_by_uid', '') != uid:
+    existing_uid = module_info.get('submitted_by_uid', '')
+    if uid and existing_uid and existing_uid != uid:
         return False, f"Ownership verification failed for '{module_name}'"
+    if uid and not existing_uid:
+        # legacy 条目无归属记录：自动创建并归操作方（认领式接管）
+        module_info['submitted_by_uid'] = uid
+        print(f"Claimed ownership of '{module_name}' -> {uid}")
 
     if action == 'delete':
         del packages[category][module_name]
@@ -107,12 +112,10 @@ def apply_item(packages, item):
         else:
             module_info.pop('logo', None)
 
-    # 验证状态：仅显式提交时改动（true = 转正；false = 撤销并移除标记）
+    # 验证状态：仅显式提交时改动。true/false 都显式落盘——
+    # 字段缺失视为隐式已验证（legacy 模块），显式 false 才是未验证
     if 'verified' in edit_data:
-        if edit_data['verified']:
-            module_info['verified'] = True
-        else:
-            module_info.pop('verified', None)
+        module_info['verified'] = bool(edit_data['verified'])
 
     if submitter_info:
         module_info['submitted_by'] = submitter_info.get('name', module_info.get('submitted_by', ''))
