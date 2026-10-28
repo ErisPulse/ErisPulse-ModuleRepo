@@ -33,7 +33,10 @@ def apply_item(packages, item):
     action = item.get('action')
     module_name = item.get('name')
     module_type = item.get('type', 'module')
-    uid = item.get('uid', '')
+    # 归属身份：uids（工作台传用户全部身份：github:<id> / wb:<uid> …），兼容旧的单 uid
+    uids = item.get('uids') or ([item['uid']] if item.get('uid') else [])
+    if isinstance(uids, str):
+        uids = [uids]
 
     if not action or not module_name:
         return False, 'Missing action or name'
@@ -45,12 +48,12 @@ def apply_item(packages, item):
     module_info = packages[category][module_name]
 
     existing_uid = module_info.get('submitted_by_uid', '')
-    if uid and existing_uid and existing_uid != uid:
+    if uids and existing_uid and existing_uid not in uids:
         return False, f"Ownership verification failed for '{module_name}'"
-    if uid and not existing_uid:
+    if uids and not existing_uid:
         # legacy 条目无归属记录：自动创建并归操作方（认领式接管）
-        module_info['submitted_by_uid'] = uid
-        print(f"Claimed ownership of '{module_name}' -> {uid}")
+        module_info['submitted_by_uid'] = uids[0]
+        print(f"Claimed ownership of '{module_name}' -> {uids[0]}")
 
     if action == 'delete':
         del packages[category][module_name]
