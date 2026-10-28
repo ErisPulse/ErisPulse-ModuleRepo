@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""模块管理：支持单条或批量（items 数组）。
+
+payload 形态：
+  单条  {action, name, type, uid, edit_data}
+  批量  {items: [{action, name, type, uid, edit_data}, ...]}
+
+批量中单条失败不中断其它条目；全部失败才以非零退出码结束。
+"""
 
 import json
 import os
@@ -7,6 +15,111 @@ import sys
 from datetime import datetime, timezone
 
 from packages_lib import normalize_category, normalize_i18n, normalize_tags, write_packages
+
+CATEGORY_MAP = {'module': 'modules', 'adapter': 'adapters'}
+
+
+def parse_json_field(value, fallback):
+    if isinstance(value, str):
+        try:
+            return json.loads(value)
+        except (json.JSONDecodeError, TypeError):
+            return fallback
+    return value if value is not None else fallback
+
+
+def apply_item(packages, item):
+    """应用单条操作，返回 (ok, message)。"""
+    action = item.get('action')
+    module_name = item.get('name')
+    module_type = item.get('type', 'module')
+    uid = item.get('uid', '')
+
+    if not action or not module_name:
+        return False, 'Missing action or name'
+
+    category = CATEGORY_MAP.get(module_type, 'modules')
+    if category not in packages or module_name not in packages[category]:
+        return False, f"Module '{module_name}' not found in {category}"
+
+    module_info = packages[category][module_name]
+
+    if uid and module_info.get('submitted_by_uid', '') != uid:
+        return False, f"Ownership verification failed for '{module_name}'"
+
+    if action == 'delete':
+        del packages[category][module_name]
+        return True, f"Deleted '{module_name}' from {category}"
+
+    if action != 'edit':
+        return False, f"Unknown action: {action}"
+
+    edit_data = parse_json_field(item.get('edit_data', '{}'), {})
+    if not isinstance(edit_data, dict):
+        edit_data = {}
+
+    submitter_info = parse_json_field(edit_data.get('submitter', '{}'), {})
+    if not isinstance(submitter_info, dict):
+        submitter_info = {}
+
+    # 标签：显式提交（即使清空为空列表）即整体替换，未提交视为不改动
+    tags_raw = edit_data.get('tags', None)
+    if tags_raw is not None:
+        tags = parse_json_field(tags_raw, [])
+        module_info['tags'] = normalize_tags(tags if isinstance(tags, (list, tuple)) else [])
+
+    # 界面语言：同 tags 的 provided 语义
+    i18n_raw = edit_data.get('i18n', None)
+    if i18n_raw is not None:
+        i18n = parse_json_field(i18n_raw, [])
+        module_info['i18n'] = normalize_i18n(i18n if isinstance(i18n, (list, tuple)) else [])
+
+    if edit_data.get('package'):
+        module_info['package'] = edit_data['package']
+    if edit_data.get('description'):
+        module_info['description'] = edit_data['description']
+    if edit_data.get('author'):
+        module_info['author'] = edit_data['author']
+    if edit_data.get('repository'):
+        module_info['repository'] = edit_data['repository']
+    if edit_data.get('version') and edit_data['version'] != '0.0.0':
+        module_info['version'] = edit_data['version']
+
+    # 分类：受控字段，非法值忽略（提交入口 Worker 已先行校验）
+    category_id = normalize_category(edit_data.get('category'))
+    if category_id is not None:
+        module_info['category'] = category_id
+
+    if edit_data.get('min_sdk_version'):
+        module_info['min_sdk_version'] = edit_data['min_sdk_version']
+    elif 'min_sdk_version' in module_info:
+        del module_info['min_sdk_version']
+
+    # logo：https URL 或 data:image URL（≤100KB）；空字符串 = 移除
+    if 'logo' in edit_data:
+        logo_val = str(edit_data['logo'] or '')
+        if logo_val:
+            if not (logo_val.startswith('https://') or logo_val.startswith('data:image/')):
+                return False, f"Invalid logo for '{module_name}': {logo_val[:60]!r}"
+            if logo_val.startswith('data:image/') and len(logo_val) > 140 * 1024:
+                return False, f"Logo data URL too large for '{module_name}' (>100KB)"
+            module_info['logo'] = logo_val
+        else:
+            module_info.pop('logo', None)
+
+    # 验证状态：仅显式提交时改动（true = 转正；false = 撤销并移除标记）
+    if 'verified' in edit_data:
+        if edit_data['verified']:
+            module_info['verified'] = True
+        else:
+            module_info.pop('verified', None)
+
+    if submitter_info:
+        module_info['submitted_by'] = submitter_info.get('name', module_info.get('submitted_by', ''))
+        module_info['submitted_by_uid'] = submitter_info.get('uid', module_info.get('submitted_by_uid', ''))
+        module_info['oauth_provider'] = submitter_info.get('provider', module_info.get('oauth_provider', ''))
+
+    return True, f"Edited '{module_name}' in {category}"
 
 
 def handle_management():
@@ -21,17 +134,12 @@ def handle_management():
         print(f"Invalid JSON in MANAGEMENT_DATA: {e}")
         sys.exit(1)
 
-    action = payload.get('action')
-    module_name = payload.get('name')
-    module_type = payload.get('type', 'module')
-    uid = payload.get('uid', '')
-
-    if not action or not module_name:
-        print("Missing action or name")
+    items = payload.get('items')
+    if not isinstance(items, list):
+        items = [payload]
+    if not items:
+        print("Empty items")
         sys.exit(1)
-
-    category_map = {'module': 'modules', 'adapter': 'adapters'}
-    category = category_map.get(module_type, 'modules')
 
     try:
         with open('packages.json', 'r', encoding='utf-8') as f:
@@ -40,107 +148,24 @@ def handle_management():
         print(f"Cannot read packages.json: {e}")
         sys.exit(1)
 
-    if category not in packages or module_name not in packages[category]:
-        print(f"Module '{module_name}' not found in {category}")
+    ok_count = 0
+    failed = []
+    for item in items:
+        if not isinstance(item, dict):
+            failed.append('non-object item')
+            continue
+        ok, message = apply_item(packages, item)
+        print(message)
+        if ok:
+            ok_count += 1
+        else:
+            failed.append(message)
+
+    if ok_count == 0:
+        print(f"All {len(items)} operation(s) failed")
         sys.exit(1)
 
-    module_info = packages[category][module_name]
-
-    if uid and module_info.get('submitted_by_uid', '') != uid:
-        print(f"Ownership verification failed: uid mismatch")
-        sys.exit(1)
-
-    if action == 'delete':
-        del packages[category][module_name]
-        print(f"Deleted '{module_name}' from {category}")
-    elif action == 'edit':
-        edit_raw = payload.get('edit_data', '{}')
-        try:
-            edit_data = json.loads(edit_raw) if isinstance(edit_raw, str) else edit_raw
-        except (json.JSONDecodeError, TypeError):
-            edit_data = {}
-
-        submitter_raw = edit_data.get('submitter', '{}')
-        try:
-            submitter_info = json.loads(submitter_raw) if isinstance(submitter_raw, str) else submitter_raw
-        except (json.JSONDecodeError, TypeError):
-            submitter_info = {}
-
-        tags_raw = edit_data.get('tags', None)
-        tags_provided = tags_raw is not None
-        try:
-            tags = json.loads(tags_raw) if isinstance(tags_raw, str) else tags_raw
-        except (json.JSONDecodeError, TypeError):
-            tags = []
-
-        if edit_data.get('package'):
-            module_info['package'] = edit_data['package']
-        if edit_data.get('description'):
-            module_info['description'] = edit_data['description']
-        if edit_data.get('author'):
-            module_info['author'] = edit_data['author']
-        if edit_data.get('repository'):
-            module_info['repository'] = edit_data['repository']
-        if edit_data.get('version') and edit_data['version'] != '0.0.0':
-            module_info['version'] = edit_data['version']
-        # 标签：自由文本，只做卫生处理。显式提交（即使清空为空列表）即整体替换，
-        # 未提交则视为「不改动」，沿用索引里的原值
-        if tags_provided:
-            module_info['tags'] = normalize_tags(tags)
-
-        # 界面语言：与 tags 相同的 provided 语义——未提供即不改动
-        i18n_raw = edit_data.get('i18n', None)
-        i18n_provided = i18n_raw is not None
-        if i18n_provided:
-            i18n = json.loads(i18n_raw) if isinstance(i18n_raw, str) else i18n_raw
-            if not isinstance(i18n, (list, tuple)):
-                i18n = []
-            module_info['i18n'] = normalize_i18n(i18n)
-
-        # 分类：受控字段，非法值忽略（提交入口 Worker 已先行校验）
-        category_id = normalize_category(edit_data.get('category'))
-        if category_id is not None:
-            module_info['category'] = category_id
-
-        if edit_data.get('min_sdk_version'):
-            module_info['min_sdk_version'] = edit_data['min_sdk_version']
-        elif 'min_sdk_version' in module_info:
-            del module_info['min_sdk_version']
-
-        # logo：可选字段，https URL 或 data:image URL（≤100KB）；空字符串 = 移除
-        if 'logo' in edit_data:
-            logo_val = str(edit_data['logo'] or '')
-            if logo_val:
-                if not (logo_val.startswith('https://') or logo_val.startswith('data:image/')):
-                    print(f"Invalid logo: {logo_val[:60]!r}")
-                    sys.exit(1)
-                if logo_val.startswith('data:image/') and len(logo_val) > 140 * 1024:
-                    print("Logo data URL too large (>100KB)")
-                    sys.exit(1)
-                module_info['logo'] = logo_val
-            else:
-                module_info.pop('logo', None)
-
-        # 验证状态：仅显式提交时改动（true = 转正；false = 撤销验证并移除标记）
-        if 'verified' in edit_data:
-            if edit_data['verified']:
-                module_info['verified'] = True
-            else:
-                module_info.pop('verified', None)
-
-        if submitter_info:
-            module_info['submitted_by'] = submitter_info.get('name', module_info.get('submitted_by', ''))
-            module_info['submitted_by_uid'] = submitter_info.get('uid', module_info.get('submitted_by_uid', ''))
-            module_info['oauth_provider'] = submitter_info.get('provider', module_info.get('oauth_provider', ''))
-
-        print(f"Edited '{module_name}' in {category}")
-    else:
-        print(f"Unknown action: {action}")
-        sys.exit(1)
-
-    current_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-    packages['last_updated'] = current_time
-
+    packages['last_updated'] = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     try:
         # 统一经 packages_lib 落盘：编辑后仍保持排序与字段顺序稳定
         write_packages('packages.json', packages)
@@ -149,7 +174,9 @@ def handle_management():
         sys.exit(1)
 
     with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
-        f.write(f"module_name={module_name}\naction={action}\n")
+        f.write(f"applied={ok_count}\nfailed={len(failed)}\n")
+    if failed:
+        print(f"Partial failure: {len(failed)} of {len(items)}")
 
 
 if __name__ == '__main__':
