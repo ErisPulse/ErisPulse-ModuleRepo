@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-26T07:32:57Z",
+    "last_updated": "2026-10-28T08:01:59Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -12,7 +12,7 @@
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -463,7 +463,7 @@
         },
         "NekoCare": {
             "package": "ErisPulse-NekoCare",
-            "version": "2.2.1",
+            "version": "3.1.0",
             "author": "wsu2059q, lin",
             "description": "NekoCare - 虚拟猫猫养成模块",
             "min_sdk_version": "2.2.0",
@@ -492,7 +492,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "4.0.4",
+            "version": "4.0.6",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
