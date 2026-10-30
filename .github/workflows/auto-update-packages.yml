@@ -89,7 +89,20 @@ jobs:
 
           🌟 自动更新了模块版本信息
           📖 更多详情请查阅 packages.json" || echo "No changes"
-          git push origin 2x
+          # 竞态处理：auto-update / 管理操作 / API 直改可能同时推进 2x，
+          # push 前先 rebase 到最新；packages.json 真冲突则显式报错，远端再次前进则重试
+          pushed=0
+          for i in 1 2 3; do
+            git fetch origin 2x
+            if ! git rebase origin/2x; then
+              git rebase --abort
+              echo "::error::packages.json 与远端冲突，无法自动合并，请手动处理"
+              exit 1
+            fi
+            if git push origin HEAD:2x; then pushed=1; break; fi
+            echo "远端在推送前再次更新，重新 rebase（第 $i 次）"
+          done
+          [ "$pushed" = "1" ] || { echo "::error::推送重试耗尽，远端持续更新中"; exit 1; }
 
       - name: 💤 今天的魔法工作完成
         if: steps.update.outputs.has_updates == 'true'
