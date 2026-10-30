@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-30T08:17:32Z",
+    "last_updated": "2026-10-30T15:20:19Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -843,6 +843,35 @@
                 "调试"
             ],
             "submitted_at": "2026-01-25T18:24:18Z"
+        },
+        "SnowLuma": {
+            "package": "ErisPulse-SnowLumaAdapter",
+            "version": "0.1.0",
+            "author": "ErisPulse",
+            "description": "基于 NTQQ hook 的 QQ 协议适配器：原生合并转发三级回退、client/server/http/webhook 四种连接模式、109 个 NapCat 兼容扩展动作、多账户自动路由",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-SnowLumaAdapter",
+            "official": false,
+            "verified": false,
+            "category": 6,
+            "tags": [
+                "QQ",
+                "NTQQ",
+                "NapCat",
+                "OneBot11",
+                "合并转发"
+            ],
+            "i18n": [
+                "zh",
+                "en",
+                "zh-tw",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-10-30T15:20:19Z"
         },
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
