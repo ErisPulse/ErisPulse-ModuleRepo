@@ -33,10 +33,12 @@ def apply_item(packages, item):
     action = item.get('action')
     module_name = item.get('name')
     module_type = item.get('type', 'module')
-    # 归属身份：uids（工作台传用户全部身份：github:<id> / wb:<uid> …），兼容旧的单 uid
+    # 归属身份：uids（工作台传用户全部身份：github:<id> / wb:<uid> …），兼容旧的单 uid；
+    # staff=1 表示管理员操作（工作台端已做角色校验），跳过所有权校验直接放行
     uids = item.get('uids') or ([item['uid']] if item.get('uid') else [])
     if isinstance(uids, str):
         uids = [uids]
+    staff = bool(item.get('staff'))
 
     if not action or not module_name:
         return False, 'Missing action or name'
@@ -48,10 +50,10 @@ def apply_item(packages, item):
     module_info = packages[category][module_name]
 
     existing_uid = module_info.get('submitted_by_uid', '')
-    if uids and existing_uid and existing_uid not in uids:
+    if uids and existing_uid and existing_uid not in uids and not staff:
         return False, f"Ownership verification failed for '{module_name}'"
     if uids and not existing_uid:
-        # legacy 条目无归属记录：自动创建并归操作方（认领式接管）
+        # legacy 条目无归属记录：自动创建并归操作方（认领式接管；管理员操作同样补齐归属）
         module_info['submitted_by_uid'] = uids[0]
         print(f"Claimed ownership of '{module_name}' -> {uids[0]}")
 
