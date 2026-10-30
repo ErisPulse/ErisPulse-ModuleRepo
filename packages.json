@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-29T08:12:06Z",
+    "last_updated": "2026-10-30T08:17:32Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -12,7 +12,7 @@
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "2.3.2",
+            "version": "2.5.0",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -816,7 +816,7 @@
         },
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
-            "version": "5.1.1",
+            "version": "5.3.0",
             "author": "wsu2059",
             "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
             "min_sdk_version": "2.7.0",
