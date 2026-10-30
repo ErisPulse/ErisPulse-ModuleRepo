@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-30T15:20:19Z",
+    "last_updated": "2026-10-30T15:22:32Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -934,6 +934,30 @@
                 "公众号"
             ],
             "submitted_at": "2026-06-16T07:32:08Z"
+        },
+        "WeCom": {
+            "package": "ErisPulse-WeComAdapter",
+            "version": "0.1.0",
+            "author": "ErisPulse",
+            "description": "企业微信自建应用适配器：回调接收（官方加解密）、应用消息与图文卡片、通讯录 API、userid 与 openid 双向转换、多企业账户",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-WeComAdapter",
+            "official": false,
+            "verified": false,
+            "category": 6,
+            "tags": [
+                "企业微信",
+                "WeCom",
+                "办公",
+                "通知"
+            ],
+            "i18n": [
+                "zh"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-10-30T15:22:32Z"
         },
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
