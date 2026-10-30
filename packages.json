@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-30T15:22:32Z",
+    "last_updated": "2026-10-30T16:15:05Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -943,7 +943,7 @@
             "min_sdk_version": "2.7.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-WeComAdapter",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 6,
             "tags": [
                 "企业微信",
