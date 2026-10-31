@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-30T16:18:55Z",
+    "last_updated": "2026-10-31T08:08:12Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -12,7 +12,7 @@
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -711,7 +711,7 @@
     "adapters": {
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
-            "version": "4.3.1",
+            "version": "4.4.0",
             "author": "ErisPulse",
             "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
             "min_sdk_version": "2.7.0",
@@ -741,7 +741,7 @@
         },
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "author": "ErisPulse",
             "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
             "min_sdk_version": "2.7.0",
@@ -756,7 +756,7 @@
         },
         "Kook": {
             "package": "ErisPulse-KookAdapter",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "author": "ShanFish",
             "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
             "min_sdk_version": "2.7.0",
@@ -771,7 +771,7 @@
         },
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "author": "wsu2059",
             "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
             "min_sdk_version": "2.7.0",
@@ -786,7 +786,7 @@
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
-            "version": "4.4.1",
+            "version": "4.5.0",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
             "min_sdk_version": "2.7.0",
@@ -801,7 +801,7 @@
         },
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
             "min_sdk_version": "2.7.0",
@@ -961,7 +961,7 @@
         },
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
-            "version": "4.5.1",
+            "version": "4.6.0",
             "author": "wsu2059q",
             "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
             "min_sdk_version": "2.7.0",
@@ -976,7 +976,7 @@
         },
         "YunhuUser": {
             "package": "ErisPulse-YunhuUserAdapter",
-            "version": "4.4.1",
+            "version": "4.5.0",
             "author": "wsu2059q",
             "description": "ErisPulse Yunhu-User adapter — driven by user-account protocol | ErisPulse 云湖用户适配器 — 用户账户协议驱动",
             "min_sdk_version": "2.7.0",
