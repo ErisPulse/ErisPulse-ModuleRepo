@@ -6,7 +6,7 @@
 
 # ErisPulse-ModuleRepo
 
-**ErisPulse 模块市场源仓库 — 发布与发现模块 / 适配器**
+**ErisPulse module marketplace source — publish & discover modules and adapters**
 
 <p>
   <a href="https://github.com/ErisPulse/ErisPulse/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"></a>
@@ -17,58 +17,58 @@
 
 ---
 
-社区模块与适配器收录在 [`packages.json`](packages.json)，[模块市场](https://www.erisdev.com/#market)在线展示，`epsdk install` 一条命令安装。
-
-## 安装模块
+## Install modules
 
 ```bash
-epsdk list-remote        # 浏览远端收录
+epsdk list-remote        # browse the registry
 epsdk install Weather
 ```
 
-安装走 PyPI；`packages.json` 中的版本号由每日工作流从 PyPI 同步，本仓库只负责收录与发现。
+Installs go through PyPI; version numbers in `packages.json` are synced from PyPI by a daily workflow — this repo only handles listing and discovery.
 
-## 发布模块
+## Publish a module
 
-1. 模块开发完成并发布到 PyPI：
+1. Finish your module and publish it to PyPI:
 
    ```bash
    python -m build
    twine upload dist/*
    ```
 
-2. 用[收录 Issue 模板](https://github.com/ErisPulse/ErisPulse-ModuleRepo/issues/new?template=module_submission.md)提交：PyPI 包名、源码仓库、分类与最低 SDK 版本。
+2. Submit via the [submission issue template](https://github.com/ErisPulse/ErisPulse-ModuleRepo/issues/new?template=module_submission.md): PyPI package name, source repo, category and minimum SDK version.
 
-3. 审核通过后合入 `packages.json`，市场即可发现。
+3. Once approved, it gets merged into `packages.json` and becomes discoverable in the market.
 
-要求：遵循 ErisPulse 开发规范、附文档、无版权问题。完整流程见[发布指南](https://www.erisdev.com/#docs/developer-guide/publishing.md)。
+Requirements: follow the ErisPulse development conventions, include docs, no licensing issues. See the [publishing guide](https://www.erisdev.com/#docs/developer-guide/publishing.md) for the full process.
 
 ## packages.json
 
-`.github/scripts/packages_lib.py` 统一读写（每日版本更新、Issue 提交、网页端管理三条链路共用），保证格式稳定。
+`.github/scripts/packages_lib.py` handles all reads and writes (daily version sync, issue submissions and the web manager share it) to keep the format stable.
 
-顶层键：`modules`、`adapters`、`last_updated`、`categories`。条目顺序即市场展示顺序：带 `"featured": true` 的置顶，其余按名称字母序。
+Top-level keys: `modules`, `adapters`, `last_updated`, `categories`. Entry order is the market display order: `"featured": true` entries first, the rest alphabetical by name.
 
-| 字段 | 说明 |
+| Field | Description |
 | --- | --- |
-| `package` | PyPI 包名，CLI 安装的依据 |
-| `version` | 版本号，由每日工作流从 PyPI 同步 |
-| `min_sdk_version` | 最低 SDK 版本，必须是裸版本号（如 `2.4.6`），带运算符会导致 SDK 版本检查失效；适配器不低于 `2.7.0` |
-| `repository` | 源码仓库地址 |
-| `official` / `verified` | 是否官方维护 / 已人工验证（缺省视为已验证） |
-| `featured` | 进入推荐位并展示「推荐」角标（可选） |
-| `hidden` | `true` 时不在市场展示且不计入统计（下架保留条目） |
-| `category` | 模块分类编号（1 工具 / 2 娱乐 / 3 管理 / 4 通知 / 5 AI / 6 平台对接 / 7 数据分析），存编号以支持多语言渲染 |
-| `tags` | 自由文本标签，市场据此生成筛选 |
-| `submitted_by` / `submitted_at` | 提交者溯源信息 |
+| `package` | PyPI package name, used by the CLI for installation |
+| `version` | Version, synced from PyPI by the daily workflow |
+| `min_sdk_version` | Minimum SDK version — must be a bare version (e.g. `2.4.6`); operators break the SDK version check. Adapters require at least `2.7.0` |
+| `repository` | Source repository URL |
+| `official` / `verified` | Officially maintained / manually verified (defaults to verified) |
+| `featured` | Pinned to the featured slot with a badge (optional) |
+| `hidden` | When `true`, hidden from the market and excluded from stats (delisted entries are kept) |
+| `category` | Category number (1 tools / 2 fun / 3 management / 4 notifications / 5 AI / 6 platform integration / 7 data analysis) — stored as a number for multilingual rendering |
+| `tags` | Free-form tags used for market filters |
+| `submitted_by` / `submitted_at` | Submission attribution |
 
-## 分支
+> Modules and adapters can also be self-published at [workbench.erisdev.com](https://workbench.erisdev.com).
 
-`2x` 为默认分支，`1x` 归档 ErisPulse v1 时代的索引。
+## Branches
 
-## 相关链接
+`2x` is the default branch; `1x` archives the index from the ErisPulse v1 era.
 
-- [模块市场](https://www.erisdev.com/#market)
-- [`epsdk` 命令参考](https://www.erisdev.com/#docs/user-guide/cli-reference.md)
-- [模块开发入门](https://www.erisdev.com/#docs/developer-guide/modules/getting-started.md)
-- [ErisPulse 主仓库](https://github.com/ErisPulse/ErisPulse)
+## Links
+
+- [Module market](https://www.erisdev.com/#market)
+- [`epsdk` CLI reference](https://www.erisdev.com/#docs/user-guide/cli-reference.md)
+- [Module development guide](https://www.erisdev.com/#docs/developer-guide/modules/getting-started.md)
+- [ErisPulse main repo](https://github.com/ErisPulse/ErisPulse)
