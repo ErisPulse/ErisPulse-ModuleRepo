@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-31T08:08:12Z",
+    "last_updated": "2026-10-31T09:48:23Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -25,7 +25,10 @@
                 "管理",
                 "监控"
             ],
-            "submitted_at": "2026-04-06T07:05:21Z"
+            "i18n": [],
+            "submitted_by_uid": "[\"github:186432158\",\"wb:u_7f47e2cfb92d\"]",
+            "submitted_at": "2026-04-06T07:05:21Z",
+            "logo": "https://github.com/ErisPulse.png?size=128"
         },
         "HelpModule": {
             "package": "ErisPulse-HelpModule",
