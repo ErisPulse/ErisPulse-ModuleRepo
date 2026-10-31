@@ -1,16 +1,16 @@
-<p align="center">
-<img src=".github/assets/banner.png" alt="ErisPulse" width="1280">
-</p>
+[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [Русский](README.ru.md)
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/ErisPulse/ErisPulse/main/.github/assets/ErisPulseLogo.png" width="180" alt="ErisPulse-ModuleRepo" />
+
 # ErisPulse-ModuleRepo
 
-**ErisPulse 模块市场数据源仓库。**
+**ErisPulse module marketplace source — publish & discover modules and adapters**
 
 <p>
-  <a href="https://github.com/ErisPulse/ErisPulse-ModuleRepo"><img src="https://img.shields.io/github/stars/ErisPulse/ErisPulse-ModuleRepo?style=for-the-badge&logo=github&color=brightgreen" alt="Stars"></a>
-  <a href="https://github.com/ErisPulse/ErisPulse"><img src="https://img.shields.io/badge/Powered_by-ErisPulse-FF6B9D?style=for-the-badge&logo=bookstack&logoColor=white" alt="ErisPulse"></a>
+  <a href="https://github.com/ErisPulse/ErisPulse/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"></a>
+  <img src="https://raw.githubusercontent.com/ErisPulse/.github/main/assets/badges/ecosystem.svg" alt="ErisPulse">
 </p>
 
 </div>
