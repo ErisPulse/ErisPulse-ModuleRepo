@@ -6,7 +6,7 @@
 
 # ErisPulse-ModuleRepo
 
-**ErisPulse module marketplace source — publish & discover modules and adapters**
+**ErisPulse 模块市场源仓库 — 发布与发现模块 / 适配器**
 
 <p>
   <a href="https://github.com/ErisPulse/ErisPulse/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"></a>
