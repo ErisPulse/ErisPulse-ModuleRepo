@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:21:52Z",
+    "last_updated": "2026-11-01T14:23:58Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -807,6 +807,26 @@
                 "Matrix"
             ],
             "submitted_at": "2026-04-25T14:54:50Z"
+        },
+        "Minecraft": {
+            "package": "ErisPulse-MinecraftAdapter",
+            "version": "0.1.0",
+            "author": "ErisPulse",
+            "description": "Minecraft 服务器适配器：RCON 命令执行，日志 tail 解析聊天与进出服事件",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-MinecraftAdapter",
+            "official": false,
+            "verified": false,
+            "category": 6,
+            "tags": [
+                "minecraft",
+                "rcon"
+            ],
+            "i18n": [],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-01T14:23:58Z"
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
