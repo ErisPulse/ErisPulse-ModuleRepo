@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:25:24Z",
+    "last_updated": "2026-11-01T14:25:27Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -822,13 +822,19 @@
             "min_sdk_version": "2.7.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-MinecraftAdapter",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 6,
             "tags": [
                 "minecraft",
                 "rcon"
             ],
-            "i18n": [],
+            "i18n": [
+                "zh",
+                "zh-tw",
+                "en",
+                "ru",
+                "ja"
+            ],
             "submitted_by": "YingXinche",
             "submitted_by_uid": "wb:u_7f47e2cfb92d",
             "oauth_provider": "workbench",
