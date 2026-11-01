@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:23:58Z",
+    "last_updated": "2026-11-01T14:25:24Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -716,7 +716,7 @@
             "package": "ErisPulse-BilibiliAdapter",
             "version": "0.2.0",
             "author": "ErisPulse",
-            "description": "��������˽����������ɨ��/Cookie ˫��¼��˽���շ���ͼƬ��Ϣ�����˻�֧��",
+            "description": "哔哩哔哩私信适配器：扫码/Cookie 双登录，私信收发与图片消息，多账户支持",
             "min_sdk_version": "2.7.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-BilibiliAdapter",
             "official": false,
@@ -724,9 +724,15 @@
             "category": 6,
             "tags": [
                 "bilibili",
-                "˽��"
+                "私信"
             ],
-            "i18n": [],
+            "i18n": [
+                "zh",
+                "zh-tw",
+                "en",
+                "ru",
+                "ja"
+            ],
             "submitted_by": "YingXinche",
             "submitted_by_uid": "wb:u_7f47e2cfb92d",
             "oauth_provider": "workbench",
