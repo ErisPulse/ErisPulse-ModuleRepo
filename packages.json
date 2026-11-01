@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:19:54Z",
+    "last_updated": "2026-11-01T14:20:11Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -720,7 +720,7 @@
             "min_sdk_version": "2.7.0",
             "repository": "https://github.com/ErisPulse/ErisPulse-BilibiliAdapter",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 6,
             "tags": [
                 "bilibili",
