@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:20:58Z",
+    "last_updated": "2026-11-01T14:21:52Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -730,7 +730,8 @@
             "submitted_by": "YingXinche",
             "submitted_by_uid": "wb:u_7f47e2cfb92d",
             "oauth_provider": "workbench",
-            "submitted_at": "2026-11-01T14:19:54Z"
+            "submitted_at": "2026-11-01T14:19:54Z",
+            "logo": "https://github.com/ErisPulse.png?size=128"
         },
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
