@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T08:53:39Z",
+    "last_updated": "2026-11-01T14:19:54Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -712,6 +712,26 @@
         }
     },
     "adapters": {
+        "Bilibili": {
+            "package": "ErisPulse-BilibiliAdapter",
+            "version": "0.2.0",
+            "author": "ErisPulse",
+            "description": "��������˽����������ɨ��/Cookie ˫��¼��˽���շ���ͼƬ��Ϣ�����˻�֧��",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/ErisPulse/ErisPulse-BilibiliAdapter",
+            "official": false,
+            "verified": false,
+            "category": 6,
+            "tags": [
+                "bilibili",
+                "˽��"
+            ],
+            "i18n": [],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-01T14:19:54Z"
+        },
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
             "version": "4.4.0",
