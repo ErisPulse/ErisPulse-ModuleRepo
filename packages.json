@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T14:25:27Z",
+    "last_updated": "2026-11-02T09:01:58Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -495,7 +495,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "4.1.1",
+            "version": "4.2.0",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
@@ -842,7 +842,7 @@
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
             "min_sdk_version": "2.7.0",
@@ -857,7 +857,7 @@
         },
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
             "min_sdk_version": "2.7.0",
