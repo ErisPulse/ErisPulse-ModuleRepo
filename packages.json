@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-03T09:10:26Z",
+    "last_updated": "2026-11-04T08:31:06Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -181,10 +181,9 @@
             "version": "0.1.5",
             "author": "YingXinche",
             "description": "View/broadcast/close framework-registered WS/SSE connections via HTTP API, SSE stream & live dashboard — 通过 HTTP API、SSE 流与实时面板查看/广播/关闭框架登记的 WS/SSE 连接。",
-            "min_sdk_version": "2.10.0.dev0",
             "repository": "https://github.com/wsu2059q/ErisPulse-ConnHub",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 3,
             "tags": [
                 "管理",
