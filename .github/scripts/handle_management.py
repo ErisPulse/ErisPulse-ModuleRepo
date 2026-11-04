@@ -178,7 +178,7 @@ def handle_management():
         # 统一经 packages_lib 落盘：编辑后仍保持排序与字段顺序稳定
         write_packages('packages.json', packages)
     except Exception as e:
-        print(f"Cannot write packages.json: {e}")
+        print(f"::error::Cannot write packages.json: {e}")
         sys.exit(1)
 
     with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:

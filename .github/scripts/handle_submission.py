@@ -255,7 +255,7 @@ def handle_submission():
         # 统一经 packages_lib 落盘：新条目自动落到排序位置，字段顺序规范化
         write_packages('packages.json', packages)
     except Exception as e:
-        print(f"Cannot write packages.json: {e}")
+        print(f"::error::Cannot write packages.json: {e}")
         sys.exit(1)
 
     print(f"Successfully added '{module_name}' to {container} (version {pypi_version})")

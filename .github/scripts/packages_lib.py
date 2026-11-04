@@ -379,6 +379,57 @@ def normalize_packages(data):
     return result
 
 
+MOJIBAKE_MARKERS = ("\ufffd", "锟斤拷", "ï¿½")
+
+
+def find_mojibake(node, path="$"):
+    """
+    找出数据里第一处乱码的字段路径
+
+    终端默认 GBK 时（Windows 常见），中文会以 GBK 字节发出，解码后只剩
+    U+FFFD 这类不可逆的替换字符 —— 一旦写进索引就再也还原不回来。
+    :param node: 待检查的数据（递归）
+    :param path: 当前字段路径，用于报错定位
+    :return: 第一处乱码的路径；没有则返回 None
+    """
+    if isinstance(node, str):
+        for marker in MOJIBAKE_MARKERS:
+            if marker in node:
+                return path
+        return None
+    if isinstance(node, list):
+        for index, value in enumerate(node):
+            hit = find_mojibake(value, f"{path}[{index}]")
+            if hit:
+                return hit
+        return None
+    if isinstance(node, dict):
+        for key, value in node.items():
+            hit = find_mojibake(value, f"{path}.{key}")
+            if hit:
+                return hit
+    return None
+
+
+def assert_clean_encoding(data):
+    """
+    写入前校验文本编码，拒绝把乱码固化进索引
+
+    :param data: 即将写入 packages.json 的数据
+    :raises ValueError: 含替换字符或编码非法时
+    """
+    bad = find_mojibake(data)
+    if bad:
+        raise ValueError(
+            f"检测到乱码（{bad}）：packages.json 必须是 UTF-8。"
+            "提交端可能使用了 GBK 终端（Windows 默认），请先执行 chcp 65001 再重新提交。"
+        )
+    try:
+        dumps(data).encode("utf-8")
+    except UnicodeEncodeError as exc:
+        raise ValueError(f"packages.json 含非法字符（{exc}）：请以 UTF-8 提交") from exc
+
+
 def dumps(data):
     """
     将数据序列化为 packages.json 的规范文本
@@ -402,6 +453,7 @@ def write_packages(path=DEFAULT_PACKAGES_FILE, data=None):
         data = json.loads(target.read_text(encoding="utf-8"))
 
     normalized = normalize_packages(data)
+    assert_clean_encoding(normalized)
     # 显式 LF：仓库索引为 LF，避免在 Windows 上写出 CRLF 造成换行噪音
     with open(target, "w", encoding="utf-8", newline="\n") as f:
         f.write(dumps(normalized))

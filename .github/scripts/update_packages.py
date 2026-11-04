@@ -119,7 +119,8 @@ def update_packages():
         write_packages('packages.json', packages)
         print(f"魔法书更新完成! 共更新了 {updated_count} 个模块~")
     except Exception as e:
-        print(f"无法保存魔法书: {e}")
+        print(f"::error::无法保存魔法书: {e}")
+        raise
 
 if __name__ == '__main__':
     update_packages()
