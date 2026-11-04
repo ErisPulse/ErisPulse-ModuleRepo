@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T08:42:31Z",
+    "last_updated": "2026-11-04T08:42:53Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -691,6 +691,27 @@
                 "系统信息"
             ],
             "submitted_at": "2025-07-14T10:40:27Z"
+        },
+        "TTS": {
+            "package": "ErisPulse-TTS",
+            "version": "0.1.0",
+            "author": "wsu2059q",
+            "description": "ͨ�������ϳ�ģ�飺OpenAI ���ݽӿڣ�Ĭ�� SiliconFlow CosyVoice2�����ϳɡ�ֱ�ӷ���������ɫ��¡",
+            "min_sdk_version": "2.8.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-TTS",
+            "official": false,
+            "verified": false,
+            "category": 5,
+            "tags": [
+                "TTS",
+                "����",
+                "CosyVoice"
+            ],
+            "i18n": [],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-04T08:42:53Z"
         },
         "UmaMusume": {
             "package": "ErisPulse-UmaMusume",
