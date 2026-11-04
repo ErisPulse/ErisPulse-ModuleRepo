@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T09:00:01Z",
+    "last_updated": "2026-11-04T09:01:47Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -531,10 +531,9 @@
             "version": "0.1.0",
             "author": "wsu2059q",
             "description": "QvQChat 伴侣插件：旁听群消息、五层插话判定、冲动值主动发言，让机器人在群里像个真成员",
-            "min_sdk_version": "2.8.0",
             "repository": "https://github.com/wsu2059q/ErisPulse-QvQStalker",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 5,
             "tags": [
                 "AI",
