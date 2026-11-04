@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T08:42:53Z",
+    "last_updated": "2026-11-04T08:45:42Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -588,10 +588,9 @@
             "version": "0.1.2",
             "author": "YingXinche",
             "description": "聊天中设置定时提醒。Lightweight reminder module for ErisPulse 2.10+ with declarative durations, ORM persistence, and owned scheduling.",
-            "min_sdk_version": "2.10.0",
             "repository": "https://github.com/wsu2059q/ErisPulse-Reminder",
             "official": false,
-            "verified": false,
+            "verified": true,
             "category": 4,
             "tags": [
                 "通知",
