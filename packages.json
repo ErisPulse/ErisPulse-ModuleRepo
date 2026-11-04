@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T08:56:32Z",
+    "last_updated": "2026-11-04T08:56:45Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -695,7 +695,7 @@
             "package": "ErisPulse-TTS",
             "version": "0.1.0",
             "author": "wsu2059q",
-            "description": "ͨ�������ϳ�ģ�飺OpenAI ���ݽӿڣ�Ĭ�� SiliconFlow CosyVoice2�����ϳɡ�ֱ�ӷ���������ɫ��¡",
+            "description": "通用语音合成模块：OpenAI 兼容接口（默认 SiliconFlow CosyVoice2），合成、直接发语音与音色克隆",
             "min_sdk_version": "2.8.0",
             "repository": "https://github.com/wsu2059q/ErisPulse-TTS",
             "official": false,
@@ -703,7 +703,7 @@
             "category": 5,
             "tags": [
                 "TTS",
-                "����",
+                "语音",
                 "CosyVoice"
             ],
             "i18n": [],
