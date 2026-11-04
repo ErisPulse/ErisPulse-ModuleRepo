@@ -4,6 +4,12 @@ permissions:
   contents: write
   pull-requests: write
 
+# 串行队列：提交/管理/每日更新共用一把锁，前一个跑完下一个才开始，
+# 消灭并发 push 冲突（配合 push 前 rebase 双保险）
+concurrency:
+  group: packages-write
+  cancel-in-progress: false
+
 on:
   schedule:
     # 每天 UTC 时间 2 点运行（北京时间 10 点）
