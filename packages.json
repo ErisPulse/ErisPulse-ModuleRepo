@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T08:34:38Z",
+    "last_updated": "2026-11-04T08:42:31Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -505,6 +505,27 @@
                 "对话"
             ],
             "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "QvQMemes": {
+            "package": "ErisPulse-QvQMemes",
+            "version": "0.1.0",
+            "author": "wsu2059q",
+            "description": "QvQChat ������ı����ϵͳ������Ⱥ���Զ���¼���Ӿ�ģ�ʹ��ǩ����ʱ������������ AI �Լ�����",
+            "min_sdk_version": "2.8.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-QvQMemes",
+            "official": false,
+            "verified": false,
+            "category": 2,
+            "tags": [
+                "�����",
+                "�Ӿ�",
+                "����"
+            ],
+            "i18n": [],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-04T08:42:31Z"
         },
         "QvQStalker": {
             "package": "ErisPulse-QvQStalker",
