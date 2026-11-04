@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T08:46:28Z",
+    "last_updated": "2026-11-04T08:56:32Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -510,16 +510,16 @@
             "package": "ErisPulse-QvQMemes",
             "version": "0.1.0",
             "author": "wsu2059q",
-            "description": "QvQChat ������ı����ϵͳ������Ⱥ���Զ���¼���Ӿ�ģ�ʹ��ǩ����ʱ������������ AI �Լ�����",
+            "description": "QvQChat 智能体的表情包系统：旁听群聊自动收录、视觉模型打标签，何时发、发哪张由 AI 自己决定",
             "min_sdk_version": "2.8.0",
             "repository": "https://github.com/wsu2059q/ErisPulse-QvQMemes",
             "official": false,
             "verified": false,
             "category": 2,
             "tags": [
-                "�����",
-                "�Ӿ�",
-                "����"
+                "表情包",
+                "视觉",
+                "娱乐"
             ],
             "i18n": [],
             "submitted_by": "YingXinche",
