@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-08T08:43:39Z",
+    "last_updated": "2026-11-09T09:22:59Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -12,7 +12,7 @@
     "modules": {
         "Dashboard": {
             "package": "ErisPulse-Dashboard",
-            "version": "2.7.3",
+            "version": "2.7.6",
             "author": "ErisPulse",
             "description": "Web admin panel — system monitor, module management, config editor & event stream | Web 管理面板 — 系统监控、模块管理、配置编辑、事件流查看",
             "min_sdk_version": "2.4.0",
@@ -493,7 +493,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "4.5.5",
+            "version": "4.6.1",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
@@ -509,7 +509,7 @@
         },
         "QvQMemes": {
             "package": "ErisPulse-QvQMemes",
-            "version": "0.1.2",
+            "version": "0.1.4",
             "author": "wsu2059q",
             "description": "QvQChat 智能体的表情包系统：旁听群聊自动收录、视觉模型打标签，何时发、发哪张由 AI 自己决定",
             "min_sdk_version": "2.8.0",
@@ -530,7 +530,7 @@
         },
         "QvQStalker": {
             "package": "ErisPulse-QvQStalker",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "author": "wsu2059q",
             "description": "QvQChat 伴侣插件：旁听群消息、五层插话判定、冲动值主动发言，让机器人在群里像个真成员",
             "repository": "https://github.com/wsu2059q/ErisPulse-QvQStalker",
