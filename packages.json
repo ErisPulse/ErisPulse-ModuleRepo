@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-09T09:22:59Z",
+    "last_updated": "2026-11-10T09:26:33Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -493,7 +493,7 @@
         },
         "QvQChat": {
             "package": "ErisPulse-QvQChat",
-            "version": "4.6.1",
+            "version": "4.6.2",
             "author": "wsu2059q",
             "description": "一个基于多AI协同的智能对话模块，让AI像真人一样自然参与聊天",
             "min_sdk_version": "2.3.0",
@@ -772,7 +772,7 @@
     "adapters": {
         "Bilibili": {
             "package": "ErisPulse-BilibiliAdapter",
-            "version": "0.2.1",
+            "version": "0.3.1",
             "author": "ErisPulse",
             "description": "哔哩哔哩私信适配器：扫码/Cookie 双登录，私信收发与图片消息，多账户支持",
             "min_sdk_version": "2.7.0",
@@ -799,7 +799,7 @@
         },
         "Discord": {
             "package": "ErisPulse-DiscordAdapter",
-            "version": "4.4.1",
+            "version": "4.4.3",
             "author": "ErisPulse",
             "description": "ErisPulse Discord adapter — Gateway WS + REST API v10 | ErisPulse Discord 适配器 — Gateway WebSocket + REST API v10",
             "min_sdk_version": "2.7.0",
@@ -814,7 +814,7 @@
         },
         "Email": {
             "package": "ErisPulse-EmailAdapter",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "author": "wsu2059q",
             "description": "ErisPulse Email adapter — turn any mailbox into a Bot | ErisPulse 邮箱适配器 — 把任意邮箱变成机器人",
             "min_sdk_version": "2.7.0",
@@ -829,7 +829,7 @@
         },
         "Ideaura": {
             "package": "ErisPulse-Ideaura",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "author": "ErisPulse",
             "description": "ErisPulse Ideaura (Allons) adapter — multi-scenario chat platform | ErisPulse 花枫咖啡馆(Allons)适配器 — 多场景聊天平台",
             "min_sdk_version": "2.7.0",
@@ -844,7 +844,7 @@
         },
         "Kook": {
             "package": "ErisPulse-KookAdapter",
-            "version": "4.3.1",
+            "version": "4.3.3",
             "author": "ShanFish",
             "description": "ErisPulse Kook adapter — messages, KMarkdown & cards | ErisPulse Kook 适配器 — 消息收发，KMarkdown / 卡片",
             "min_sdk_version": "2.7.0",
@@ -859,7 +859,7 @@
         },
         "Matrix": {
             "package": "ErisPulse-MatrixAdapter",
-            "version": "4.6.0",
+            "version": "4.6.1",
             "author": "wsu2059",
             "description": "ErisPulse Matrix adapter — decentralized chat via long-polling sync | ErisPulse Matrix 适配器 — 去中心化协议，Long Polling 同步",
             "min_sdk_version": "2.7.0",
@@ -874,7 +874,7 @@
         },
         "Minecraft": {
             "package": "ErisPulse-MinecraftAdapter",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "author": "ErisPulse",
             "description": "Minecraft 服务器适配器：RCON 命令执行，日志 tail 解析聊天与进出服事件",
             "min_sdk_version": "2.7.0",
@@ -900,7 +900,7 @@
         },
         "OneBot11": {
             "package": "ErisPulse-OneBot11Adapter",
-            "version": "4.6.0",
+            "version": "4.6.2",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot11 adapter — compatible with any OneBot v11 implementation | ErisPulse OneBot11 适配器 — 兼容任意 OneBot V11 协议实现",
             "min_sdk_version": "2.7.0",
@@ -915,7 +915,7 @@
         },
         "OneBot12": {
             "package": "ErisPulse-OneBot12Adapter",
-            "version": "4.6.0",
+            "version": "4.6.2",
             "author": "wsu2059q",
             "description": "ErisPulse OneBot12 adapter — baseline protocol, multi-account & dual-mode | ErisPulse OneBot12 适配器 — 基线协议，多账户 / Server·Client 双模式",
             "min_sdk_version": "2.7.0",
@@ -930,7 +930,7 @@
         },
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
-            "version": "5.3.1",
+            "version": "5.3.3",
             "author": "wsu2059",
             "description": "ErisPulse QQ Official Bot adapter — groups, DMs & channels | ErisPulse QQ 官方机器人适配器 — 群聊 / 私聊 / 频道",
             "min_sdk_version": "2.7.0",
@@ -945,7 +945,7 @@
         },
         "sandbox": {
             "package": "ErisPulse-SandboxAdapter",
-            "version": "4.2.1",
+            "version": "4.2.3",
             "author": "ErisPulse",
             "description": "ErisPulse Sandbox adapter — test your Bot in a web UI, zero setup | ErisPulse 沙箱适配器 — 网页 UI 调试，零平台接入即测即用",
             "min_sdk_version": "2.7.0",
@@ -960,7 +960,7 @@
         },
         "SnowLuma": {
             "package": "ErisPulse-SnowLumaAdapter",
-            "version": "0.3.2",
+            "version": "0.3.4",
             "author": "ErisPulse",
             "description": "基于 NTQQ hook 的 QQ 协议适配器：原生合并转发三级回退、client/server/http/webhook 四种连接模式、109 个 NapCat 兼容扩展动作、多账户自动路由",
             "min_sdk_version": "2.7.0",
@@ -989,7 +989,7 @@
         },
         "Telegram": {
             "package": "ErisPulse-TelegramAdapter",
-            "version": "4.3.1",
+            "version": "4.3.3",
             "author": "wsu2059q",
             "description": "ErisPulse Telegram adapter — Bot API with multi-account & rich media | ErisPulse Telegram 适配器 — Bot API，多账户 + 富媒体",
             "min_sdk_version": "2.7.0",
@@ -1004,7 +1004,7 @@
         },
         "Terminal": {
             "package": "ErisPulse-TerminalAdapter",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "author": "ErisPulse",
             "description": "ErisPulse Terminal adapter — the terminal is the chat, zero-config | ErisPulse 终端适配器 — 命令行即聊天，零配置开发调试",
             "min_sdk_version": "2.7.0",
@@ -1020,7 +1020,7 @@
         },
         "Webhook": {
             "package": "ErisPulse-WebhookAdapter",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "author": "ErisPulse",
             "description": "ErisPulse Webhook adapter — a low-code HTTP bridge to any system | ErisPulse Webhook 适配器 — 通用 HTTP 桥接，低代码接任意系统",
             "min_sdk_version": "2.7.0",
@@ -1035,7 +1035,7 @@
         },
         "WechatMp": {
             "package": "ErisPulse-WechatMpAdapter",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "author": "ErisPulse",
             "description": "ErisPulse WeChat MP adapter — webhook callback + customer/template messages | ErisPulse 微信公众号适配器 — Webhook 回调 + 客服 / 模板消息",
             "min_sdk_version": "2.7.0",
@@ -1051,7 +1051,7 @@
         },
         "WeCom": {
             "package": "ErisPulse-WeComAdapter",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "author": "ErisPulse",
             "description": "企业微信自建应用适配器：回调接收（官方加解密）、应用消息与图文卡片、通讯录 API、userid 与 openid 双向转换、多企业账户",
             "min_sdk_version": "2.7.0",
@@ -1075,7 +1075,7 @@
         },
         "Yunhu": {
             "package": "ErisPulse-YunhuAdapter",
-            "version": "4.6.1",
+            "version": "4.6.2",
             "author": "wsu2059q",
             "description": "ErisPulse Yunhu adapter — enterprise IM over WebSocket/Webhook | ErisPulse 云湖适配器 — 企业 IM，WebSocket / Webhook 双模式",
             "min_sdk_version": "2.7.0",
@@ -1090,7 +1090,7 @@
         },
         "YunhuUser": {
             "package": "ErisPulse-YunhuUserAdapter",
-            "version": "4.5.1",
+            "version": "4.6.1",
             "author": "wsu2059q",
             "description": "ErisPulse Yunhu-User adapter — driven by user-account protocol | ErisPulse 云湖用户适配器 — 用户账户协议驱动",
             "min_sdk_version": "2.7.0",
