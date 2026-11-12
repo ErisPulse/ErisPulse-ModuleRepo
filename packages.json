@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12T09:28:40Z",
+    "last_updated": "2026-11-12T14:57:44Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -304,6 +304,34 @@
                 "通知"
             ],
             "submitted_at": "2026-02-12T21:37:45Z"
+        },
+        "ErisPulse-ApiMCP": {
+            "package": "ErisPulse-ApiMCP",
+            "version": "0.1.0",
+            "author": "wsu2059q",
+            "description": "把 ErisPulse 机器人运行时能力经 MCP 开放给 AI 客户端：收发消息、调用模块、管理适配器、观测事件流、检索框架文档`把 ErisPulse 機器人執行時能力經 MCP 開放給 AI 用戶端：收發訊息、呼叫模組、管理適配器、觀測事件流、檢索框架文件`Expose an ErisPulse bot runtime over MCP to AI clients: messaging, module calls, adapter management, event streams, and framework docs search`ErisPulse ボットの機能を MCP 経由で AI クライアントに公開：メッセージ送受信、モジュール呼び出し、イベント購読、ドキュメント検索`Открывает рантайм бота ErisPulse через MCP для AI-клиентов: сообщения, вызов модулей, события, поиск по документации",
+            "min_sdk_version": "2.11.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-ApiMCP",
+            "official": false,
+            "verified": false,
+            "category": 5,
+            "tags": [
+                "MCP",
+                "AI",
+                "API",
+                "docs"
+            ],
+            "i18n": [
+                "zh",
+                "zh-tw",
+                "en",
+                "ja",
+                "ru"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-12T14:57:44Z"
         },
         "Feedback": {
             "package": "ErisPulse-Feedback",
