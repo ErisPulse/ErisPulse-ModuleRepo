@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12T14:57:44Z",
+    "last_updated": "2026-11-13T04:02:20Z",
     "categories": {
         "1": "tool",
         "2": "fun",
@@ -955,6 +955,28 @@
                 "OneBot12"
             ],
             "submitted_at": "2026-01-25T12:57:42Z"
+        },
+        "Oopz": {
+            "package": "ErisPulse-OopzAdapter",
+            "version": "0.1.0",
+            "author": "wsu2059q",
+            "description": "Oopz 用户账号接入适配器：WebSocket 收发频道/私信消息，支持好友申请审批与域/频道管理（非官方接口）",
+            "min_sdk_version": "2.7.0",
+            "repository": "https://github.com/wsu2059q/ErisPulse-OopzAdapter",
+            "official": false,
+            "verified": false,
+            "category": 6,
+            "tags": [
+                "oopz",
+                "语音"
+            ],
+            "i18n": [
+                "zh"
+            ],
+            "submitted_by": "YingXinche",
+            "submitted_by_uid": "wb:u_7f47e2cfb92d",
+            "oauth_provider": "workbench",
+            "submitted_at": "2026-11-13T04:02:20Z"
         },
         "QQBot": {
             "package": "ErisPulse-QQBotAdapter",
